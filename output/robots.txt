@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /legal-disclosure.html
+Disallow: /privacy-policy.html
+Disallow: /disclaimer.html
+Disallow: /contact.html
+Disallow: /authors.html
+Disallow: /author/
+Disallow: /images/
+Disallow: /theme/

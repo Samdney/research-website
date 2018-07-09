@@ -1,0 +1,40 @@
+    {% extends "base.html" %}
+
+    {% block content_title %}
+    {% if articles_page.number == 1 %}
+    {% include 'introduction.html' %}
+    {% endif %}
+    {% endblock %}
+
+    {% block content %}
+
+    <br><br><br>
+
+    <section id="listing">
+      {% for article in articles_page.object_list %}
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <center>
+            <h2>{{ article.title }}</h2>
+          </center>
+        </header>
+
+        <div class="entry-content">
+            <center>
+                {{ article.content }}
+            </center>
+        </div>
+      </article>
+
+      <br><br><br>
+
+      {% endfor %}
+
+      {% if articles_page.has_other_pages() %}
+      {% include 'pagination.html' %}
+      <br><br><br>
+      {% endif %}
+
+    </section>
+
+    {% endblock content %}

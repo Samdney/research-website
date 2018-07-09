@@ -1,0 +1,2 @@
+rm -r *.html
+rm -r 2018 author category images theme pages
