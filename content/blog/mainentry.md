@@ -12,3 +12,7 @@ my name is Carolin and I'm an independent mathematical scientist. I work as free
 I publish all my work under free licenses (as long it is not limited by third parties). I belive in open knowledge and that the results of research and its access has to be possible and free, without any fees, for everybody.
 
 I would be happy to get your support, to protect our right for private communication and online security.
+
+For more information about me, look at my CV on  
+<a href="http://www.carolin-zoebelein.de/aboutme/cv/cv.php" target="_blank"><font color="#2196F3">http://www.carolin-zoebelein.de/aboutme/cv/cv.php</font></a>  
+and contact me with your project description by email!
