@@ -12,7 +12,6 @@ SITEURL = ''
 
 PATH = 'content'
 
-
 # *** TODO ***
 STATIC_PATHS = ['blog', 'pages', 'images']
 ARTICLE_PATHS = ['blog']
@@ -62,6 +61,8 @@ AUTHOR_FEED_RSS = None
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
 
+# PGP Keys
+SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 
 # Social
 SOCIAL = (
