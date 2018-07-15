@@ -66,12 +66,11 @@ SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 
 # Social
 SOCIAL = (
-    #('facebook', 'http://www.facebook.com/johndoe'),
-    ('twitter', 'http://twitter.com/SamdneyTweet'),
-    ('pencil', 'https://Samdney.github.io'),
-    ('github', 'https://github.com/Samdney'),
-    ('gitlab', 'http://gitlab.com/Samdney'),
-    ('file-text-o',
+    ('Twitter', 'twitter', 'http://twitter.com/SamdneyTweet'),
+    ('Blog', 'pencil', 'https://Samdney.github.io'),
+    ('GitHub', 'github', 'https://github.com/Samdney'),
+    ('GitLab', 'gitlab', 'http://gitlab.com/Samdney'),
+    ('arXiv', 'file-text-o',
     'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C'),
 
 )

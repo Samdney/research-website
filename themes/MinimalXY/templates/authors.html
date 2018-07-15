@@ -24,7 +24,7 @@
 
         <div style="display: flex; flex-wrap: wrap;">
           <ul class="social" style="flex-grow: 1; padding: 0px;  margin-top: 12px; margin-bottom: 0px;">
-            {% for name, link in SOCIAL %}
+            {% for title, name, link in SOCIAL %}
             <li style="font-size: 18pt;"><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
             {% endfor %}
           </ul>
