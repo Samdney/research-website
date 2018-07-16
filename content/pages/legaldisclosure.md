@@ -36,7 +36,7 @@ Germany</p>
 <p>The content is created by Carolin Zöbelein.</p>  
 
 <p>List of external sources which are used:<br />
----</p>  
+This website uses <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>  
 
 <p>Source: <a href="https://www.twigg.de/" target="_blank">https://www.twigg.de/</a></p>
 
@@ -74,6 +74,6 @@ Deutschland</p>
 <p>Der Inhalt wurde erstellt von Carolin Zöbelein.</p>
 
 <p>Liste externer Quellen, die genutzt werden:<br />
----</p>
+Diese Website benutzt <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
 
 <p>Quelle: <a href="https://www.twigg.de/" target="_blank">https://www.twigg.de/</a></p>
