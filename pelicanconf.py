@@ -21,7 +21,7 @@ ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 PAGE_URL = '{slug}.html'
 
-SUMMARY_MAX_LENGTH = 15
+SUMMARY_MAX_LENGTH = None
 # *** TODO ***
 
 
@@ -45,7 +45,7 @@ MENUITEMS = (
 )
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = u'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None

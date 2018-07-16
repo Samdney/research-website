@@ -129,7 +129,7 @@
           {{ MINIMALXY_START_YEAR }}{% if MINIMALXY_START_YEAR != MINIMALXY_CURRENT_YEAR %}&dash;{{ MINIMALXY_CURRENT_YEAR }}{% endif %}
           {% endif %}
           {{ AUTHOR }}<br />
-          {% if FEED_ALL_ATOM %} | <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>{% endif %}
+          {% if FEED_ALL_ATOM %} <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>{% endif %}
         </span>
       </div>
     </footer>
