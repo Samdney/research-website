@@ -36,8 +36,7 @@ Germany</p>
 <p>The content is created by Carolin Zöbelein.</p>  
 
 <p>List of external sources which are used:<br />
-This website uses <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>  
-
+This website uses <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and <a href="https://jpswalsh.github.io/academicons/" target="_blank">Academicons</a>.</p>  
 <p>Source: <a href="https://www.twigg.de/" target="_blank">https://www.twigg.de/</a></p>
 
 <hr>
@@ -74,6 +73,7 @@ Deutschland</p>
 <p>Der Inhalt wurde erstellt von Carolin Zöbelein.</p>
 
 <p>Liste externer Quellen, die genutzt werden:<br />
-Diese Website benutzt <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
+Diese Website benutzt <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> und <a href="https://jpswalsh.github.io/academicons/" target="_blank">
+Academicons</a>.</p>
 
 <p>Quelle: <a href="https://www.twigg.de/" target="_blank">https://www.twigg.de/</a></p>

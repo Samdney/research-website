@@ -24,8 +24,9 @@
 
         <div style="display: flex; flex-wrap: wrap;">
           <ul class="social" style="flex-grow: 1; padding: 0px;  margin-top: 12px; margin-bottom: 0px;">
-            {% for title, name, link in SOCIAL %}
-            <li style="font-size: 18pt;"><a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+            {% for title, type, name, link in SOCIAL %}
+            <li style="font-size: 18pt;"><a class="sc-{{ name }}" href="{{ link
+            }}" title="{{ title }}" target="_blank"><i class="{{ type }} {{ type }}-{{ name }}"></i></a></li>
             {% endfor %}
           </ul>
           <a class="w3-btn w3-blue w3-right" style="margin-top: 12px;" href="{{ SITEURL }}/{{ author.url }}">All articles &#10093;</a>

@@ -66,12 +66,11 @@ SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 
 # Social
 SOCIAL = (
-    ('Twitter', 'twitter', 'http://twitter.com/SamdneyTweet'),
-    ('Blog', 'pencil', 'https://Samdney.github.io'),
-    ('GitHub', 'github', 'https://github.com/Samdney'),
-    ('GitLab', 'gitlab', 'http://gitlab.com/Samdney'),
-    ('arXiv', 'file-text-o',
-    'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C'),
+    ('Twitter', 'fa', 'twitter', 'http://twitter.com/SamdneyTweet'),
+    ('Blog', 'fa', 'pencil', 'https://Samdney.github.io'),
+    ('GitHub', 'fa', 'github', 'https://github.com/Samdney'),
+    ('GitLab', 'fa', 'gitlab', 'http://gitlab.com/Samdney'),
+    ('arXiv', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C'),
 
 )
 
