@@ -9,6 +9,10 @@ from datetime import datetime
 AUTHOR = u'Carolin Zöbelein'
 SITENAME = u'Carolin Zöbelein - Research'
 SITEURL = ''
+KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
+        'Freelancer', 'Math', 'Crytography', 'Algebra', 'Number Theory', 
+        'Crowdfunding', 'Encryption', 'Privacy', 'Anonymity', 'Communication',
+        'Free', 'Access')
 
 PATH = 'content'
 

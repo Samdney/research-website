@@ -7,7 +7,8 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     <!-- Meta -->
-    <meta name="description" content="{{ SITENAME }} &ndash; {{ SITESUBTITLE }}">
+    <meta name="description" content="{{ SITENAME }} &ndash; {{ SITESUBTITLE}}">
+    <meta name="keywords" content="{% for word in KEYWORDS %}{% if word != KEYWORDS[-1] %}{{ word }}, {% else %}{{ word }}{% endif %}{% endfor %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Social -->
