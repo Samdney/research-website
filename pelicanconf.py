@@ -7,6 +7,7 @@ from datetime import datetime
 
 
 AUTHOR = u'Carolin Zöbelein'
+AUTHOR_AVATAR = u'/images/zoebelein_avatar.png'
 SITENAME = u'Carolin Zöbelein - Research'
 SITEURL = ''
 KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
@@ -17,7 +18,7 @@ KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
 PATH = 'content'
 
 # *** TODO ***
-STATIC_PATHS = ['blog', 'pages', 'images']
+STATIC_PATHS = ['blog', 'pages', 'images', 'files']
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
@@ -42,7 +43,7 @@ MINIMALXY_CURRENT_YEAR = date.today().year
 
 # Menu      # TODO: '/categories.html'
 MENUITEMS = (
-    #('About', '/about.html'),
+    ('About', '/about.html'),
     #('Projects', '/projects.html'),
     ('Crowdfunding', '/crowdfunding.html'),
     ('Contact', '/contact.html'),
