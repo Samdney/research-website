@@ -18,3 +18,6 @@ system for online money transfers.
 Liberapay is a non-profit organization providing a platform to donate money.  
 <a href="https://liberapay.com/Carolin.Zoebelein/donate" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
+### Bank transfer
+You can send me money by bank transfer in USD (USA), GBP (GB), EUR (DE) and AUD (AU, national transfer only). Contact me for bank information.  
+*Personal note:* Please use other ways for donations if possible. I don't want to know your personal data ;).
