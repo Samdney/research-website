@@ -11,7 +11,7 @@ Slug:       researchforyou
 <table>
 <tr>
 <td width="30%" align="center">
-	<img width="220" height="500" src='/images/john-moeses-bauan-690280-unsplash.jpg'"</img>
+	<img width="220" height="500" src="/images/john-moeses-bauan-690280-unsplash.jpg"</img>
 </td>
 
 <td width="60%" align="center">
