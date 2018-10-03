@@ -45,6 +45,7 @@ MINIMALXY_CURRENT_YEAR = date.today().year
 MENUITEMS = (
     ('About', '/about.html'),
     ('Projects', '/projects.html'),
+    ('Public', '/public.html'),
     ('Crowdfunding', '/crowdfunding.html'),
     ('Contact', '/contact.html'),
 )
