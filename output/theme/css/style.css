@@ -62,24 +62,110 @@ abbr[title] {
 
 
 /* Classes */
+/* Desktop old: min-width: 630px */
+/* Mobile old: max-width: 629px */
 
-.col-main {
-  margin: auto;
-  width: 100%;
-  max-width: 900px;
+/* Desktop */
+@media all and (min-width: 1025px) {
+	.col-main {
+  		margin: auto;
+  		width: 100%;
+  		max-width: 57%;		/* 57%, 900px */
+	}
+
+	.col-page {
+  		margin: auto;
+  		width: 100%;
+  		max-width: 68%;
+	}
+
+	.col-page-sub {
+  		margin: auto;
+  		width: 100%;
+  		max-width: 90%;
+	}
 }
 
-.col-page {
-  margin: auto;
-  width: 100%;
-  max-width: 68%;
+/* Mobile */
+@media all and (max-width: 1024px) {
+	.col-main {
+  		margin: auto;
+  		width: 100%;
+  		max-width: 900px;	/* 900px */
+	}
+
+	.col-page {
+  		margin: auto;
+  		width: 100%;
+  		max-width: 900px;
+	}
+
+	.col-page-sub {
+  		margin: auto;
+  		width: 100%;
+  		max-width: 90%;
+	}
 }
 
-.col-page-sub {
-  margin: auto;
-  width: 100%;
-  max-width: 90%;
+
+
+/* Desktop */
+@media all and (min-width: 1025px) {
+	.two-columns {
+		display: flex ;
+    	align-items: stretch;
+		flex-flow: row wrap;
+	}
+
+	.col01 { 
+		/*float: left;*/
+		order: 1;
+		width: 50%;
+	}
+
+	.col02 { 
+		/*float: left;*/
+		order: 2; 
+		width: 50%; 
+	}
+
+	.two-col-myimage01 {
+		width: 60%;
+		height: 95%;
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
 }
+
+
+/* Mobile */
+@media all and (max-width: 1024px) {
+	/* one column code */
+	.two-columns {
+    	display: flex ;
+    	align-items: stretch;
+    	flex-flow: column wrap;
+  	}
+	
+	.col01 {
+    	order: 1 ;
+    	width: 100%;
+  	}
+  
+	.col02 {
+    	order: 2 ;
+    	width: 100% ;
+  	}
+
+	.two-col-myimage01 {
+		width: 45%;
+		height: 100%;
+		margin-top: -25%;		/* -4.5em, -25%, -90px */
+		margin-bottom: -25%;	/* -4.5em, -25%, -90px */
+		transform: rotate(-90deg);
+	}
+}
+
 
 .adjust-width {
   margin: 0 -16px;
@@ -325,9 +411,10 @@ ul.social li a:hover {
 
 
 
-/* Screen > 530px */
+/* Screen: Desktop */
+/* Old: 530 px */
 
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 1025px) {
 
   h1 {
     font-size: 26pt;
