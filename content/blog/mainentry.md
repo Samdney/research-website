@@ -10,7 +10,8 @@ Slug:       researchforyou
 
 <div class="two-columns">
     <div class="col01">
-		<img class="two-col-myimage01" src="/images/john-moeses-bauan-690280-unsplash.jpg"</img>
+		<img class="two-col-mymainimage01" src="/images/john-moeses-bauan-690280-unsplash.jpg"></img>
+		<img class="two-col-mymainimage02" src="/images/john-moeses-bauan-690280-unsplash_mobile.jpg"></img>
 	</div>
 
     <div class="col02">
