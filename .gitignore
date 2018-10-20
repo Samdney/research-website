@@ -4,3 +4,4 @@
 *.pid
 *.swp
 *.pyc
+*/*/.goutputstream*
