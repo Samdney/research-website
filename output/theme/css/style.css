@@ -107,10 +107,11 @@ abbr[title] {
 	}
 }
 
-
+/* --- */
 
 /* Desktop */
 @media all and (min-width: 1025px) {
+	/* Two columns */
 	.two-columns {
 		display: flex;
     	align-items: stretch;
@@ -118,13 +119,11 @@ abbr[title] {
 	}
 
 	.col01 { 
-		/*float: left;*/
 		order: 1;
 		width: 50%;
 	}
 
 	.col02 { 
-		/*float: left;*/
 		order: 2; 
 		width: 50%;
 	}
@@ -142,6 +141,30 @@ abbr[title] {
 		margin-top: 0%;
 		margin-bottom: 0%;
 	}
+
+	/* Three columms */
+	/*
+	.three-columns {
+		display: flex;
+		align-items: strecht;
+		flex-flow: row wrap;
+	}
+
+	.three-col01 { 
+		order: 1;
+		width: 33%;
+	}
+
+	.three-col02 { 
+		order: 2; 
+		width: 33%;
+	}
+
+	.three-col03 { 
+		order: 3; 
+		width: 33%;
+	}
+	*/
 }
 
 
@@ -191,6 +214,105 @@ abbr[title] {
 	}
 }
 
+/* --- */
+
+/* Desktop */
+@media all and (min-width: 630px) {
+	/* Two columns pages */
+	.two-columns-pages {
+		display: flex;
+    	align-items: stretch;
+		flex-flow: row wrap;
+	}
+
+	/* Columns: 50% <-> 50% */
+	.col01-pages50 { 
+		order: 1;
+		width: 50%;
+	}
+
+	.col02-pages50 { 
+		order: 2; 
+		width: 50%;
+	}
+
+	/* Columns: 30% <-> 70% */
+	.col01-pages30 { 
+		order: 1;
+		width: 30%;
+		margin-top: 7.5%; 
+		margin-bottom: 7.5%;
+	}
+
+	.col02-pages70 { 
+		order: 2; 
+		width: 70%;
+		padding: 5%;
+	}
+
+	/* Columns: 70% <-> 30% */
+	.col01-pages70 { 
+		order: 1;
+		width: 70%;
+		padding: 5%;
+	}
+
+	.col02-pages30 { 
+		order: 2; 
+		width: 30%;
+		margin-top: 7.5%;
+		margin-bottom: 7.5%;
+	}
+}
+
+
+/* Mobile */
+@media all and (max-width: 629px) {
+	/* one column code */
+	.two-columns-pages {
+    	display: flex;
+    	align-items: stretch;
+    	flex-flow: column wrap;
+        writing-mode: horizontal-tb;
+  	}
+	
+	/* Columns: 50% <-> 50% */
+	.col01-pages50 {
+    	order: 1 ;
+    	width: 100%;
+  	}
+
+	.col02-pages50 {
+    	order: 2 ;
+    	width: 100% ;
+  	}
+
+	/* Columns: 30% <-> 70% */
+	.col01-pages30 {
+    	order: 1 ;
+    	width: 100%;
+  	}
+
+	.col02-pages70 {
+    	order: 2 ;
+    	width: 100% ;
+		padding: 5%;
+  	}
+
+	/* Columns: 70% <-> 30% */
+	.col01-pages70 {
+    	order: 2 ;
+    	width: 100%;
+		padding: 5%;
+  	}
+
+	.col02-pages30 {
+    	order: 1 ;
+    	width: 100% ;
+  	}	
+}
+
+/* --- */
 
 .adjust-width {
   margin: 0 -16px;
