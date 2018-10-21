@@ -3,6 +3,7 @@ Date:           2018/07/07 20:00
 Slug:           crowdfunding
 
 <code><a href="/crowdfunding.html#DirectDonations">\#Direct Donations</a></code>
+<code><a href="/crowdfunding.html#Cross-subsidization">\#Cross-subsidization</a></code>
 
 <hr />
 
@@ -25,3 +26,7 @@ Liberapay is a non-profit organization providing a platform to donate money.
 <h3>Bank transfer</h3>
 You can send me money by bank transfer in USD (USA), GBP (GB), EUR (DE) and AUD (AU, national transfer only). Contact me for bank information.  
 *Personal note:* Please use other ways for donations if possible. I don't want to know your personal data ;).
+
+
+<h2 id="Cross-subsidization">Cross-subsidization</h2>
+From time to time, I also work as artist. You can also support my research work by buying one or more of my artworks. Currently, I sell all my work over <a href="https://www.saatchiart.com/Samdney" target="_blank">Saatchi Art</a>.
