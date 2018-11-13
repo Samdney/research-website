@@ -24,7 +24,7 @@ Slug:       researchforyou
 		I would be happy to get your support, to protect our right for private communication, open knowledge  and online security.<br />
 		<br />
 		For more information about me, look at my CV on <a href="/about.html" title="About"><font color="#2196F3">About</font></a>  
-		and contact me with your project description or wishe by email!<br />
+		and contact me with your project description or wish by email!<br />
 		<br />
 		Or support my work by <a href="https://research.carolin-zoebelein.de/crowdfunding.html"><font color="#2196F3">Crowdfunding</font></a>
 	</div>
