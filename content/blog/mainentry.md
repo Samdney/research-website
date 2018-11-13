@@ -6,7 +6,7 @@ Author:     Carolin Zöbelein
 Slug:       researchforyou
 
 
-### I make research for you
+### I do research for you
 
 <div class="two-columns">
     <div class="col01">
