@@ -60,10 +60,24 @@ abbr[title] {
 }
 
 
-
 /* Classes */
 /* Desktop old: min-width: 630px */
 /* Mobile old: max-width: 629px */
+
+/* Desktop */
+@media all and (min-width: 1025px) {
+	.cryptocurr-addr {
+        font-size: 13pt;
+    }
+}
+
+/* Mobile */
+@media all and (max-width: 1024px) {
+    .cryptocurr-addr {
+        font-size: 9pt;
+    }
+}
+
 
 /* Desktop */
 @media all and (min-width: 1025px) {

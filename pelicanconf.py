@@ -18,7 +18,7 @@ KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
 PATH = 'content'
 
 # *** TODO ***
-STATIC_PATHS = ['blog', 'pages', 'images', 'files']
+STATIC_PATHS = ['blog', 'pages', 'images', 'files', 'qrcodes']
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'

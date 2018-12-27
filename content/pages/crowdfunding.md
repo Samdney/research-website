@@ -25,12 +25,12 @@ Liberapay is a non-profit organization providing a platform to donate money.
 
 <h3>Bitcoin</h3>
 Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or administrator. Please use the following address:  
-<a href="https://blockexplorer.com/address/3QtQTQHt1kQ4QQz5wqYwmsQ2QR5YwFwZQ6" target="_blank">3QtQTQHt1kQ4QQz5wqYwmsQ2QR5YwFwZQ6 (Explorer, QR-Code)</a>
+<i class="cryptocurr-addr">3QtQTQHt1kQ4QQz5wqYwmsQ2QR5YwFwZQ6 (<a href="/qrcodes/crowdfunding_bitcoin.png" title="Crowdfunding - Bitcoin: QR-Code" target="_blank">QR-Code</a>)</i>
 
 <h3>Zcash</h3>
 Zcash is a cryptocurrency. It is aimed at using cryptography to provide
 enhanced privacy for its users. Please use the following address:  
-<a href="https://zcash.blockexplorer.com/address/t1L665gYuCfYppbCfXjRfZZ2oSiuVZ1dSZL" target="_blank">t1L665gYuCfYppbCfXjRfZZ2oSiuVZ1dSZL (Explorer, QR-Code)</a>
+<i class="cryptocurr-addr">t1L665gYuCfYppbCfXjRfZZ2oSiuVZ1dSZL (<a href="/qrcodes/crowdfunding_zcash.png" title="Crowdfunding - Zcash: QR-Code" target="_blank">QR-Code</a>)</i>
 
 <h3>Bank transfer</h3>
 You can send me money by bank transfer in USD (USA), GBP (GB, national transfer only), EUR (DE) and AUD (AU, national transfer only). Contact me for bank information.  
