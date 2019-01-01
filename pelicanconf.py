@@ -41,6 +41,9 @@ THEME = 'themes/MinimalXY'
 MINIMALXY_START_YEAR = 2018
 MINIMALXY_CURRENT_YEAR = date.today().year
 
+# Icon
+MINIMALXY_FAVICON = 'images/favicon.ico'
+
 # Menu      # TODO: '/categories.html'
 MENUITEMS = (
     ('About', '/about.html'),
