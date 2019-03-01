@@ -11,24 +11,96 @@
     <br><br><br>
 
     <section id="listing">
-      {% for article in articles_page.object_list %}
-      <article class="w3-container w3-card-2 w3-white col-main">
-        <header>
-          <center>
-            <h2>{{ article.title }}</h2>
-          </center>
-        </header>
 
-        <div class="entry-content">
-            <center>
-                {{ article.content }}
-            </center>
-        </div>
-      </article>
+      {% if articles_page.number == 1 %}
+        <article class="w3-container w3-card-2 w3-white col-main">
+          <hr>
+          <div class="two-columns-pages" style="margin-left: 2%; margin-right: 2%;">
+	        <div class="col01-pages30">
+                <center>
+                  <img class="index-image" src='/images/zoebelein_avatar.png'><br />
+                  <p>
+                    <i>Carolin Zöbelein</i><br />
+                    <font style="font-size: 13px"><i>Independent mathematical scientist</i></font>
+                  </p>
+                </center>
+            </div>
+            <div class="col02-pages70" style="font-size: 15px">
+              Hi,<br />
+		          <br />
+		          my name is Carolin and I'm an independent mathematical scientist. I work as freelancer on topics around it-security, decentralized networks, online privacy & anonymity and censorship circumvention with mathematical (Cryptography, Algebra, Number Theory) focus.<br />
+		          <br />
+		          I publish all my work under free licenses (as long it is not limited by third parties). I believe in open knowledge and that the results of research and its access has to be possible and free, without any fees, for everybody.<br />
+		          <br />
+		          I would be happy to get your support, to protect our right for private communication, open knowledge and online security.             
+            </div>
+          </div>   
+        <hr>      
+        </article>
+      {% endif %}
 
-      <br><br><br>
+      <br>
 
+      <article class="w3-white col-main-entries">
+        <!-- <header style="margin-left: 1.5%;"> -->
+            <!-- <h1>Featured</h1> --> <!-- TODO: News -->
+        <!-- </header> -->
+
+        <!-- <br> -->       
+
+        {% for article in articles_page.object_list %}
+          {% if loop.index % 3 == 1 %}
+            <div class="three-columns">
+
+              <div class="w3-container w3-card-2 three-col01">
+          {% elif loop.index % 3 == 2 %}
+              <div class="w3-container w3-card-2 three-col02">
+          {% elif loop.index % 3 == 0 %}
+              <div class="w3-container w3-card-2 three-col03">
+          {% endif %}                
+                
+                <center>
+                  <img width="90%" src="{{ article.index_image }}">   
+                </center>
+
+                <header class="article-index-title">    <!-- desktop version: font-size: <h2> -->
+                  <b>{{ article.index_title }}</b>
+                </header>
+              
+                <div style="margin-left: 5%; margin-right: 5%; color: black;">
+                  {{ article.category }}
+                </div>
+
+                <div style="margin-left: 5%; margin-right: 5%;">
+                  {{ article.index_summary }}
+                </div>
+
+                <div style="margin-left: 5%; margin-right: 5%; color: #2196F3; font-size: 10px;">
+                  <a href="{{ SITEURL }}/{{ article.url }}">READ MORE >> </a>
+                </div>
+
+                <br><br>
+
+              </div>          
+
+          {% if loop.length % 3 == 0 %}
+            {% if loop.index % 3 == 0 %}
+            </div>
+            {% endif %}
+          {% else %}
+            {% if loop.index % 3 == 0 %}
+            </div>
+            {% endif %}
+
+            {% if loop.index == loop.length %}
+            </div>
+            {% endif %}
+          {% endif %}
+        
       {% endfor %}
+       </article>
+
+      <br>
 
       {% if articles_page.has_other_pages() %}
       {% include 'pagination.html' %}

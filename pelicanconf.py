@@ -17,20 +17,26 @@ KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
 
 PATH = 'content'
 
-# *** TODO ***
+# ******
 STATIC_PATHS = ['blog', 'pages', 'images', 'files', 'qrcodes']
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
+#ARTICLE_SAVE_AS = '{categories}/{date:%Y}/{slug}.html'  # TODO
+#ARTICLE_URL = '{categories}/{date:%Y}/{slug}.html' # TODO
 
 PAGE_SAVE_AS = '{slug}.html'
 PAGE_URL = '{slug}.html'
 
 SUMMARY_MAX_LENGTH = None
-# *** TODO ***
+# ******
 
 
 TIMEZONE = 'Europe/Paris'
+
+DATE_FORMATS = {
+        'en': '%Y/%m/%d',
+}
 
 DEFAULT_LANG = u'en'
 
@@ -44,7 +50,7 @@ MINIMALXY_CURRENT_YEAR = date.today().year
 # Icon
 MINIMALXY_FAVICON = 'images/favicon.ico'
 
-# Menu      # TODO: '/categories.html'
+# Menu
 MENUITEMS = (
     ('About', '/about.html'),
     ('Projects', '/projects.html'),
@@ -66,9 +72,11 @@ AUTHOR_FEED_RSS = None
 #         ('Jinja2', 'http://jinja.pocoo.org/'),
 #         ('You can modify those links in your config file', '#'),)
 
-# Social widget
-#SOCIAL = (('You can add links in your config file', '#'),
-#          ('Another social link', '#'),)
+# Index introduction
+INDEX_INTRO_IMAGE = '/images/john-moeses-bauan-690280-unsplash.jpg'
+INDEX_INTRO_TITLE = '' # TODO
+INDEX_INTRO_CONTENT = '' # TODO
+
 
 # PGP Keys
 SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
@@ -83,7 +91,7 @@ SOCIAL = (
 
 )
 
-DEFAULT_PAGINATION = 8
+DEFAULT_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
