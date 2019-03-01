@@ -9,7 +9,7 @@ Slug:           crowdfunding
 
 <h2 id="DirectDonations">Direct Donations</h2>
 
-<h3>Paypal</h3>
+<h3>PayPal</h3>
 PayPal Holdings, Inc. is an American company operating an online payments
 system for online money transfers.
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
