@@ -11,7 +11,7 @@ Slug:           about
 <h2 id="WeAreOne">We are one</h2>
 <div class="two-columns-pages">
 	<div class="col01-pages30">
-        <img width="100%" src="/images/helena-lopes-596553-unsplash.jpg"></img>
+        <img width="100%" src="/images/helena-lopes-596553-unsplash.jpg">
     </div>
     <div class="col02-pages70">
         <b>Living in a world well connected...</b><br />
@@ -46,13 +46,13 @@ Slug:           about
         -->
     </div>
     <div class="col02-pages30">
-        <img width="100%" src="/images/nesa-by-makers-752736-unsplash.jpg"></img>
+        <img width="100%" src="/images/nesa-by-makers-752736-unsplash.jpg">
     </div>
 </div>
 
 <div class="two-columns-pages" style="padding-top: 40px;">
 	<div class="col01-pages30">
-        <img width="100%" src="/images/frame-harirak-748416-unsplash.jpg"></img>
+        <img width="100%" src="/images/frame-harirak-748416-unsplash.jpg">
     </div>
     <div class="col02-pages70">
         <b>People who live in this world, want to make it better...</b>
