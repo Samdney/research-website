@@ -7,7 +7,7 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     <!-- Meta -->
-    <meta name="description" content="{{ SITENAME }} &ndash; {{ SITESUBTITLE}}">
+    <meta name="description" content="{{ SITENAME }}{% if SITESUBTITLE %} &ndash; {{ SITESUBTITLE}}{% endif %}">
     <meta name="keywords" content="{% for word in KEYWORDS %}{% if word != KEYWORDS[-1] %}{{ word }}, {% else %}{{ word }}{% endif %}{% endfor %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,6 +22,17 @@
     <meta property="og:description" content="{{ article.summary|striptags|escape }}"/>
     <meta property="og:site_name" content="{{ SITENAME }}" />
     <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SamdneyTweet" />
+    <meta name="twitter:title" content="{{ article.title }}" />
+    <meta name="twitter:description" content="{{ article.index_summary }}" />
+    {% if article.index_image[0] == "/" %}
+      {% set index_image = article.index_image[1:] %}
+    {% else %}
+      {% set index_image = article.index_image %}
+    {% endif %}
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ index_image }}" />
     {% elif page %}
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ page.title }}"/>
@@ -29,6 +40,12 @@
     <meta property="og:site_name" content="{{ SITENAME }}" />
     <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
     <meta property="og:image" content="{{ AUTHOR_AVATAR }}"/>
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SamdneyTweet" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ SITESUBTITLE }}" />
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ MINIMALXY_FAVICON }}" />
     {% else %}
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ SITENAME }}"/>
@@ -36,6 +53,12 @@
     <meta property="og:site_name" content="{{ SITENAME }}" />
     <meta property="og:url" content="{{ SITEURL }}"/>
     <meta property="og:image" content="{{ AUTHOR_AVATAR }}"/>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SamdneyTweet" />
+    <meta name="twitter:title" content="{{ SITENAME }}" />
+    <meta name="twitter:description" content="{{ SITESUBTITLE }}" />
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ MINIMALXY_FAVICON }}" />
     {% endif %}
 
     <!-- Feed -->
@@ -70,7 +93,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/w3.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/all.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/academicons.min.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments-highlight-github.css">
     {% if MINIMALXY_CUSTOM_CSS %}
