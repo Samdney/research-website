@@ -6,7 +6,7 @@
           {% if SOCIAL %}
           <ul class="social" style="margin: 0; margin-top: 0px; margin-left: 0px; padding: 0; background-color: rgba(255, 255, 255, 0.85);">
             {% for title, typea, typef, name, link in SOCIAL %}
-            <li><a-intro class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank"><i class="{{ typea }} {{ typef }}-{{ name }}"></i></a-intro></li>
+            <li><a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank"><i class="{{ typea }} {{ typef }}-{{ name }}" style="color: black;"></i></a></li>
             {% if loop.index % SOCIAL_PAGINATION == 0 %}
             <br>
             {% endif %}
