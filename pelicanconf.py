@@ -10,6 +10,7 @@ AUTHOR = u'Carolin Zöbelein'
 AUTHOR_AVATAR = u'/images/zoebelein_avatar.png'
 SITENAME = u'Carolin Zöbelein - Research'
 SITEURL = ''
+SITEURL_SOCIAL = 'https://research.carolin-zoebelein.de'
 KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
         'Freelancer', 'Math', 'Crytography', 'Algebra', 'Number Theory', 
         'Crowdfunding', 'Encryption', 'Privacy', 'Anonymity', 'Communication',

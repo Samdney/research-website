@@ -21,7 +21,7 @@
     <meta property="og:title" content="{{ article.title|striptags }}"/>
     <meta property="og:description" content="{{ article.summary|striptags|escape }}"/>
     <meta property="og:site_name" content="{{ SITENAME }}" />
-    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
+    <meta property="og:url" content="{{ SITEURL_SOCIAL }}/{{ article.url }}"/>
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@SamdneyTweet" />
@@ -32,33 +32,33 @@
     {% else %}
       {% set index_image = article.index_image %}
     {% endif %}
-    <meta name="twitter:image" content="{{ SITEURL }}/{{ index_image }}" />
+    <meta name="twitter:image" content="{{ SITEURL_SOCIAL }}/{{ index_image }}" />
     {% elif page %}
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ page.title }}"/>
     <meta property="og:description" content="{{ SITESUBTITLE }}"/>
     <meta property="og:site_name" content="{{ SITENAME }}" />
-    <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
+    <meta property="og:url" content="{{ SITEURL_SOCIAL }}/{{ page.url }}"/>
     <meta property="og:image" content="{{ AUTHOR_AVATAR }}"/>
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@SamdneyTweet" />
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ SITESUBTITLE }}" />
-    <meta name="twitter:image" content="{{ SITEURL }}/{{ MINIMALXY_FAVICON }}" />
+    <meta name="twitter:image" content="{{ SITEURL_SOCIAL }}/{{ MINIMALXY_FAVICON }}" />
     {% else %}
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ SITENAME }}"/>
     <meta property="og:description" content="{{ SITESUBTITLE }}"/>
     <meta property="og:site_name" content="{{ SITENAME }}" />
-    <meta property="og:url" content="{{ SITEURL }}"/>
+    <meta property="og:url" content="{{ SITEURL_SOCIAL }}"/>
     <meta property="og:image" content="{{ AUTHOR_AVATAR }}"/>
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@SamdneyTweet" />
     <meta name="twitter:title" content="{{ SITENAME }}" />
     <meta name="twitter:description" content="{{ SITESUBTITLE }}" />
-    <meta name="twitter:image" content="{{ SITEURL }}/{{ MINIMALXY_FAVICON }}" />
+    <meta name="twitter:image" content="{{ SITEURL_SOCIAL }}/{{ MINIMALXY_FAVICON }}" />
     {% endif %}
 
     <!-- Feed -->
