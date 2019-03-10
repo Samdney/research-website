@@ -3,65 +3,457 @@
     {% block title %}{{ article.title|striptags }} &ndash; {{ SITENAME }}{% endblock %}
 
     {% block content %}
-
-    <br><br><br>
-
-    <article>
-      <header class="w3-container col-main">
-        <h1>{{ article.title }}</h1>
-        <div class="post-info">
-          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
-            <span><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time> in <a href="{{ SITEURL }}/{{ article.category.url }}" title="All articles in category {{ article.category }}">{{ article.category }}</a></span>
-          </div>
-          {% if article.tags %}
-          <div>
-            {% for tag in article.tags %}
-            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
-              <a href="{{ SITEURL }}/{{ tag.url }}" title="All articles with {{ tag.name.title() }} tag">#{{ tag }}</a>
-            </span>
-            {% endfor %}
-          </div>
-          {% endif %}
-        </div>
-      </header>
-
-      <br>
-
-      {% if article.headerimage %}
-      <div class="headerimage-article">
-        <img src="{{ article.headerimage }}" style="width: 100%;">
-        {% if article.headerimagecaption %}
-          <p class="caption">{{ article.headerimagecaption }}</p>
-        {% endif %}
-      </div>
-      {% endif %}
-
-      <div class="col-main w3-container">
-        <section id="content">
-          {{article.content}}
-        </section>
-
-        <br><br><br>
-
-        <footer>
-          {% if article.related_posts %}
-          <div class="related-posts">
-            <h4>Related posts:</h4>
-            <ul>
-              {% for related_post in article.related_posts %}
-              <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+    
+    {% if article.categories == "Project" %}
+    <!-- Project -->
+      <br><br><br>
+        <article>
+          <header class="w3-white w3-container col-main">
+            <h1>{{ article.title }}</h1>
+            <div class="post-info">
+              <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+                <span>Published <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, <a href="{{ SITEURL }}/{{ article.category.url }}" title="All articles in category {{ article.category }}">{{ article.category }}</a></span>
+              </div>
+              {% if article.tags %}
+              <div>
+              {% for tag in article.tags %}
+                <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                  <a href="{{ SITEURL }}/{{ tag.url }}" title="All articles with {{ tag.name.title() }} tag">#{{ tag }}</a>
+                </span>
               {% endfor %}
-            </ul>
+              </div>
+              {% endif %}
+            </div>
+          </header>
+
+          <br>
+
+          {% if article.headerimage %}
+          <div class="headerimage-article">
+            <img src="{{ article.headerimage }}" style="width: 100%;">
+            {% if article.headerimagecaption %}
+            <p class="caption">{{ article.headerimagecaption }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+                    
+          <div class="col-main w3-container">
+            <section id="content">
+            <div class="two-columns-pages">
+	            <div class="col01-pages30">
+                <img width="100%" src="/images/helena-lopes-596553-unsplash.jpg">
+              </div>
+              <div class="col02-pages70">
+                {% if article.keywords %}
+                  {% set keywords = article.keywords.split(', ') %}
+                {% endif %}
+
+                <div style="font-size: 15px; margin-top: 2%;">
+    	            {% if article.project_members %}<b>Author(s):</b> {{ article.project_members }}<br />{% endif %}
+                  {% if article.project_period %}<b>Project period:</b> {{ article.project_period }}<br />{% endif %}
+                  {% if article.subject_class %}<b>Subject class:</b> {{ article.subject_class }}<br />{% endif %}
+                  {% if article.keywords %}<b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}<br />{% endif %}                  
+                </div>
+              </div>
+            </div>
+            </section>
+           
+            {% if article.synopsis %}
+            <section id="content">
+              <h3>Synopsis</h3>
+              <i>{{ article.synopsis }}</i>
+            </section>
+            {% endif %}
+
+            {% if article.content %}
+            <section id="content" style="color: black;">
+              <h3>Content</h3>
+              {{article.content}}
+            </section>
+            {% endif %}
+
+            
+            {% if article.papers %}
+            <section id="content">
+              <h3>Related papers</h3>
+              {% set papers = article.papers.split(', ') %}
+              {% for paper in papers %}
+                {% for articleref in articles %}
+                  {% if articleref.id == paper %}
+                  <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a><br />
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+
+            {% if article.links %}
+            <section id="content">
+              <h3>Links</h3>
+              {% set links = article.links.split(', ') %}                
+              {% for title, typea, typef, name in SOCIAL_SIGNS %}
+                {% for link in links %}
+                  {% set index = loop.index %}
+
+                  {% if link == title %}                  
+                    {% if article.links_info %}
+                      {% set index_info = ((index - 1)/2)|int %}
+                      {% set links_info = article.links_info.split(', ') %} 
+                    {% endif %}
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i> {%if article.links_info %}{{ links_info[index_info] }}:{% endif %} <a class="sc-{{ name }}" href="{{ links[index] }}" title="External: {{ links[index] }}" target="_blank"> {{ links[index] }}</a><br />
+                  {% endif %}
+
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+            <br>
+
+            <footer>
+            {% if article.related_posts %}
+            <div class="related-posts">
+              <h4>Related posts:</h4>
+              <ul>
+                {% for related_post in article.related_posts %}
+                <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if DISQUS_SITENAME %}
+            {% include "disqus.html" %}
+            <br><br><br>
+            {% endif %}
+            </footer>
+
+            <br><br><br>          
+         
+          </div>
+
+        </article>
+      <br><br><br>
+    
+    {% elif article.kind == "Paper" %}
+    <!-- Paper -->
+      <br><br><br>
+        <article>
+          <header class="w3-white w3-container col-main">
+            <h1>{{ article.title }}</h1>
+            <div class="post-info">
+              <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+                <span>Published <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, <a href="{{ SITEURL }}/{{ article.category.url }}" title="All articles in category {{ article.category }}">{{ article.category }}</a></span>
+              </div>
+              {% if article.tags %}
+              <div>
+              {% for tag in article.tags %}
+                <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                  <a href="{{ SITEURL }}/{{ tag.url }}" title="All articles with {{ tag.name.title() }} tag">#{{ tag }}</a>
+                </span>
+              {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </header>
+
+          <br>
+
+          {% if article.headerimage %}
+          <div class="headerimage-article">
+            <img src="{{ article.headerimage }}" style="width: 100%;">
+            {% if article.headerimagecaption %}
+            <p class="caption">{{ article.headerimagecaption }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+                    
+          <div class="col-main w3-container">
+            <section id="content">
+            <div class="two-columns-pages">
+	            <div class="col01-pages30">
+                <img width="100%" src="/images/helena-lopes-596553-unsplash.jpg">
+              </div>
+              <div class="col02-pages70">
+                {% if article.keywords %}
+                  {% set keywords = article.keywords.split(', ') %}
+                {% endif %}
+
+                <div style="font-size: 15px; margin-top: 2%;">
+    	            {% if article.paper_author %}<b>Author(s):</b> {{ article.paper_author }}<br />{% endif %}
+                  {% if article.publish_date %}<b>Published:</b> {{ article.publish_date }}<br />{% endif %}
+                  {% if article.subject_class %}<b>Subject class:</b> {{ article.subject_class }}<br />{% endif %}
+                  {% if article.keywords %}<b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}<br />{% endif %}              
+                  {% if article.arxiv %}<b>arXiv:</b> {{ article.arxiv }}<br />{% endif %}
+                  {% if article.pdf %}<b>Pdf:</b> <a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">{{ article.pdf }}</a><br />{% endif %}
+                </div>
+              </div>
+            </div>
+            </section>
+           
+            {% if article.abstract %}
+            <section id="content">
+              <h3>Abstract</h3>
+              <i>{{ article.abstract }}</i>
+            </section>
+            {% endif %}
+
+            {% if article.content %}
+            <section id="content" style="color: black;">
+              <h3>Content</h3>
+              {{article.content}}
+            </section>
+            {% endif %}
+
+            
+            {% if article.project %}
+            <section id="content">
+              <h3>Related projects</h3>
+              {% set projects = article.project.split(', ') %}
+              {% for project in projects %}
+                {% for articleref in articles %}
+                  {% if articleref.id == project %}
+                  <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a><br />
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+
+            {% if article.links %}
+            <section id="content">
+              <h3>Links</h3>
+              {% set links = article.links.split(', ') %}                
+              {% for title, typea, typef, name in SOCIAL_SIGNS %}
+                {% for link in links %}
+                  {% set index = loop.index %}
+
+                  {% if link == title %}                  
+                    {% if article.links_info %}
+                      {% set index_info = ((index - 1)/2)|int %}
+                      {% set links_info = article.links_info.split(', ') %} 
+                    {% endif %}
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i> {%if article.links_info %}{{ links_info[index_info] }}:{% endif %} <a class="sc-{{ name }}" href="{{ links[index] }}" title="External: {{ links[index] }}" target="_blank"> {{ links[index] }}</a><br />
+                  {% endif %}
+
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+            <br>
+
+            <footer>
+            {% if article.related_posts %}
+            <div class="related-posts">
+              <h4>Related posts:</h4>
+              <ul>
+                {% for related_post in article.related_posts %}
+                <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if DISQUS_SITENAME %}
+            {% include "disqus.html" %}
+            <br><br><br>
+            {% endif %}
+            </footer>
+
+            <br><br><br>          
+         
+          </div>
+
+        </article>
+      <br><br><br>
+    
+    {% elif article.kind == "Meetup" %}
+    <!-- Meetup -->
+      <br><br><br>
+        <article>
+          <header class="w3-white w3-container col-main">
+            <h1>{{ article.title }}</h1>
+            <div class="post-info">
+              <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+                <span>Published <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, <a href="{{ SITEURL }}/{{ article.category.url }}" title="All articles in category {{ article.category }}">{{ article.category }}</a></span>
+              </div>
+              {% if article.tags %}
+              <div>
+              {% for tag in article.tags %}
+                <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                  <a href="{{ SITEURL }}/{{ tag.url }}" title="All articles with {{ tag.name.title() }} tag">#{{ tag }}</a>
+                </span>
+              {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </header>
+
+          <br>
+
+          {% if article.headerimage %}
+          <div class="headerimage-article">
+            <img src="{{ article.headerimage }}" style="width: 100%;">
+            {% if article.headerimagecaption %}
+            <p class="caption">{{ article.headerimagecaption }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+                    
+          <div class="col-main w3-container">
+            <section id="content">
+              <div style="font-size: 15px; margin-top: 2%;">
+                {% if article.event_date %}<b>Date & Time:</b> {{ article.event_date }}<br />{% endif %}
+                {% if article.event_place %}<b>Place:</b> {{ article.event_place }}<br />{% endif %}
+                {% if article.further_info %}<b>Further Information:</b> {{ article.further_info }}<br />{% endif %}
+              </div>
+            </section>
+           
+            {% if article.synopsis %}
+            <section id="content">
+              <h3>Synopsis</h3>
+              <i>{{ article.synopsis }}</i>
+            </section>
+            {% endif %}
+
+            {% if article.content %}
+            <section id="content" style="color: black;">
+              <h3>Content</h3>
+              {{article.content}}
+            </section>
+            {% endif %}
+
+            
+            {% if article.project %}
+            <section id="content">
+              <h3>Related projects</h3>
+              {% set projects = article.project.split(', ') %}
+              {% for project in projects %}
+                {% for articleref in articles %}
+                  {% if articleref.id == project %}
+                  <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a><br />
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+
+            {% if article.links %}
+            <section id="content">
+              <h3>Links</h3>
+              {% set links = article.links.split(', ') %}                
+              {% for title, typea, typef, name in SOCIAL_SIGNS %}
+                {% for link in links %}
+                  {% set index = loop.index %}
+
+                  {% if link == title %}                  
+                    {% if article.links_info %}
+                      {% set index_info = ((index - 1)/2)|int %}
+                      {% set links_info = article.links_info.split(', ') %} 
+                    {% endif %}
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i> {%if article.links_info %}{{ links_info[index_info] }}:{% endif %} <a class="sc-{{ name }}" href="{{ links[index] }}" title="External: {{ links[index] }}" target="_blank"> {{ links[index] }}</a><br />
+                  {% endif %}
+
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+            <br>
+
+            <footer>
+            {% if article.related_posts %}
+            <div class="related-posts">
+              <h4>Related posts:</h4>
+              <ul>
+                {% for related_post in article.related_posts %}
+                <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if DISQUS_SITENAME %}
+            {% include "disqus.html" %}
+            <br><br><br>
+            {% endif %}
+            </footer>
+
+            <br><br><br>          
+
+          </div>
+
+        </article>
+      <br><br><br>
+
+    {% else %}
+    <!-- Else -->
+      <br><br><br>
+        <article>
+          <header class="w3-white w3-container col-main">
+            <h1>{{ article.title }}</h1>
+            <div class="post-info">
+              <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+                <span>Published <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, <a href="{{ SITEURL }}/{{ article.category.url }}" title="All articles in category {{ article.category }}">{{ article.category }}</a></span>
+              </div>
+              {% if article.tags %}
+              <div>
+                {% for tag in article.tags %}
+                <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                  <a href="{{ SITEURL }}/{{ tag.url }}" title="All articles with {{ tag.name.title() }} tag">#{{ tag }}</a>
+                </span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </header>
+
+          <br>
+
+          {% if article.headerimage %}
+          <div class="headerimage-article">
+            <img src="{{ article.headerimage }}" style="width: 100%;">
+            {% if article.headerimagecaption %}
+            <p class="caption">{{ article.headerimagecaption }}</p>
+            {% endif %}
           </div>
           {% endif %}
 
-          {% if DISQUS_SITENAME %}
-          {% include "disqus.html" %}
-          <br><br><br>
-          {% endif %}
+          <div class="col-main w3-container">
+            {% if article.content %}
+            <section id="content" style="color: white;">
+              {{article.content}}
+            </section>
+            {% endif %}
 
-        </footer>
-      </div>
-    </article>
+            <br><br><br>
 
+            <footer>
+            {% if article.related_posts %}
+              <div class="related-posts">
+                <h4>Related posts:</h4>
+                  <ul>
+                  {% for related_post in article.related_posts %}
+                    <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+                  {% endfor %}
+                  </ul>
+              </div>
+            {% endif %}
+
+            {% if DISQUS_SITENAME %}
+            {% include "disqus.html" %}
+            <br><br><br>
+            {% endif %}
+
+            </footer>
+          </div>
+        </article>
+      <br><br><br>
+
+    {% endif %}
+  
     {% endblock content %}

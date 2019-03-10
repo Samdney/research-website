@@ -13,17 +13,25 @@ SITEURL = ''
 KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
         'Freelancer', 'Math', 'Crytography', 'Algebra', 'Number Theory', 
         'Crowdfunding', 'Encryption', 'Privacy', 'Anonymity', 'Communication',
-        'Free', 'Access')
+        'Free', 'Access', 'Independently', 'Obfuscation', 'Anti-Censorship',
+        'Censorship', 'Blocking', 'Circumvention', 'Protecting',
+        'Decentralized', 'Networks', 'Technologies', 'Search Engine',
+        'Protocol', 'Prime numbers', 'Android', 'App', 'Security', 'Art')
 
 PATH = 'content'
+# ******
+# Plugins
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['jinja2content']
+
 
 # ******
 STATIC_PATHS = ['blog', 'pages', 'images', 'files', 'qrcodes']
 ARTICLE_PATHS = ['blog']
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
-#ARTICLE_SAVE_AS = '{categories}/{date:%Y}/{slug}.html'  # TODO
-#ARTICLE_URL = '{categories}/{date:%Y}/{slug}.html' # TODO
+#ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+#ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_SAVE_AS = '{slug_dir}/{slug_subdir}/{slug}.html'
+ARTICLE_URL = '{slug_dir}/{slug_subdir}/{slug}.html'
 
 PAGE_SAVE_AS = '{slug}.html'
 PAGE_URL = '{slug}.html'
@@ -74,8 +82,8 @@ AUTHOR_FEED_RSS = None
 
 # Index introduction
 INDEX_INTRO_IMAGE = '/images/john-moeses-bauan-690280-unsplash.jpg'
-INDEX_INTRO_TITLE = '' # TODO
-INDEX_INTRO_CONTENT = '' # TODO
+INDEX_INTRO_TITLE = 'Welcome'
+INDEX_INTRO_CONTENT = 'Research. Free and Independently.'
 
 
 # PGP Keys
@@ -83,13 +91,28 @@ SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 
 # Social
 SOCIAL = (
-    ('Twitter', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet'),
-    ('Blog', 'fa', 'pencil', 'https://Samdney.github.io'),
-    ('GitHub', 'fa', 'github', 'https://github.com/Samdney'),
-    ('GitLab', 'fa', 'gitlab', 'https://gitlab.com/Samdney'),
-    ('arXiv', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C'),
-
+    ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet'),
+    ('Blog', 'fas', 'fa', 'pencil-alt', 'https://Samdney.github.io'),
+    ('Medium', 'fab', 'fa', 'medium', 'https://medium.com/@carolinzoebelein'),
+    #('Art', 'far', 'fa', 'images', 'https://art.carolin-zoebelein.de'),
+    ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney'),
+    ('GitLab', 'fab', 'fa', 'gitlab', 'https://gitlab.com/Samdney'),
+    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C'),
 )
+
+SOCIAL_SIGNS = (
+    ('Twitter', 'fab', 'fa', 'twitter'),
+    ('Blog', 'fas', 'fa', 'pencil-alt'),
+    ('Medium', 'fab', 'fa', 'medium'),
+    #('Art', 'far', 'fa', 'images'),
+    ('GitHub', 'fab', 'fa', 'github'),
+    ('GitLab', 'fab', 'fa', 'gitlab'),
+    ('arXiv', 'ai', 'ai', 'arxiv'),
+    ('Website', 'fas', 'fa', 'globe'),
+    ('Misc', 'fas', 'fa', 'cat'),
+ )
+
+SOCIAL_PAGINATION = 3
 
 DEFAULT_PAGINATION = 6
 

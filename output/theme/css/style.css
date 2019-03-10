@@ -21,15 +21,21 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 20pt;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   font-weight: bold;
   font-size: 16pt;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 h4 {
   font-size: 16pt;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -59,6 +65,12 @@ abbr[title] {
   background: #81C784;
 }
 
+hr {
+  margin: 3rem auto 3rem auto;
+  border-color: #ccc;
+  border-width: 1px;
+}
+
 
 /* Classes */
 /* Desktop old: min-width: 630px */
@@ -68,9 +80,15 @@ abbr[title] {
 @media all and (min-width: 1025px) {
 	.cryptocurr-addr {
         font-size: 13pt;
-    }
+  }
+  .little-information {
+        font-size: 10px;
+  }
+  .little-information-line {
+        font-size: 14px;
+  }	
 
-    .index-image {
+  .index-image {
         width: 120px;
         height: 120px;
         margin-top: 28%;
@@ -81,6 +99,15 @@ abbr[title] {
 @media all and (max-width: 1024px) {
     .cryptocurr-addr {
         font-size: 9pt;
+    }
+      .little-information {
+        font-size: 10px;
+        margin-top: 2px;
+        margin-left: 5%;
+    }
+      .little-information-line {
+        font-size: 14px;
+        margin-top: 2px;
     }
 
      .index-image {
@@ -95,6 +122,9 @@ abbr[title] {
 @media all and (min-width: 1025px) {
 	.index-intro {
 		margin-left: 18%;
+    margin-right: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
 	}
 	
 	.article-index-title {
@@ -106,7 +136,7 @@ abbr[title] {
 
 /* Mobile */
 @media all and (max-width: 1024px) {
-    	.index-intro {
+    .index-intro {
 		text-align: center;
 	}
 
@@ -454,6 +484,14 @@ ul.social li {
 
 ul.social li a:hover {
   opacity: 0.85;
+}
+
+.social a {
+  color: #2196F3;
+}
+
+.social a-intro {
+  color: black;
 }
 
 

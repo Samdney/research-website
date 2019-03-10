@@ -42,11 +42,11 @@
       <br>
 
       <article class="w3-white col-main-entries">
-        <!-- <header style="margin-left: 1.5%;"> -->
-            <!-- <h1>Featured</h1> --> <!-- TODO: News -->
-        <!-- </header> -->
+        <header style="margin-left: 1.5%;">
+            <h1>Featured</h1>
+        </header>
 
-        <!-- <br> -->       
+        <br>        
 
         {% for article in articles_page.object_list %}
           {% if loop.index % 3 == 1 %}
@@ -59,23 +59,23 @@
               <div class="w3-container w3-card-2 three-col03">
           {% endif %}                
                 
-                <center>
-                  <img width="90%" src="{{ article.index_image }}">   
+                <center style="margin-top: 10%;">
+                  <img style="border:0.5px solid #e0e0e0;" width="90%" src="{{ article.index_image }}">   
                 </center>
 
                 <header class="article-index-title">    <!-- desktop version: font-size: <h2> -->
                   <b>{{ article.index_title }}</b>
                 </header>
               
-                <div style="margin-left: 5%; margin-right: 5%; color: black;">
-                  {{ article.category }}
+                <div style="margin-left: 5%; margin-right: 5%; color: #0000cd;">
+                  {{ article.category }}, <i style="font-size: 14px">{{ article.kind }}</i>
                 </div>
 
                 <div style="margin-left: 5%; margin-right: 5%;">
                   {{ article.index_summary }}
                 </div>
 
-                <div style="margin-left: 5%; margin-right: 5%; color: #2196F3; font-size: 10px;">
+                <div style="margin-left: 5%; margin-right: 5%; color: #2196F3; font-size: 12px;">
                   <a href="{{ SITEURL }}/{{ article.url }}">READ MORE >> </a>
                 </div>
 
