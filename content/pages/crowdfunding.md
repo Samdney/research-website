@@ -19,9 +19,11 @@ system for online money transfers.
 <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+<!--
 <h3>Liberapay</h3>
 Liberapay is a non-profit organization providing a platform to donate money.  
 <a href="https://liberapay.com/Carolin.Zoebelein/donate" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+-->
 
 <h3>Bitcoin</h3>
 Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or administrator. Please use the following address:  
