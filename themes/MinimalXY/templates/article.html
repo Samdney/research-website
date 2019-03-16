@@ -7,8 +7,11 @@
     {% if article.categories == "Project" %}
     <!-- Project -->
       <br><br><br>
-        <article>
-          <header class="w3-white w3-container col-main">
+        <article class="w3-container-page w3-card-2 w3-white col-page">
+
+          <br>
+
+          <header class="w3-container-page-sub col-page-sub">
             <h1>{{ article.title }}</h1>
             <div class="post-info">
               <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
@@ -37,7 +40,7 @@
           </div>
           {% endif %}
                     
-          <div class="col-main w3-container">
+          <div class="col-page-sub w3-container-page-sub">
             <section id="content">
             <div class="two-columns-pages">
 	            <div class="col01-pages30">
@@ -139,8 +142,11 @@
     {% elif article.kind == "Paper" %}
     <!-- Paper -->
       <br><br><br>
-        <article>
-          <header class="w3-white w3-container col-main">
+        <article class="w3-container-page w3-card-2 w3-white col-page">
+
+          <br>
+
+          <header class="w3-container-page-sub col-page-sub">
             <h1>{{ article.title }}</h1>
             <div class="post-info">
               <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
@@ -169,7 +175,7 @@
           </div>
           {% endif %}
                     
-          <div class="col-main w3-container">
+          <div class="col-page-sub w3-container-page-sub">
             <section id="content">
             <div class="two-columns-pages">
 	            <div class="col01-pages30">
@@ -273,8 +279,11 @@
     {% elif article.kind == "Meetup" %}
     <!-- Meetup -->
       <br><br><br>
-        <article>
-          <header class="w3-white w3-container col-main">
+        <article class="w3-container-page w3-card-2 w3-white col-page">
+
+            <br>
+
+            <header class="w3-container-page-sub col-page-sub">
             <h1>{{ article.title }}</h1>
             <div class="post-info">
               <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
@@ -303,7 +312,7 @@
           </div>
           {% endif %}
                     
-          <div class="col-main w3-container">
+          <div class="col-page-sub w3-container-page-sub">
             <section id="content">
               <div style="font-size: 15px; margin-top: 2%;">
                 {% if article.event_date %}<b>Date & Time:</b> {{ article.event_date }}<br />{% endif %}
@@ -393,8 +402,11 @@
     {% else %}
     <!-- Else -->
       <br><br><br>
-        <article>
-          <header class="w3-white w3-container col-main">
+        <article class="w3-container-page w3-card-2 w3-white col-page">
+
+          <br>
+
+          <header class="w3-container-page-sub col-page-sub">
             <h1>{{ article.title }}</h1>
             <div class="post-info">
               <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
@@ -423,9 +435,9 @@
           </div>
           {% endif %}
 
-          <div class="col-main w3-container">
+          <div class="col-page-sub w3-container-page-sub">
             {% if article.content %}
-            <section id="content" style="color: white;">
+            <section id="content" style="color: black;">
               {{article.content}}
             </section>
             {% endif %}
