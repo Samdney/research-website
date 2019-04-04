@@ -24,8 +24,6 @@ PATH = 'content'
 # Plugins
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['jinja2content']
-
-
 # ******
 STATIC_PATHS = ['blog', 'pages', 'images', 'files', 'qrcodes']
 ARTICLE_PATHS = ['blog']
@@ -111,7 +109,7 @@ SOCIAL_SIGNS = (
     ('arXiv', 'ai', 'ai', 'arxiv'),
     ('Website', 'fas', 'fa', 'globe'),
     ('Misc', 'fas', 'fa', 'cat'),
- )
+)
 
 SOCIAL_PAGINATION = 3
 
