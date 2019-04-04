@@ -16,11 +16,11 @@ Slug:           about
 <hr />
 -->
 
-<h2 id="CurrentWork">Current work</h2>
 <p>
-This site is under revision. More content will follow soon. 
+<font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
 </p>
 
+<h2 id="CurrentWork">Current work</h2>
 <p>
 <b>I work on:</b>
 <ul>
