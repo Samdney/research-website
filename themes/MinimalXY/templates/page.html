@@ -53,7 +53,7 @@
                                 <li>
                                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
                                 <div class="little-information-line">
-                                    {{ article.publication_author }}{% if article.publish_date %}, {{ article.publish_date }}{% endif %}{% if article.subject_class %}, Subject class: {{ article.subject_class }}{% endif %}{% if article.arxiv %}, arXiv:{{ article.arxiv }}{% endif %}{% if article.pdf %}, <a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>{% endif %}
+                                    {{ article.publication_author }}{% if article.publish_date %}, {{ article.publish_date }}{% endif %}{% if article.subject_class %}, Subject class: {{ article.subject_class }}{% endif %}{% if article.arxiv %}, arXiv:{{ article.arxiv }}{% endif %}{% if article.id %}, id: {{ article.id }}{% endif %}{% if article.pdf %}, <a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>{% endif %}
                                 </div>
                                 </li>
                             {% endif %}   
