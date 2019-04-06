@@ -7,7 +7,7 @@ tags:       		Publication, Preprint
 author:     		Carolin Zöbelein
 slug_dir:           Public
 slug_subdir:        Publications
-slug:       		AboutTheProofOfTheCollatzConjecture
+slug:       		About-the-proof-of-the-Collatz-conjecture
 index_title:		About the proof of the Collatz conjecture
 index_image:        /images/publications/paper_0001.jpg
 index_summary:		I want to show one possibility to proof the Collatz conjecture, also called 3n+1 conjecture, for any natural number N.

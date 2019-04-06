@@ -7,7 +7,7 @@ tags:       		Publication, Preprint
 author:     		Carolin Zöbelein
 slug_dir:           Public
 slug_subdir:        Publications
-slug:       		TheRecursiveStructureOfTheDistributionOfPrimes
+slug:       		The-recursive-structure-of-the-distribution-of-primes
 index_title:		The recursive structure of the distribution of primes
 index_image:        /images/publications/paper_0002.jpg
 index_summary:		In this work I look at the distribution of primes by calculation of an infinite number of intersections.

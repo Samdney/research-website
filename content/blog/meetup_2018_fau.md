@@ -7,7 +7,7 @@ tags:       		Meetup
 author:     		Carolin Zöbelein
 slug_dir:           Public
 slug_subdir:        Meetups
-slug:       		WhyYouShouldStudyNumberTheory
+slug:       		Why-you-should-study-Number-Theory
 index_title:		Why you should study Number Theory!
 index_image:        /images/Meetup.jpg
 index_summary:		2018/10, A friendly together for talking about Number Theory studies with coffee and tea.
