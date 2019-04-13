@@ -1,8 +1,15 @@
+# Disallow everything.
 User-agent: *
-Disallow: /legal-disclosure.html
-Disallow: /privacy-policy.html
-Disallow: /disclaimer.html
-Disallow: /contact.html
-Disallow: /authors.html
-Disallow: /author/
-Disallow: /theme/
+Disallow: /
+
+User-agent: Googlebot
+Allow: /about.html
+Allow: /funding.html
+Allow: /index.html
+Allow: /projects.html
+Allow: /public.html
+Allow: /Projects/
+Allow: /Public/
+
+User-agent: Twitterbot
+Allow: /images
