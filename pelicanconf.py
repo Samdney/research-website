@@ -12,7 +12,7 @@ SITENAME = u'Carolin Zöbelein - Research'
 SITEURL = ''
 SITEURL_SOCIAL = 'https://research.carolin-zoebelein.de'
 KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
-        'Freelancer', 'Math', 'Crytography', 'Algebra', 'Number Theory', 
+        'Freelancer', 'Math', 'Crytography', 'Algebra', 'Number Theory', 'Funding',
         'Crowdfunding', 'Encryption', 'Privacy', 'Anonymity', 'Communication',
         'Free', 'Access', 'Independently', 'Obfuscation', 'Anti-Censorship',
         'Censorship', 'Blocking', 'Circumvention', 'Protecting',
@@ -62,7 +62,7 @@ MENUITEMS = (
     ('About', '/about.html'),
     ('Projects', '/projects.html'),
     ('Public', '/public.html'),
-    ('Crowdfunding', '/crowdfunding.html'),
+    ('Funding', '/funding.html'),
     ('Contact', '/contact.html'),
 )
 

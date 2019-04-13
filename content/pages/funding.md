@@ -1,9 +1,9 @@
-Title:          Crowdfunding
+Title:          Funding
 Date:           2018/07/07 20:00
-Slug:           crowdfunding
+Slug:           funding
 
-<code><a href="/crowdfunding.html#DirectDonations">\#Direct Donations</a></code>
-<code><a href="/crowdfunding.html#Cross-subsidization">\#Cross-subsidization</a></code>
+<code><a href="/funding.html#DirectDonations">\#Direct Donations</a></code>
+<code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code>
 
 <hr />
 
