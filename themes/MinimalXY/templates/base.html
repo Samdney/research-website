@@ -19,12 +19,19 @@
 
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ article.title|striptags }}"/>
-    <meta property="og:description" content="{{ article.summary|striptags|escape }}"/>
+    <meta property="og:description" content="{{ article.index_summary|striptags|escape }}"/>
     <meta property="og:site_name" content="{{ SITENAME }}" />
     <meta property="og:url" content="{{ SITEURL_SOCIAL }}/{{ article.url }}"/>
+    {% if article.index_image[0] == "/" %}
+      {% set index_image = article.index_image[1:] %}
+    {% else %}
+      {% set index_image = article.index_image %}
+    {% endif %}
+    <meta name="og:image" content="{{ SITEURL_SOCIAL }}/{{ index_image }}" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@SamdneyTweet" />
+    <meta name="twitter:creator" content="@SamdneyTweet" />
     <meta name="twitter:title" content="{{ article.title }}" />
     <meta name="twitter:description" content="{{ article.index_summary }}" />
     {% if article.index_image[0] == "/" %}
@@ -45,7 +52,7 @@
     <meta name="twitter:site" content="@SamdneyTweet" />
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ SITESUBTITLE }}" />
-    <meta name="twitter:image" content="{{ SITEURL_SOCIAL }}/images/favicon.jpg" />
+    <meta name="twitter:image" content="{{ SITEURL_SOCIAL }}/images/favicon.ico" />
     {% else %}
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ SITENAME }}"/>
@@ -58,7 +65,7 @@
     <meta name="twitter:site" content="@SamdneyTweet" />
     <meta name="twitter:title" content="{{ SITENAME }}" />
     <meta name="twitter:description" content="{{ SITESUBTITLE }}" />
-    <meta name="twitter:image" content="{{ SITEURL_SOCIAL }}/images/favicon.jpg" />
+    <meta name="twitter:image" content="{{ SITEURL_SOCIAL }}/images/favicon.ico" />
     {% endif %}
 
     <!-- Feed -->

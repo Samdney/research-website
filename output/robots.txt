@@ -5,5 +5,4 @@ Disallow: /disclaimer.html
 Disallow: /contact.html
 Disallow: /authors.html
 Disallow: /author/
-Disallow: /images/
 Disallow: /theme/
