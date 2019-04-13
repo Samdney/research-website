@@ -4,7 +4,7 @@
 
     {% block content %}
     
-    {% if article.categories == "Project" %}
+    {% if article.kind == "Project" %}
     <!-- Project -->
       <br><br><br>
         <article class="w3-container-page w3-card-2 w3-white col-page">
@@ -43,19 +43,22 @@
           <div class="col-page-sub w3-container-page-sub">
             <section id="content">
             <div class="two-columns-pages">
-	            <div class="col01-pages30">
-                <img width="100%" src="/images/helena-lopes-596553-unsplash.jpg">
+	      <div class="col01-pages30">
+              	<img width="100%" style="border:1px solid #e0e0e0; margin-top: 0%;" src="{{ article.sum_image }}">
               </div>
               <div class="col02-pages70">
                 {% if article.keywords %}
                   {% set keywords = article.keywords.split(', ') %}
                 {% endif %}
 
-                <div style="font-size: 15px; margin-top: 2%;">
-    	            {% if article.project_members %}<b>Author(s):</b> {{ article.project_members }}<br />{% endif %}
-                  {% if article.project_period %}<b>Project period:</b> {{ article.project_period }}<br />{% endif %}
-                  {% if article.subject_class %}<b>Subject class:</b> {{ article.subject_class }}<br />{% endif %}
-                  {% if article.keywords %}<b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}<br />{% endif %}                  
+                <div style="font-size: 15px; margin-top: 5%;">
+                  <ul style="list-style-type:none;">
+    	            {% if article.project_members %}<li><b>Project member(s):</b> {{ article.project_members }}</li>{% endif %}
+                    {% if article.project_period %}<li><b>Project period:</b> {{ article.project_period }}</li>{% endif %}
+                    {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
+                    {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
+	  	            {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -71,11 +74,10 @@
             {% if article.content %}
             <section id="content" style="color: black;">
               <h3>Content</h3>
-              {{article.content}}
+              {{ article.content }}
             </section>
             {% endif %}
 
-            
             {% if article.publications %}
             <section id="content">
               <h3>Related publications</h3>
@@ -89,7 +91,6 @@
               {% endfor %}
             </section>
             {% endif %}
-
 
             {% if article.links %}
             <section id="content">
@@ -222,7 +223,6 @@
               {{article.content}}
             </section>
             {% endif %}
-
             
             {% if article.project %}
             <section id="content">
@@ -237,7 +237,6 @@
               {% endfor %}
             </section>
             {% endif %}
-
 
             {% if article.links %}
             <section id="content">
@@ -345,7 +344,6 @@
               {{ article.content }}
             </section>
             {% endif %}
-
             
             {% if article.project %}
             <section id="content">
@@ -360,7 +358,6 @@
               {% endfor %}
             </section>
             {% endif %}
-
 
             {% if article.links %}
             <section id="content">

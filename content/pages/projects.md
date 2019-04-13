@@ -2,16 +2,12 @@ Title:          Projects
 Date:           2018/08/01 20:00
 Slug:           projects
 
-<hr />
+<!-- <hr /> --> <!-- TODO -->
 
+<!-- <h2 id="MyProjects">My projects</h2> --> <!-- TODO: Current projects -->
 <p>
-<font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
-</p>
-
-<h2 id="MyProjects">My projects</h2> <!-- TODO: Current projects -->
-<p>
-In the following, a list of my past, current and currently on-the-way for funding projects.<br />
-List is incomplete.
+<!-- In the following, a list of my past, current and currently on-the-way for funding projects.<br />
+List is incomplete.--> <!-- TODO -->
 <ul>
     <li>
 	    Secret website tunnel<br />
@@ -49,12 +45,14 @@ List is incomplete.
             "Tunneling" data through Twitter
         </font>
     </li>
+    <!-- 
     <li>
 	    Twitter secrets<br />
         <font style="font-size:14px;">
             A general investigation in possible ways to use Twitter for secret data sharing/transfer
         </font>
     </li>
+    -->
     <li>
 	    An essay about geoip mapping<br />
         <font style="font-size:14px;">
