@@ -57,7 +57,15 @@
                     {% if article.project_period %}<li><b>Project period:</b> {{ article.project_period }}</li>{% endif %}
                     {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
                     {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
-	  	            {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+	  	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+		    {% if article.project_proposal_pdf %}
+			<li>
+				<b>Project proposal: </b><a href="{{ article.project_proposal_pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
+				{% if article.project_proposal_download %} 
+				| <a href="{{ article.project_proposal_download }}" title="External: {{ article.title }}">direct download</a>
+				{% endif %}
+			</li>
+		  {% endif %}
                   </ul>
                 </div>
               </div>

@@ -106,6 +106,7 @@
                                 <li>
                                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
                                 <div class="little-information-line">
+				    {% if article.sum_content %}{{ article.sum_content }}<br />{% endif %}
                                     {{ article.publication_author }}{% if article.publish_date %}, {{ article.publish_date }}{% endif %}{% if article.subject_class %}, Subject class: {{ article.subject_class }}{% endif %}{% if article.arxiv %}, arXiv:{{ article.arxiv }}{% endif %}{% if article.id %}, id: {{ article.id }}{% endif %}{% if article.pdf %}, <a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>{% endif %}
                                 </div>
                                 </li>
@@ -125,7 +126,10 @@
                             {% if article.kind == "Meetup" %}                                 
     	                        <li>
                                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a><br />
-                                <div class="little-information-line"><i>Date & Time:</i> {{ article.event_date }}, <i>Place:</i> {{ article.event_place }}</div>
+                                <div class="little-information-line">
+					{% if article.sum_content %}{{ article.sum_content }}<br />{% endif %}
+					<i>Date & Time:</i> {{ article.event_date }}, <i>Place:</i> {{ article.event_place }}
+				</div>
                                 </li>
                             {% endif %}   
                         {% endif %}
