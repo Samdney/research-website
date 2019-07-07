@@ -3,7 +3,8 @@ Date:           2018/07/07 20:00
 Slug:           funding
 
 <code><a href="/funding.html#DirectDonations">\#Direct Donations</a></code>
-<code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code>
+<code><a href="/funding.html#MembershipPlatforms">\#Membership Platforms</a></code>
+<!-- <code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code> -->
 
 <hr />
 
@@ -19,12 +20,6 @@ system for online money transfers.
 <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-<!--
-<h3>Liberapay</h3>
-Liberapay is a non-profit organization providing a platform to donate money.  
-<a href="https://liberapay.com/Carolin.Zoebelein/donate" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
--->
-
 <h3>Bitcoin</h3>
 Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or administrator. Please use the following address:  
 <i class="cryptocurr-addr">3QtQTQHt1kQ4QQz5wqYwmsQ2QR5YwFwZQ6 (<a href="/qrcodes/crowdfunding_bitcoin.png" title="Crowdfunding - Bitcoin: QR-Code" target="_blank">QR-Code</a>)</i>
@@ -39,6 +34,23 @@ You can send me money by bank transfer in EUR, USD and GBP. Contact me for bank 
 *Personal note:* Please use other ways for donations if possible. I don't want to know your personal data ;).
 
 <hr />
+<h2 id="MembershipPlatforms">Membership Platforms</h2>
 
+<h3>Patreon</h3>
+Patreon is a crowdfunding membership platform that provides the possibility to run a subscription content service.  
+<a href="https://www.patreon.com/carolinzoebelein_research" title="Patreon: Carolin Zöbelein - Research" target="_blank">Become a patron!</a>
+
+<!--
+<h3>Liberapay</h3>
+Liberapay is a non-profit organization providing a platform to donate money.  
+<a href="https://liberapay.com/Carolin.Zoebelein/donate" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+-->
+
+<!--
+<hr />
+-->
+
+<!--
 <h2 id="Cross-subsidization">Cross-subsidization</h2>
 From time to time, I also work as artist. You can also support my research work by buying one or more of my artworks. Currently, I sell all my work over <a href="https://www.saatchiart.com/Samdney" target="_blank">Saatchi Art</a>.
+-->
