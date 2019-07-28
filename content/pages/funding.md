@@ -2,12 +2,26 @@ Title:          Funding
 Date:           2018/07/07 20:00
 Slug:           funding
 
+<!-- <code><a href="/funding.html#FundingsGrantsFellowships">\#Fundings, Grants &amp; Fellowships</a></code> -->
+<!-- <code><a href="/funding.html#Crowdfunding">\#Crowdfunding</a></code> -->
 <code><a href="/funding.html#DirectDonations">\#Direct Donations</a></code>
 <code><a href="/funding.html#MembershipPlatforms">\#Membership Platforms</a></code>
 <!-- <code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code> -->
+<!-- <code><a href="/funding.html#FinancialReports">\#Financial Reports</a></code> -->
+<!-- <code><a href="/funding.html#Cooperations">\#Cooperations</a></code> -->
+<!-- <code><a href="/funding.html#SupportedBy">\#Supported By</a></code> -->
+
+<!--
+<hr />
+<h2 id="FundingsGrantsFellowships">Fundings, Grants &amp; Fellowships</h2>
+-->
+
+<!--
+<hr />
+<h2 id="Crowdfunding">Crowdfunding</h2>
+-->
 
 <hr />
-
 <h2 id="DirectDonations">Direct Donations</h2>
 
 <h3>PayPal</h3>
@@ -53,4 +67,19 @@ Liberapay is a non-profit organization providing a platform to donate money.
 <!--
 <h2 id="Cross-subsidization">Cross-subsidization</h2>
 From time to time, I also work as artist. You can also support my research work by buying one or more of my artworks. Currently, I sell all my work over <a href="https://www.saatchiart.com/Samdney" target="_blank">Saatchi Art</a>.
+-->
+
+<!--
+<hr />
+<h2 id="FinancialReports">Financial Reports</h2>
+-->
+
+<!--
+<hr />
+<h2 id="Cooperations">Cooperations</h2>
+-->
+
+<!--
+<hr />
+<h2 id="SupportedBy">Supported By</h2>
 -->

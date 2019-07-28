@@ -197,19 +197,19 @@
 
                 <div style="font-size: 15px; margin-top: 5%;">
                   <ul style="list-style-type:none;">
-    	            {% if article.publication_author %}<li><b>Author(s):</b> {{ article.publication_author }}</li>{% endif %}
+    	          {% if article.publication_author %}<li><b>Author(s):</b> {{ article.publication_author }}</li>{% endif %}
                   {% if article.publish_date %}<li><b>Published:</b> {{ article.publish_date }}</li>{% endif %}
                   {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
                   {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
                   {% if article.arxiv %}<li><b>arXiv:</b> {{ article.arxiv }}</li>{% endif %}
-	  	  {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+	  	  		  {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
                   {% if article.pdf %}
-			<li>
-				<a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
-				{% if article.download %} 
-				| <a href="{{ article.download }}" title="External: {{ article.title }}">direct download</a>
-				{% endif %}
-			</li>
+					<li>
+						<a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
+						{% if article.download %} 
+						| <a href="{{ article.download }}" title="External: {{ article.title }}">direct download</a>
+						{% endif %}
+					</li>
 		  {% endif %}
 		  
                   </ul>
@@ -239,6 +239,151 @@
               {% for project in projects %}
                 {% for articleref in articles %}
                   {% if articleref.id == project %}
+                  <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a><br />
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+            {% if article.links %}
+            <section id="content">
+              <h3>Links</h3>
+              {% set links = article.links.split(', ') %}                
+              {% for title, typea, typef, name in SOCIAL_SIGNS %}
+                {% for link in links %}
+                  {% set index = loop.index %}
+
+                  {% if link == title %}                  
+                    {% if article.links_info %}
+                      {% set index_info = ((index - 1)/2)|int %}
+                      {% set links_info = article.links_info.split(', ') %} 
+                    {% endif %}
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i> {%if article.links_info %}{{ links_info[index_info] }}:{% endif %} <a class="sc-{{ name }}" href="{{ links[index] }}" title="External: {{ links[index] }}" target="_blank"> {{ links[index] }}</a><br />
+                  {% endif %}
+
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+            <br>
+
+            <footer>
+            {% if article.related_posts %}
+            <div class="related-posts">
+              <h4>Related posts:</h4>
+              <ul>
+                {% for related_post in article.related_posts %}
+                <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if DISQUS_SITENAME %}
+            {% include "disqus.html" %}
+            <br><br><br>
+            {% endif %}
+            </footer>
+
+            <br><br><br>          
+         
+          </div>
+
+        </article>
+      <br><br><br>
+
+     {% elif article.kind == "Funding" %} <!-- TODO -->
+     <!-- Funding -->
+       <br><br><br>
+        <article class="w3-container-page w3-card-2 w3-white col-page">
+
+          <br>
+
+          <header class="w3-container-page-sub col-page-sub">
+            <h1>{{ article.title }}</h1>
+            <div class="post-info">
+              <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+                <span>Published <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, <a href="{{ SITEURL }}/{{ article.category.url }}" title="All articles in category {{ article.category }}">{{ article.category }}</a></span>
+              </div>
+              {% if article.tags %}
+              <div>
+              {% for tag in article.tags %}
+                <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                  <a href="{{ SITEURL }}/{{ tag.url }}" title="All articles with {{ tag.name.title() }} tag">#{{ tag }}</a>
+                </span>
+              {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </header>
+
+          <br>
+
+          {% if article.headerimage %}
+          <div class="headerimage-article">
+            <img src="{{ article.headerimage }}" style="width: 100%;">
+            {% if article.headerimagecaption %}
+            <p class="caption">{{ article.headerimagecaption }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+                    
+          <div class="col-page-sub w3-container-page-sub">
+            <section id="content">
+            <div class="two-columns-pages">
+	      <div class="col01-pages30">
+              	<img width="100%" style="border:1px solid #e0e0e0; margin-top: 0%;" src="{{ article.sum_image }}">
+              </div>
+              <div class="col02-pages70">
+                {% if article.keywords %}
+                  {% set keywords = article.keywords.split(', ') %}
+                {% endif %}
+
+                <div style="font-size: 15px; margin-top: 5%;">
+                  <ul style="list-style-type:none;">
+    	            {% if article.project_members %}<li><b>Project member(s):</b> {{ article.project_members }}</li>{% endif %}
+                    {% if article.funding_period %}<li><b>Funding period:</b> {{ article.funding_period }}</li>{% endif %}
+					{% if article.funding_amount %}<li><b>Funding amount:</b> {{ article.funding_amount }}</li>{% endif %}
+                    {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
+                    {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
+	  	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+		    {% if article.funding_proposal_pdf %}
+			<li>
+				<b>Funding proposal: </b><a href="{{ article.funding_proposal_pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
+				{% if article.funding_proposal_download %} 
+				| <a href="{{ article.funding_proposal_download }}" title="External: {{ article.title }}">direct download</a>
+				{% endif %}
+			</li>
+		  {% endif %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </section>
+           
+            {% if article.synopsis %}
+            <section id="content">
+              <h3>Synopsis</h3>
+              <i>{{ article.synopsis }}</i>
+            </section>
+            {% endif %}
+
+            {% if article.content %}
+            <section id="content" style="color: black;">
+              <h3>Content</h3>
+              {{ article.content }}
+            </section>
+            {% endif %}
+
+            {% if article.publications %}
+            <section id="content">
+              <h3>Related publications</h3>
+              {% set publications = article.publications.split(', ') %}
+              {% for publication in publications %}
+                {% for articleref in articles %}
+                  {% if articleref.id == publication %}
                   <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a><br />
                   {% endif %}
                 {% endfor %}
