@@ -6,6 +6,7 @@ Slug:           about
 <code><a href="/about.html#Thatsme">\#That's me</a></code>
 <code><a href="/about.html#CurrentWork">\#Current work</a></code>
 <code><a href="/about.html#Mission">\#Mission</a></code>
+<code><a href="/about.html#Hiring">\#Hiring</a></code>
 <code><a href="/about.html#CurriculumVitae">\#Curriculum Vitae</a></code>
 
 <hr />
@@ -48,7 +49,6 @@ Slug:           about
 </p>
 
 <hr />
-
 <h2 id="CurrentWork">Current work</h2>
 <p>
 <b>I work on:</b>
@@ -68,11 +68,13 @@ For information about my work, have a look at my GitHub account <a href="https:/
 </p>
 
 <hr />
-
 <h2 id="Mission">Mission</h2>
 To help people, who want to make the world better, with my mathematical and technical skills to circumvent repression and censorship and protecting their privacy.
 
 <hr />
+<h2 id="Hiring">Hiring</h2>
+I work as independent mathematical scientist and also do mathematical services (E.g. Algorithm revision and development, Mathematical Modelling) for companies. Additionally, I make digital and political art. If you are interested in hiring me, contact me by <a href="/contact.html#Information" title="Contact">email</a>.<br><br><i>You can find a Hiring Manual as pdf version <a href="/files/hiring-manual.pdf" title="Hiring Manual" target="_blank">here</a>.</i>
 
+<hr />
 <h2 id="CurriculumVitae">Curriculum Vitae</h2>
 <i>You can find my curriculum vitae as pdf version <a href="/files/cv_longversion.pdf" title="Curriculum Vitae" target="_blank">here</a>.</i><br />
