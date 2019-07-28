@@ -114,6 +114,23 @@
                         {% endif %}
                     {% endfor %}
                     </ul>
+
+		    <h3 id="Thesis">Thesis</h3>
+                    <ul>
+                    {% for article in articles %}
+                        {% if article.kind == "Publication" %}
+                            {% if article.sub_kind == "Thesis" %}
+                                <li>
+                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                                <div class="little-information-line">
+				    {% if article.sum_content %}{{ article.sum_content }}<br />{% endif %}
+                                    {{ article.publication_author }}{% if article.publish_date %}, {{ article.publish_date }}{% endif %}{% if article.subject_class %}, Subject class: {{ article.subject_class }}{% endif %}{% if article.arxiv %}, arXiv:{{ article.arxiv }}{% endif %}{% if article.id %}, id: {{ article.id }}{% endif %}{% if article.pdf %}, <a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>{% endif %}
+                                </div>
+                                </li>
+                            {% endif %}   
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
                     </section>
 
                     <hr />
