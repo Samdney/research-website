@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carolin Zöbelein - Research</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-04-13T10:00:00+02:00</updated><entry><title>Twitter secrets</title><link href="/Projects/2018/Twitter-secrets.html" rel="alternate"></link><published>2019-04-13T10:00:00+02:00</published><updated>2019-04-13T10:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-04-13:/Projects/2018/Twitter-secrets.html</id><summary type="html"></summary><content type="html"></content><category term="AntiCensorship"></category><category term="Circumvention"></category><category term="Twitter"></category><category term="Project"></category></entry><entry><title>Why you should study Number Theory!</title><link href="/Public/Meetups/Why-you-should-study-Number-Theory.html" rel="alternate"></link><published>2018-10-03T07:00:00+02:00</published><updated>2018-10-03T07:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2018-10-03:/Public/Meetups/Why-you-should-study-Number-Theory.html</id><summary type="html">&lt;div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carolin Zöbelein - Research</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-05-04T20:00:00+02:00</updated><entry><title>Primes (part 01): Recursion basics</title><link href="/Public/Publications/Primes-part-01-Recursion-basics.html" rel="alternate"></link><published>2019-05-04T20:00:00+02:00</published><updated>2019-05-04T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-04:/Public/Publications/Primes-part-01-Recursion-basics.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;I. Page 1 - 4: Basic equations and solution of the non-times-table equations intersection&lt;/li&gt;
+&lt;li&gt;II. Page 5 - 5: Relationship between old and new (modified) equation&lt;/li&gt;
+&lt;li&gt;III. Page 6 - 7: Relationship between old and new (modified) equation - Floor corrections&lt;/li&gt;
+&lt;li&gt;IV. Page 8 - 14: General form of the intersection of an arbitrary number of non-times-table
+equations&lt;/li&gt;
+&lt;li&gt;V. Page 15 - 16: Non-times-table equation correction of Y i to the valid range, by substi-
+tution&lt;/li&gt;
+&lt;li&gt;VI. Page 17 - 20: Restriction on only odd solutions and the final, general intersection
+equation&lt;/li&gt;
+&lt;li&gt;VII. Page 21 - 22: Verification that our new (modified) equation is also valid (can used
+without restrictions) during every recursion step&lt;/li&gt;
+&lt;li&gt;VIII. Page 23 - 27: Determine valid Y i and z i, j ranges&lt;/li&gt;
+&lt;li&gt;IX. Page 28 - 28: Approximations for Floor function&lt;/li&gt;
+&lt;li&gt;X. Page 29 - 30: Let’s put all together. ToDo.&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;I. Page 1 - 4: Basic equations and solution of the non-times-table equations intersection&lt;/li&gt;
+&lt;li&gt;II. Page 5 - 5: Relationship between old and new (modified) equation&lt;/li&gt;
+&lt;li&gt;III. Page 6 - 7: Relationship between old and new (modified) equation - Floor corrections&lt;/li&gt;
+&lt;li&gt;IV. Page 8 - 14: General form of the intersection of an arbitrary number of non-times-table
+equations&lt;/li&gt;
+&lt;li&gt;V. Page 15 - 16: Non-times-table equation correction of Y i to the valid range, by substi-
+tution&lt;/li&gt;
+&lt;li&gt;VI. Page 17 - 20: Restriction on only odd solutions and the final, general intersection
+equation&lt;/li&gt;
+&lt;li&gt;VII. Page 21 - 22: Verification that our new (modified) equation is also valid (can used
+without restrictions) during every recursion step&lt;/li&gt;
+&lt;li&gt;VIII. Page 23 - 27: Determine valid Y i and z i, j ranges&lt;/li&gt;
+&lt;li&gt;IX. Page 28 - 28: Approximations for Floor function&lt;/li&gt;
+&lt;li&gt;X. Page 29 - 30: Let’s put all together. ToDo.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Twitter secrets</title><link href="/Projects/2018/Twitter-secrets.html" rel="alternate"></link><published>2019-04-13T10:00:00+02:00</published><updated>2019-04-13T10:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-04-13:/Projects/2018/Twitter-secrets.html</id><summary type="html"></summary><content type="html"></content><category term="AntiCensorship"></category><category term="Circumvention"></category><category term="Twitter"></category><category term="Project"></category></entry><entry><title>Why you should study Number Theory!</title><link href="/Public/Meetups/Why-you-should-study-Number-Theory.html" rel="alternate"></link><published>2018-10-03T07:00:00+02:00</published><updated>2018-10-03T07:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2018-10-03:/Public/Meetups/Why-you-should-study-Number-Theory.html</id><summary type="html">&lt;div&gt;
     &lt;i&gt;Why you should study Number Theory!&lt;/i&gt;, A friendly together for talking about Number Theory studies with coffee and tea.
 &lt;/div&gt;</summary><content type="html">&lt;div&gt;
     &lt;i&gt;Why you should study Number Theory!&lt;/i&gt;, A friendly together for talking about Number Theory studies with coffee and tea.
