@@ -53,7 +53,7 @@
 
 				{% set length = [0] %}
 				{% for article in articles_page.object_list %}
-					{% if article.sub_kind != "Notes" %}		
+					{% if ((article.sub_kind != "Notes") and (article.sub_kind != "Worksheets")) %}		
 						{% if length.append(length.pop() + 1) %}{% endif %}
 					{% endif %}
 				{% endfor %}
@@ -61,7 +61,7 @@
 
 					{% set counter = [0] %}
         			{% for article in articles_page.object_list %}
-						{% if article.sub_kind != "Notes" %}			
+						{% if ((article.sub_kind != "Notes") and (article.sub_kind != "Worksheets")) %}			
 							{% if counter.append(counter.pop() + 1) %}{% endif %}
 							{% if counter[0] <= INDEX_PAGINATION %}
 								{% if counter[0] % 3 == 1 %}
