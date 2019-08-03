@@ -3,7 +3,7 @@ Date:       	2018/07/07 20:00
 Slug:           legal-disclosure
 
 <span id="legaldisclosure"></span>
-<p> Deutsche Version siehe <a href="/legal-disclosure#impressum">unten</a>. / German version see <a href="/legal-disclosure#impressum">below</a>.</p>
+<p> Deutsche Version siehe <a href="/legal-disclosure.html#impressum">unten</a>. / German version see <a href="/legal-disclosure.html#impressum">below</a>.</p>
 
 <p>Information in accordance with section 5 TMG</p> 
 
