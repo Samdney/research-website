@@ -37,7 +37,7 @@ Germany</p>
 
 <p>List of external sources which are used:<br />
 This website uses <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and <a href="https://jpswalsh.github.io/academicons/" target="_blank">Academicons</a>.<br />
-Photos by: John Moeses Bauan on Unsplash (index.html, favicon.ico), NASA on Unsplash (footer), Helena Lopes on Unsplash (about.html), NESA by Makers on Unsplash (about.html), Frame Harirak on Unsplash (about.html)
+Photos by: John Moeses Bauan on Unsplash (index.html, favicon.ico), NASA on Unsplash (footer), Helena Lopes on Unsplash (about.html), NESA by Makers on Unsplash (about.html), Frame Harirak on Unsplash (about.html), Sandy Millar on Unsplash (projects.html), Alex Block on Unsplash (projects.html), Alina Grubnyak on Unsplash (projects.html), Ryan Stone on Unsplash (projects.html), Antoine Dautry on Unsplash (projects.html), veeterzy on Unsplash (projects.html), Erik-Jan Leusink on Unsplash (projects.html)
 </p>  
 <p>Source: <a href="https://www.twigg.de/" target="_blank">https://www.twigg.de/</a></p>
 
@@ -77,7 +77,7 @@ Deutschland</p>
 <p>Liste externer Quellen, die genutzt werden:<br />
 Diese Website benutzt <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> und <a href="https://jpswalsh.github.io/academicons/" target="_blank">
 Academicons</a>.<br />
-Fotos von: John Moeses Bauan auf Unsplash (index.html, favicon.ico), NASA auf Unsplash (Fußzeile), Helena Lopes auf Unsplash (about.html), NESA by Makers auf Unsplash (about.html), Frame Harirak auf Unsplash (about.html)
+Fotos von: John Moeses Bauan auf Unsplash (index.html, favicon.ico), NASA auf Unsplash (Fußzeile), Helena Lopes auf Unsplash (about.html), NESA by Makers auf Unsplash (about.html), Frame Harirak auf Unsplash (about.html), Sandy Millar auf Unsplash (projects.html), Alex Block auf Unsplash (projects.html), Alina Grubnyak auf Unsplash (projects.html), Ryan Stone auf Unsplash (projects.html), Antoine Dautry auf Unsplash (projects.html), veeterzy auf Unsplash (projects.html), Erik-Jan Leusink auf Unsplash (projects.html)
 </p>
 
 <p>Quelle: <a href="https://www.twigg.de/" target="_blank">https://www.twigg.de/</a></p>
