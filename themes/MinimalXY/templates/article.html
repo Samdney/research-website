@@ -3,8 +3,147 @@
     {% block title %}{{ article.title|striptags }} &ndash; {{ SITENAME }}{% endblock %}
 
     {% block content %}
-    
-    {% if article.kind == "Project" %}
+
+	{% if article.kind == "Research Area" %}
+    <!-- Research Area -->
+      <br><br><br>
+        <article class="w3-container-page w3-card-2 w3-white col-page">
+
+          <br>
+
+          <header class="w3-container-page-sub col-page-sub">
+            <h1>{{ article.title }}</h1>
+            <div class="post-info">
+              {% if article.tags %}
+              <div>
+              {% for tag in article.tags %}
+                <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                  <a href="{{ SITEURL }}/{{ tag.url }}" title="All articles with {{ tag.name.title() }} tag">#{{ tag }}</a>
+                </span>
+              {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </header>
+
+          <br>
+
+          {% if article.headerimage %}
+          <div class="headerimage-article">
+            <img src="{{ article.headerimage }}" style="width: 100%;">
+            {% if article.headerimagecaption %}
+            <p class="caption">{{ article.headerimagecaption }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+                    
+          <div class="col-page-sub w3-container-page-sub">
+			<!-- TODO: Other content -->
+			<!--
+            <section id="content">
+				<div class="two-columns-pages-projects">
+					<div class="col01-pages40" style="margin-top: 0;">	
+						<img width="100%; style="margin-top: 0%;" src="{{ article.sum_image }}">
+					</div>
+					<div class="col02-pages60" style="padding-top: 0;">
+						<p>
+							{{ article.summary }}
+						</p>
+						<p style="text-align: right; font-size: 12px;">
+							{% if article.id %}{{ article.id }}, {% endif %}{% if article.medium_link %}<a style="color: #2196F3;" class="sc-medium" href="{{ article.medium_link }}" title="Medium" target="_blank">Read more on <font style="color: black;"><i class="fab fa-medium"></i></font></a>{% endif %}
+						</p>
+					</div>
+				</div>
+			</section>
+			-->
+           
+            {% if article.synopsis %}
+            <section id="content">
+              <h3>Synopsis</h3>
+              <i>{{ article.synopsis }}</i>
+            </section>
+            {% endif %}
+
+            {% if article.content %}
+            <section id="content" style="color: black;">
+              <h3>Content</h3>
+              {{ article.content }}
+            </section>
+            {% endif %}
+
+			<!-- TODO: Projects, Talks, Meetup, Code -->
+
+            {% if article.publications %}
+            <section id="content">
+              <h3>Publications</h3>
+              {% set publications = article.publications.split(', ') %}
+			  <ul>
+              {% for publication in publications %}
+                {% for articleref in articles %}
+                  {% if articleref.id == publication %}
+                  <li>
+				  <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a>
+                  <div class="little-information-line">
+				    {% if articleref.sum_content %}{{ articleref.sum_content }}<br />{% endif %}
+                    {{ articleref.publication_author }}{% if articleref.publish_date %}, {{ articleref.publish_date }}{% endif %}{% if articleref.subject_class %}, Subject class: {{ articleref.subject_class }}{% endif %}{% if articleref.arxiv %}, arXiv:{{ articleref.arxiv }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.pdf %}, <a href="{{ articleref.pdf }}" title="External: {{ articleref.title }}" target="_blank">pdf</a>{% endif %}<br />
+                  </div>
+				  </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+              </ul>
+            </section>
+            {% endif %}
+
+            {% if article.links %}
+            <section id="content">
+              <h3>Links</h3>
+              {% set links = article.links.split(', ') %}                
+              {% for title, typea, typef, name in SOCIAL_SIGNS %}
+                {% for link in links %}
+                  {% set index = loop.index %}
+
+                  {% if link == title %}                  
+                    {% if article.links_info %}
+                      {% set index_info = ((index - 1)/2)|int %}
+                      {% set links_info = article.links_info.split(', ') %} 
+                    {% endif %}
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i> {%if article.links_info %}{{ links_info[index_info] }}:{% endif %} <a class="sc-{{ name }}" href="{{ links[index] }}" title="External: {{ links[index] }}" target="_blank"> {{ links[index] }}</a><br />
+                  {% endif %}
+
+                {% endfor %}
+              {% endfor %}
+            </section>
+            {% endif %}
+
+            <br>
+
+            <footer>
+            {% if article.related_posts %}
+            <div class="related-posts">
+              <h4>Related posts:</h4>
+              <ul>
+                {% for related_post in article.related_posts %}
+                <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if DISQUS_SITENAME %}
+            {% include "disqus.html" %}
+            <br><br><br>
+            {% endif %}
+            </footer>
+
+            <br><br><br>          
+         
+          </div>
+
+        </article>
+      <br><br><br>
+
+    {% elif article.kind == "Project" %}
     <!-- Project -->
       <br><br><br>
         <article class="w3-container-page w3-card-2 w3-white col-page">
