@@ -21,37 +21,142 @@
                     </div>
                 </header>
 
-                <div class="col-page-sub w3-container-page-sub">                  
+                <div class="col-page-sub w3-container-page-sub">
 
-                    <section id="content">
-                    <font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
-                    <hr /> <!-- TODO -->
-                    <h2 id="MyProjects">My projects</h2> <!-- TODO: Current projects -->
-                    <p>
-                        In the following, a list of my past, current and currently on-the-way for funding projects.<br />
-                        List is incomplete. <!-- TODO -->
-                    </p>
-                    <ul>
-                    {% for article in articles %}
-                        {% if article.kind == "Project" %}
-                            <li>
-                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                                <div class="little-information-line">
-                                    {% if article.sum_content %}{{ article.sum_content }}<br />{% endif %}
-                                    {{ article.project_members }}{% if article.project_period %}, {{ article.project_period }}{% endif %}{% if article.subject_class %}, Subject class: {{ article.subject_class }}{% endif %}{% if article.id %}, id: {{ article.id }}{% endif %}
-                                </div>
-                            </li>                            
-                        {% endif %}
-                    {% endfor %}
-                    </ul>
-                    </section>
+					<section id="content">
+					<font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
+					
+					<hr />
+					<h2 id="ResearchAreas">Research Areas</h2> <!-- TODO: Change: , to | -->
+
+					{% if page.research_areas %}
+                  		{% set research_areas = page.research_areas.split('| ') %}
+                	{% endif %}
+					
+					{% if page.research_areas_title_ids %}
+                  		{% set research_areas_title_ids = page.research_areas_title_ids.split(', ') %}
+                	{% endif %}
+
+					{% if page.research_areas_images %}
+                  		{% set research_areas_images = page.research_areas_images.split(', ') %}
+                	{% endif %}
+
+					{% if page.research_areas_ids %}
+                  		{% set research_areas_ids = page.research_areas_ids.split(', ') %}
+                	{% endif %}
+				
+					{% if page.research_areas_medium %}
+                  		{% set research_areas_medium = page.research_areas_medium.split(', ') %}
+                	{% endif %}
+
+					{% if page.research_areas_projects %}
+                  		{% set research_areas_projects_pa = page.research_areas_projects.split('| ') %}
+                	{% endif %}
+
+					{% if page.research_areas_summaries %}
+                  		{% set research_areas_summaries = page.research_areas_summaries.split('| ') %}
+                	{% endif %}
+
+
+					{% set counter = [0] %}
+					{% for research_area in research_areas %}
+
+						{% if counter[0] != 0 %}
+							<!-- TODO -->
+							<hr style="border-top: dotted 1px; color: blue;" />
+							<!-- TODO -->
+						{% endif %}
+	
+						
+						<h3 id="{{ research_areas_title_ids[counter[0]] }}">{{ research_area }}</h3>
+					
+						<div class="two-columns-pages-projects">
+
+						{% if counter[0] % 2 == 0 %}							
+
+							<div class="col01-pages40" style="margin-top: 0;">	
+								<img width="100%" style="margin-top: 0%;" src="{{ research_areas_images[counter[0]] }}">
+							</div>
+							<div class="col02-pages60">
+								<p>
+									{{ research_areas_summaries[counter[0]] }}
+								</p>
+								<p style="text-align: right; font-size: 12px;">
+									{% if research_areas_ids[counter[0]] %}{{ research_areas_ids[counter[0]] }}{% endif %}{% if page.research_areas_medium %}{% if research_areas_medium[counter[0]] %}, <a style="color: #2196F3;" class="sc-medium" href="{{ research_areas_medium[counter[0]] }}" title="Medium" target="_blank">Read more on <font style="color: black;"><i class="fab fa-medium"></i></font></a>{% endif %}{% endif %}
+								</p>
+							</div>							
+
+						{% elif counter[0] % 2 == 1 %}
+
+							<div class="col01-pages60">
+								<p>
+									{{ research_areas_summaries[counter[0]] }}
+								</p>
+								<p style="text-align: left; font-size: 12px;">
+									{% if page.research_areas_medium %}{% if research_areas_medium[counter[0]] %}<a style="color: #2196F3;" class="sc-medium" href="{{ research_areas_medium[counter[0]] }}" title="Medium" target="_blank">Read more on <font style="color: black;"><i class="fab fa-medium"></i></font></a>,{% endif %}{% endif %}{% if research_areas_ids[counter[0]] %} {{ research_areas_ids[counter[0]] }}{% endif %}
+								</p>
+							</div>
+							<div class="col02-pages40" style="margin-top: 0;">	
+								<img width="100%" style="margin-top: 0%;" src="{{ research_areas_images[counter[0]] }}">
+							</div>
+
+						{% endif %}
+
+						</div>
+						
+						{% if page.research_areas_projects %}
+							{% if research_areas_projects_pa[counter[0]] %}
+                  				{% set research_areas_projects = research_areas_projects_pa[counter[0]].split(', ') %}
+                			{% endif %}
+						{% endif %}				
+						
+						
+						{% if research_areas_projects %}
+							<b>Running projects...</b>
+							<p>
+							<ul>
+							{% for research_areas_project in research_areas_projects %}
+								
+								{% for articleref in articles %}
+                  					{% if articleref.id == research_areas_project %}
+
+
+									<li>
+                                		<a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a>
+                                		<div class="little-information-line">
+                                    		{% if articleref.sum_content %}{{ articleref.sum_content }}<br />{% endif %}
+                                    		{{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.subject_class %}, Subject class: {{ articleref.subject_class }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}
+                                		</div>
+                            		</li>									
+
+
+									{% endif %}
+								{% endfor %}
+
+							{% endfor %}
+							</ul>
+							</p>
+						{% endif %}
+
+						<p style="text-align: right; font-size: 12px;">
+							{% for article in articles %}
+								{% if article.id == research_areas_ids[counter[0]] %}
+									<a href="{{ SITEURL }}/{{ article.url }}">Related older projects, fundings, publications & talks <i class="fas fa-angle-double-right"></i></a>						
+								{% endif %}
+							{% endfor %}							
+						</p>
+
+						{% if counter.append(counter.pop() + 1) %}{% endif %}
+					{% endfor %}
+
+					</section>
 
                     <section id="content">
                         {{ page.content }}
                     </section>
                     
                     <br><br><br>
-                    
+  
                 </div>
             
             </article>
