@@ -84,6 +84,14 @@ INDEX_INTRO_IMAGE = '/images/john-moeses-bauan-690280-unsplash.jpg'
 INDEX_INTRO_TITLE = 'Welcome'
 INDEX_INTRO_CONTENT = 'Research. Free and Independently.'
 
+# Ongoing Events
+#TALKS = ""
+#MEETUPS = ""
+#WEBINARS = ""
+#PROJECTS = ""
+#FUNDINGS = ""
+#CROWDFUNDING_CAMPAIGNS = ""
+SCHEDULE = "My public <a href='/about.html#Schedule' title='Schedule' style='color: #2196F3;'>schedule</a> for my projects and fundings."
 
 # PGP Keys
 SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'

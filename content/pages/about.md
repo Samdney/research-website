@@ -4,6 +4,7 @@ Slug:           about
 
 <!-- <code><a href="/about.html#WeAreOne">\#We are one</a></code> -->
 <code><a href="/about.html#Thatsme">\#That's me</a></code>
+<code><a href="/about.html#Schedule">\#Schedule</a></code>
 <code><a href="/about.html#CurrentWork">\#Current work</a></code>
 <code><a href="/about.html#Mission">\#Mission</a></code>
 <code><a href="/about.html#Hiring">\#Hiring</a></code>
@@ -46,6 +47,12 @@ Slug:           about
 	I publish all my work under free licenses (as long it is not limited by third parties). I believe in open knowledge and that the results of research and its access has to be possible and free, without any fees, for everybody.<br />
 	<br />
 	I would be happy to get your support, to protect our right for private communication, open knowledge and online security.
+</p>
+
+<hr />
+<h2 id="Schedule">Schedule</h2>
+<p>
+	<i>You can find my public schedule for current, upcoming and planned projects and fundings for the next months, as pdf version, <a href="/files/schedule.pdf" title="Schedule" target="_blank">here</a>.</i>
 </p>
 
 <hr />

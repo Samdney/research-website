@@ -40,6 +40,61 @@
         <hr>
         </article>
 	-->
+
+	<article class="w3-container w3-card-2 w3-white col-main">
+		<b style="font-size: 25px;">Ongoing...</b>
+
+		{% if TALKS %}
+		<p>
+		<b>Talks</b><br />
+			{{ TALKS }}
+		</p>
+		{% endif %}
+
+		{% if MEETUPS %}
+		<p>
+		<b>Meetups</b><br />
+			{{ MEETUPS }}
+		</p>
+		{% endif %}
+
+		{% if WEBINARS %}
+		<p>
+		<b>Webinars</b><br />
+			{{ WEBINARS }}
+		</p>
+		{% endif %}
+
+		{% if PROJECTS %}
+		<p>
+		<b>Projects</b><br />
+			{{ PROJECTS }}
+		<p>
+		{% endif %}
+
+		{% if FUNDINGS %}
+		<p>
+		<b>Fundings</b><br />
+			{{ FUNDINGS }}
+		</p>
+		{% endif %}
+
+		{% if CROWDFUNDING_CAMPAIGNS %}
+		<p>
+		<b>Crowdfunding Campaigns</b><br />
+			{{ CROWDFUNDING_CAMPAIGNS }}
+		</p>
+		{% endif %}
+		
+		{% if SCHEDULE %}
+		<p>
+		<b>Schedule</b><br />
+			{{ SCHEDULE }}
+		</p>
+		{% endif %}
+
+	</article>
+
       {% endif %}
 
       <br>
