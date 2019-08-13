@@ -3,7 +3,7 @@ Date:           2018/07/07 20:00
 Slug:           funding
 
 <!-- <code><a href="/funding.html#FundingsGrantsFellowships">\#Fundings, Grants &amp; Fellowships</a></code> -->
-<!-- <code><a href="/funding.html#Crowdfunding">\#Crowdfunding</a></code> -->
+<code><a href="/funding.html#Crowdfunding">\#Crowdfunding</a></code>
 <code><a href="/funding.html#DirectDonations">\#Direct Donations</a></code>
 <code><a href="/funding.html#MembershipPlatforms">\#Membership Platforms</a></code>
 <!-- <code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code> -->
@@ -16,10 +16,13 @@ Slug:           funding
 <h2 id="FundingsGrantsFellowships">Fundings, Grants &amp; Fellowships</h2>
 -->
 
-<!--
+
 <hr />
 <h2 id="Crowdfunding">Crowdfunding</h2>
--->
+
+<h3 id="InCollectingProcess">In Collecting Process</h3>
+GoFundMe.com: <i>Conference Attending Expenses</i> (<a href="https://www.gofundme.com/f/conference-attending-expenses" title="GoFundMe.com: Conference Attending Expenses" target="_blank">visit</a>)
+
 
 <hr />
 <h2 id="DirectDonations">Direct Donations</h2>
