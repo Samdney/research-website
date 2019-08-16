@@ -1,0 +1,74 @@
+Author: Carolin Zöbelein
+Last change: 2019/08/16
+
+TODO
+The following stuff is from an older website version and (very) old work. I'm currently still work on the content of the projects site for an update. So this section is for clean up and also because of historical reasons.
+
+In the following, a list of my past, current and currently on-the-way for funding projects.
+List is incomplete.
+
+=> Secret website tunnel
+A tunnel for secret data sharing/transfer over a website
+
+=> Website secrets
+A general investigation in possible ways to use a website for secret data sharing/transfer
+
+=> Abstract protocol modelling - Strand spaces
+Expansion of existing protocol modelling concepts
+   
+=> Steganography within mobile apps
+Steganography of information and secret functionality within mobile apps
+   
+=> Usage of social networks for secret information sharing
+A general investigation in possible ways for secret information sharing in social networks. Technical, psychological and usability questions.
+  
+=> Twitter tunnel
+"Tunneling" data through Twitter
+   
+=> Twitter secrets
+A general investigation in possible ways to use Twitter for secret data sharing/transfer
+   
+=> An essay about geoip mapping
+A bit writing about geoip mapping issues and experiments
+   
+=> Mathematical modelling of decentralized networks
+Developing of general mathematical modelling concepts for decentralized networks
+    
+=> Mathematical modelling of the Tor network
+A larger mathematical model of the Tor network apart from only topological aspects
+    
+=> Tor topology
+A simple mathematical modelling of basis topology of the Tor network
+   
+=> Jumping pony
+Secret
+   
+=> Simple secret browser
+A simple browser with some special functionality for secret data sharing/transfer during website visits
+
+=> Simple browser
+Coding of a simple browser with Tor connection for exercise reasons, for a better understanding of privacy and anonymity points of failure of browsers
+      
+=> Decentralized emulated Quantum Computing RNG
+Concept for a new approach of RNG in decentralized networks 
+   
+=> TCP redesign thinkings
+Ideas for redesign of TCP for new network principals
+       
+=> TCP easter eggs
+Secret      
+   
+=> Android directory access
+Investigation in existing access security bug (access with breach of privileges) in particular Android versions by apps
+     
+=> Prime factorization groups
+Faster prime factorization algorithm for numbers which belong to particular integer groups
+      
+=> Prime numbers
+Research on the distribution of primes, their influence on physics and questions of the (in)security of prime number based encryption algorithms
+    
+=> Collatz conjecture
+Spending time with papers about the conjecture, Developing of my own proof ideas
+
+
+For information about my work, have a look at my GitHub account https://github.com/Samdney and my blog https://Samdney.github.io/
