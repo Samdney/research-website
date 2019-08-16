@@ -49,8 +49,12 @@
                   		{% set research_areas_medium = page.research_areas_medium.split(', ') %}
                 	{% endif %}
 
-					{% if page.research_areas_projects %}
-                  		{% set research_areas_projects_pa = page.research_areas_projects.split('| ') %}
+					{% if page.research_areas_projects_ongoing %}
+                  		{% set research_areas_projects_ongoing_pa = page.research_areas_projects_ongoing.split('| ') %}
+                	{% endif %}
+
+					{% if page.research_areas_projects_upcoming %}
+                  		{% set research_areas_projects_upcoming_pa = page.research_areas_projects_upcoming.split('| ') %}
                 	{% endif %}
 
 					{% if page.research_areas_summaries %}
@@ -104,21 +108,20 @@
 
 						</div>
 						
-						{% if page.research_areas_projects %}
-							{% if research_areas_projects_pa[counter[0]] %}
-                  				{% set research_areas_projects = research_areas_projects_pa[counter[0]].split(', ') %}
+						{% if page.research_areas_projects_ongoing %}
+							{% if research_areas_projects_ongoing_pa[counter[0]] %}
+                  				{% set research_areas_projects_ongoing = research_areas_projects_ongoing_pa[counter[0]].split(', ') %}
                 			{% endif %}
-						{% endif %}				
+						{% endif %}						
 						
-						
-						{% if research_areas_projects %}
-							<b>Running projects...</b>
+						{% if research_areas_projects_ongoing %}
+							<b>Ongoing projects...</b>
 							<p>
 							<ul>
-							{% for research_areas_project in research_areas_projects %}
+							{% for research_areas_project_ongoing in research_areas_projects_ongoing %}
 								
 								{% for articleref in articles %}
-                  					{% if articleref.id == research_areas_project %}
+                  					{% if articleref.id == research_areas_project_ongoing %}
 
 
 									<li>
@@ -137,6 +140,41 @@
 							</ul>
 							</p>
 						{% endif %}
+
+
+						{% if page.research_areas_projects_upcoming %}
+							{% if research_areas_projects_upcoming_pa[counter[0]] %}
+                  				{% set research_areas_projects_upcoming = research_areas_projects_upcoming_pa[counter[0]].split(', ') %}
+                			{% endif %}
+						{% endif %}
+
+						{% if research_areas_projects_upcoming %}
+							<b>Upcoming projects...</b>
+							<p>
+							<ul>
+							{% for research_areas_project_upcoming in research_areas_projects_upcoming %}
+								
+								{% for articleref in articles %}
+                  					{% if articleref.id == research_areas_project_upcoming %}
+
+
+									<li>
+                                		<a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a>
+                                		<div class="little-information-line">
+                                    		{% if articleref.sum_content %}{{ articleref.sum_content }}<br />{% endif %}
+                                    		{{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.subject_class %}, Subject class: {{ articleref.subject_class }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}
+                                		</div>
+                            		</li>									
+
+
+									{% endif %}
+								{% endfor %}
+
+							{% endfor %}
+							</ul>
+							</p>
+						{% endif %}
+
 
 						<p style="text-align: right; font-size: 12px;">
 							{% for article in articles %}
