@@ -84,6 +84,9 @@ INDEX_INTRO_IMAGE = '/images/john-moeses-bauan-690280-unsplash.jpg'
 INDEX_INTRO_TITLE = 'Welcome'
 INDEX_INTRO_CONTENT = 'Research. Free and Independently.'
 
+# Upcoming Stuff
+UPCOMING = "<b>Grant:</b> NLnet <a href='https://nlnet.nl/discovery/' title='NLnet NGI Zero Discovery' target='_blank' style='color: #2196F3;'>NGI Zero Discovery</a> (19 100 EUR, 12 months)"
+
 # Ongoing Events
 #TALKS = ""
 #MEETUPS = ""

@@ -210,6 +210,13 @@
               </div>
             </div>
             </section>
+
+			{% if article.fundings %}
+			<section id="content">
+				<h3>This project is funded by ...</h3>
+				{{ article.fundings }}
+			</section>
+			{% endif %}
            
             {% if article.synopsis %}
             <section id="content">

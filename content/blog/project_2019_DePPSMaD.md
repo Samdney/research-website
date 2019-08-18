@@ -16,3 +16,5 @@ kind:               				Project
 project_period:     				Start End of August/Beginning of September 2019
 project_members:    				Carolin Zöbelein
 keywords:           				decentralization, search engine, privacy
+fundings:							<b>Grant:</b> NLnet <a href="https://nlnet.nl/discovery/" title="NLnet NGI Zero Discovery" target="_blank">NGI Zero Discovery</a> (19 100 EUR, 12 months)
+sum_fundings:						NLnet NGI Zero Discovery (Grant, 19 100 EUR, 12 months)

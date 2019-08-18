@@ -2,7 +2,7 @@ Title:          Funding
 Date:           2018/07/07 20:00
 Slug:           funding
 
-<!-- <code><a href="/funding.html#FundingsGrantsFellowships">\#Fundings, Grants &amp; Fellowships</a></code> -->
+<code><a href="/funding.html#GrantsAndFellowships">\#Grants &amp; Fellowships</a></code>
 <code><a href="/funding.html#Crowdfunding">\#Crowdfunding</a></code>
 <code><a href="/funding.html#DirectDonations">\#Direct Donations</a></code>
 <code><a href="/funding.html#MembershipPlatforms">\#Membership Platforms</a></code>
@@ -11,10 +11,12 @@ Slug:           funding
 <!-- <code><a href="/funding.html#Cooperations">\#Cooperations</a></code> -->
 <!-- <code><a href="/funding.html#SupportedBy">\#Supported By</a></code> -->
 
-<!--
+
 <hr />
-<h2 id="FundingsGrantsFellowships">Fundings, Grants &amp; Fellowships</h2>
--->
+<h2 id="GrantsAndFellowships">Grants &amp; Fellowships</h2>
+
+<h3 id="Upcoming">Upcoming</h3>
+<b>Grant:</b> NLnet <a href="https://nlnet.nl/discovery/" title="NLnet NGI Zero Discovery" target="_blank">NGI Zero Discovery</a> (19 100 EUR, 12 months)
 
 
 <hr />
