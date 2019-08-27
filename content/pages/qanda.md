@@ -15,3 +15,6 @@ A1: I have a separate web presence for my art. You can find it on <a href="https
 * **Q1: In which languages do you give talks, workshops and webinars?**  
 A1: English and German.
 
+* **Q2: I saw that you speak Arabic, too. Do you also give workshops in Arabic?**  
+A2: No. I only give talks, workshops and webinars in English and German. Currently, my knowledge in other languages is not good enough for professional speaking.
+
