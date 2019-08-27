@@ -49,7 +49,9 @@ enhanced privacy for its users. Please use the following address:
 <i class="cryptocurr-addr">t1L665gYuCfYppbCfXjRfZZ2oSiuVZ1dSZL (<a href="/qrcodes/crowdfunding_zcash.png" title="Crowdfunding - Zcash: QR-Code" target="_blank">QR-Code</a>)</i>
 
 <h3>Bank transfer</h3>
-You can send me money by bank transfer in EUR, USD and GBP. Contact me for bank information.  
+You can send me money by bank transfer in EUR, USD and GBP to an Europe based bank account.  
+An US based bank account is available for donations from the US, too.  
+Contact me for bank information.  
 *Personal note:* Please use other ways for donations if possible. I don't want to know your personal data ;).
 
 <hr />
