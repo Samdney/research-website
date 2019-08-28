@@ -23,6 +23,15 @@ A2: PGP means "Pretty Good Privacy" and is an encryption program that gives the 
 * **Q3: How can I send you a PGP encrypted e-mail?**  
 A3: You can find an explanation for how you can set up PGP on your system on the following links for <a href="https://ssd.eff.org/en/module/how-use-pgp-windows" title="External: EFF - How to: Use PGP for Windows" target="_blank">Windows</a>, <a href="https://ssd.eff.org/en/module/how-use-pgp-mac-os-x" title="External: EFF - How to: Use PGP for macOS" target="_blank">macOS</a> and <a href="https://ssd.eff.org/en/module/how-use-pgp-linux" title="External: EFF - How to: Use PGP for Linux" target="_blank">Linux</a>.
 
+* **Q4: On your contact page I read: "OTR: FEB02E6C ...", next to your Jabber address. What does that mean?**  
+A4: That's the fingerprint of my OTR public key for my Jabber address.
+
+* **Q5: What is OTR?**  
+A5: OTR means "Off-the-Record Messaging" and is a cryptographic protocol that gives the possibility for encryption and authentication of instant messaging conversations.
+
+* **Q6: How can I use OTR for instant messaging conversations?**  
+A6: You can find an explanation for how you can set up OTR on your system on the following links for <a href="https://ssd.eff.org/en/module/how-use-otr-macos" title="External: EFF - How to: Use OTR for macOS" target="_blank">macOS</a> and <a href="https://ssd.eff.org/en/module/how-use-otr-linux" title="External: EFF - How to: Use OTR on Linux"  target="_blank">Linux</a>.
+
 
 <h2 id="TalksWorkshopsAndWebinars">Talks, Workshops & Webinars</h2>
 * **Q1: In which languages do you give talks, workshops and webinars?**  
