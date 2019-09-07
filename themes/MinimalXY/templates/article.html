@@ -209,14 +209,7 @@
                 </div>
               </div>
             </div>
-            </section>
-
-			{% if article.fundings %}
-			<section id="content">
-				<h3>This project is funded by ...</h3>
-				{{ article.fundings }}
-			</section>
-			{% endif %}
+            </section>			
            
             {% if article.synopsis %}
             <section id="content">
@@ -231,6 +224,23 @@
               {{ article.content }}
             </section>
             {% endif %}
+
+			{% if article.fundings %}
+			<section id="content">
+				<h3>Funded by ...</h3>
+				{{ article.fundings }}
+			</section>
+			{% endif %}
+
+			{% if article.mailing_lists %}
+			{% set mailing_lists = article.mailing_lists.split('| ') %}
+			<section id="content">
+				<h3>Mailing Lists</h3>
+				{% for mailing_list in mailing_lists %}
+					{{ mailing_list }}<br />
+				{% endfor %}
+			</section>
+			{% endif %}
 
             {% if article.publications %}
             <section id="content">

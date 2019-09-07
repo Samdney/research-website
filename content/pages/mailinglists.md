@@ -11,5 +11,6 @@ Slug:           mailinglists
 <hr />
 
 <h2 id="PrivateGroups">Private Groups</h2>
-* <code>deppsmad-dev@lists.riseup.net</code>  
+* <span id="list-deppsmad-dev"> <code>deppsmad-dev@lists.riseup.net</code>  
 List info and subscription: <a href="https://lists.riseup.net/www/info/deppsmad-dev" title="Mailing List: deppsmad-dev@lists.riseup.net" target="_blank">https://lists.riseup.net/www/info/deppsmad-dev</a>
+</span>
