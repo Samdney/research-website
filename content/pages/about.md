@@ -12,16 +12,11 @@ Slug:           about
 
 <hr />
 
-<!-- TODO: We are one -->
 <!--
-<h2 id="WeAreOne">We are one</h2>
-
-<hr />
--->
-
 <p>
 <font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
 </p>
+-->
 
 <h2 id="Thatsme">That's me</h2>
 <div class="two-columns-pages">
