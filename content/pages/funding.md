@@ -15,8 +15,12 @@ Slug:           funding
 <hr />
 <h2 id="GrantsAndFellowships">Grants &amp; Fellowships</h2>
 
+<!--
+<h3 id="Running">Running</h3>
+-->
+
 <h3 id="Upcoming">Upcoming</h3>
-<b>Grant:</b> NLnet <a href="https://nlnet.nl/discovery/" title="NLnet NGI Zero Discovery" target="_blank">NGI Zero Discovery</a> (19 100 EUR, 12 months)
+NLnet <a href="https://nlnet.nl/discovery/" title="NLnet NGI Zero Discovery" target="_blank">NGI Zero Discovery</a> (Grant, 19 100 EUR, 12 months)
 
 
 <hr />
