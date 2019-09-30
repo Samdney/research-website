@@ -341,6 +341,47 @@
             </article>
         <br><br><br>
 
+	{% elif page.title == "TestFunding" %}
+    <!-- Funding --> <!-- TODO -->
+
+		<br><br><br>
+            <article class="w3-container-page w3-card-2 w3-white col-page">
+
+                <br>
+
+                <header class="w3-container-page-sub col-page-sub">
+                    <h1>{{ page.title }}</h1>
+                    <div class="post-info">
+                        <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+                        {% import 'translations.html' as translations with context %}
+                        {{ translations.translations_for(page) }}
+                        </div>
+                    </div>
+                </header>
+
+				
+				<!-- TODO -->
+
+
+
+
+
+
+
+				<!-- TODO -->
+
+
+                <div class="col-page-sub w3-container-page-sub">
+                    <section id="content">
+                    {{ page.content }}
+                    </section>
+
+                    <br><br><br>
+        
+                </div>
+            </article>
+        <br><br><br>
+
     <!-- Crowdfunding -->
     <!--
     {% elif page.title == "Crowdfunding" %}
