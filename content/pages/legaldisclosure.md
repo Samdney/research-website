@@ -20,7 +20,7 @@ E-Mail: contact@carolin-zoebelein.de<br />
 Website: <a href="https://research.carolin-zoebelein.de">https://research.carolin-zoebelein.de</a></p>
 
 <h3>VAT number</h3>
-<p>VAT indentification number in accorance with section 27 a of the German VAT act<br />  
+<p>VAT indentification number in accordance with section 27 a of the German VAT act<br />  
 DE 300126870</p>  
 
 <h3>Independent Professions</h3>
