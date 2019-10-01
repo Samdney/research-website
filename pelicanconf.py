@@ -60,6 +60,7 @@ MINIMALXY_FAVICON = 'images/favicon.ico'
 # Menu
 MENUITEMS = (
     ('About', '/about.html'),
+    ('Research', '/research.html'),
     ('Projects', '/projects.html'),
     ('Public', '/public.html'),
     ('Funding', '/funding.html'),

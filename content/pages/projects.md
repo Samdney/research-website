@@ -1,22 +1,23 @@
 Title:          		Projects
 Date:           		2018/08/01 20:00
 Slug:           		projects
-research_areas:			Online Traffic Obfuscation & Censorship Circumvention| Decentralized Search Engines| Privacy Protecting Decentralized Networks & Technologies| Mathematical Computer Science & Modelling| Algebra, Number Theory, Encryption Algorithms and Online Protocols| Mobile Apps| Misc stuff
-research_areas_title_ids:	OnlineTrafficObfuscationAndCensorshipCircumvention, DecentralizedSearchEngines, PrivacyProtectingDecentralizedNetworksAndTechnologies, MathematicalComputerScienceAndModelling, AlgebraNumberTheoryEncryptionAlgorithmsAndOnlineProtocols, MobileApps, MiscStuff
-research_areas_images:		/images/projects/sandy-millar-e9GyzrK2IkM-unsplash.jpg, /images/projects/alex-block-PdDBTrkGYLo-unsplash_mirrored.jpg, /images/projects/alina-grubnyak-ZiQkhI7417A-unsplash.jpg, /images/projects/ryan-stone-OlxJVn9fxz4-unsplash.jpg, /images/projects/antoine-dautry-05A-kdOH6Hw-unsplash.jpg, /images/projects/veeterzy-b_xciWkK8Pc-unsplash.jpg, /images/projects/erik-jan-leusink-O7ePLfRRlBs-unsplash.jpg
-research_areas_ids:		RA-TOCC, RA-DCSE, RA-PPDC, RA-MACS, RA-ALNTH, RA-MOBILE, RA-MISC
-research_areas_summaries:	Be a mouse. Be clever. Find what you are looking for.| If you do not give all your data to one company.| Decentralization rocks.| Sometimes, you have to look at things more mathematical.| Algebra and Number Theory are fascinating topics which play an important role in our daily life.| Examination of apps for privacy breaks.| Stuff which fits to nothing else.
-research_areas_projects_upcoming:	| project_0055| | | | | 
 
 
 <hr />
-<h2 id="CommunityBasedResearchAndDevelopment">Community based Research & Development</h2>
-I see myself as Research Scientist funded by the community for working for the community. If you have wishes or ideas for projects which fit to my areas of knowledge, please feel free to <a href="/contact.html#Information">contact</a> me.
+<h2 id="UpcomingProjects">Upcoming projects</h2>    <!-- TODO -->
+<ul>
+<li>
+    <a href="/Projects/2019/Decentralized-privacy-preserving-search-by-mathematical-design.html">Decentralized privacy preserving search by mathematical design (DePPSMaD)</a>
+    <div class="little-information-line">
+        Carolin Zöbelein, Start End of August/Beginning of September 2019, Fundings: NLnet NGI Zero Discovery (Grant, 19 100 EUR, 12 months), id: project_0055
+    </div>
+</li>
+</ul>
 
 
 <hr />
 <h2 id="ProjectsUnderConstruction">Projects under Construction</h2>
-<b>You can find ongoing, upcoming and past projects in the <i>Research Areas</i> section above and its specific area sites.</b>
+<!-- <b>You can find ongoing, upcoming and past projects in the <i>Research Areas</i> section above and its specific area sites.</b> --> <!-- TODO -->
 
 
 <h3 id="InQueue">In Queue</h3>
@@ -77,6 +78,13 @@ Raw and crazy stuff from brainstorming. :)
 <p>
 None.
 </p>
+
+
+
+<hr />
+<h2 id="CommunityBasedResearchAndDevelopment">Community based Research & Development</h2>
+I see myself as Research Scientist funded by the community for working for the community. If you have wishes or ideas for projects which fit to my areas of knowledge, please feel free to <a href="/contact.html#Information">contact</a> me.
+
 
 
 
