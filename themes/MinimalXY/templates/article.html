@@ -197,6 +197,7 @@
                     {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
                     {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
 	  	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+
 		    {% if article.project_proposal_pdf %}
 			<li>
 				<b>Project proposal: </b><a href="{{ article.project_proposal_pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
@@ -204,7 +205,10 @@
 				| <a href="{{ article.project_proposal_download }}" title="External: {{ article.title }}">direct download</a>
 				{% endif %}
 			</li>
-		  {% endif %}
+		    {% endif %}
+
+            {% if article.shields %}<li>{{ article.shields }}</li>{% endif %}
+
                   </ul>
                 </div>
               </div>
@@ -276,6 +280,16 @@
               {% endfor %}
             </section>
             {% endif %}
+
+            {% if article.credits %}
+			{% set credits = article.credits.split('| ') %}
+			<section id="content">
+				<h3>Credits</h3>
+				{% for credit in credits %}
+					{{ credit }}<br />
+				{% endfor %}
+			</section>
+			{% endif %}
 
             <br>
 

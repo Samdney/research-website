@@ -1,10 +1,16 @@
 Title:          		Projects
 Date:           		2018/08/01 20:00
 Slug:           		projects
+projects_ongoing:       project_0056| project_0055
 
 
-<hr />
-<h2 id="UpcomingProjects">Upcoming projects</h2>    <!-- TODO -->
+<h2 id="UpcomingProjects">Upcoming projects</h2>
+
+<p>
+None.
+</p>
+
+<!--
 <ul>
 <li>
     <a href="/Projects/2019/Decentralized-privacy-preserving-search-by-mathematical-design.html">Decentralized privacy preserving search by mathematical design (DePPSMaD)</a>
@@ -13,6 +19,7 @@ Slug:           		projects
     </div>
 </li>
 </ul>
+-->
 
 
 <hr />

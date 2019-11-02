@@ -223,6 +223,57 @@
 					<font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
 					</section>
 
+                    {% if page.projects_ongoing %}
+                  		{% set projects_ongoing_pa = page.projects_ongoing.split('| ') %}                	
+
+                        <hr />
+                        <section id="content">
+                        <h2 id="OngoingProjects">Ongoing Projects</h2>
+                        <ul>
+                        {% for project_ongoing in projects_ongoing_pa %}
+
+                            {% for articleref in articles %}
+                  			    {% if articleref.id == project_ongoing %}
+                                  
+                                    <li>
+                                        <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
+                                        <div class="little-information-line">
+                                            {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
+                                            {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                        </div>
+                                    </li>                           
+             
+                                    <!-- TODO
+                                    <div class="two-columns-pages" style="background: yellow;">
+	                                    <div class="col01-pages30" style="background: green;">
+                                            <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
+                                        </div>
+                                        <div class="col02-pages70" style="margin-top: 2%; background: red;">
+            	                            {{ articleref.exhibition_date }}<br />
+	                                        <b>{{ articleref.title }}</b>
+
+	                                        <br /><br />
+	                                        <div style="font-size: 15px;">
+	                                            {{ articleref.sum_content }}
+                                            </div>
+
+                                            <div style="color: lime; font-size: 10px;">
+                                                <a href="{{ SITEURL }}/{{ articleref.url }}">READ MORE >> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+
+                                    <!--<br /> -->
+
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                        </ul>
+					    </section>
+                    {% endif %}
+
+                    <hr />
                     <section id="content">
                         {{ page.content }}
                     </section>
