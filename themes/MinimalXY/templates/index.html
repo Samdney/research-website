@@ -49,7 +49,29 @@
     </noscript>
 
 	<article class="w3-container w3-card-2 w3-white col-main">
-		{% if UPCOMING %}
+        {% if STATUS_REPORT %}
+        <b style="font-size: 25px;">Status Report</b>
+        <p>
+        {% for title, typea, typef, name in SOCIAL_SIGNS %}
+            {% if title == 'Medium' %}
+                
+                <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ STATUS_REPORT[1] }}" title="External: {{ STATUS_REPORT[0] }}" target="_blank" style="color: #2196F3;"> {{ STATUS_REPORT[0] }}</a>, {{ STATUS_REPORT[2] }}
+
+            {% endif %}
+        {% endfor %}
+        </p>
+        {% endif %}
+
+        {% if MEDIUM %}
+        <hr />
+        <b style="font-size: 25px;">Medium</b>
+        <p>
+            {{ MEDIUM }}
+        </p>
+        {% endif %}
+
+        {% if UPCOMING %}
+        <hr />
 		<b style="font-size: 25px;">Upcoming</b>
 		<p>
 			{{ UPCOMING }}

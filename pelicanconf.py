@@ -88,6 +88,13 @@ INDEX_INTRO_CONTENT = 'Research. Free and Independently.'
 # Upcoming Stuff
 UPCOMING = "<b>Grant:</b> NLnet <a href='https://nlnet.nl/discovery/' title='NLnet NGI Zero Discovery' target='_blank' style='color: #2196F3;'>NGI Zero Discovery</a> (19 100 EUR, 12 months)"
 
+# Medium
+#MEDIUM = ""
+
+# Status Report
+STATUS_REPORT = ('Status report #1: Getting ordered, collecting money', 'https://medium.com/@carolinzoebelein/status-report-1-getting-ordered-collecting-money-fe549b05bd59?source=friends_link&sk=21746e4733102fbbad9e8515bb39f66d', '2019/10/24')
+
+
 # Ongoing Events
 #TALKS = ""
 #MEETUPS = ""
