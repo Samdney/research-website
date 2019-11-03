@@ -284,13 +284,45 @@ hr {
 	}
 }
 
+/* Desktop */
+@media all and (min-width: 1025px) {
+    /* Three columms */
+	.three-columns-github {
+		display: flex;
+		align-items: strecht;
+		flex-flow: row wrap;
+	}
+
+	.three-col01-github {
+		order: 1;
+		width: 25%;
+        margin-left: 11%;
+        margin-right: 0.75%;
+	}
+
+	.three-col02-github {
+		order: 2;
+		width: 25%;
+        margin-left: 0.75%;
+        margin-right: 0.75%;
+	}
+
+	.three-col03-github {
+		order: 3;
+		width: 25%;
+        margin-left: 0.75%;
+        margin-right: 11%;
+	}
+
+}
+
 
 /* Mobile */
 @media all and (max-width: 1024px) {
 	/* one column code */
 	.two-columns {
     	display: flex;
-    	align-items: stretch;
+        align-items: stretch;
     	flex-flow: column wrap;
         writing-mode: horizontal-tb;
   	}
@@ -333,9 +365,9 @@ hr {
     /* Three columms */
 	.three-columns {
 		display: flex;
-    		align-items: stretch;
-    		flex-flow: column wrap;
-        	writing-mode: horizontal-tb;
+    	align-items: stretch;
+    	flex-flow: column wrap;
+        writing-mode: horizontal-tb;
 	}
 
 	.three-col01 { 
@@ -352,6 +384,35 @@ hr {
 
 	.three-col03 { 
 		order: 3; 
+		width: 100%;
+        margin-bottom: 5px;
+	}
+}
+
+/* Mobile */
+@media all and (max-width: 1024px) {
+    /* Three columms */
+	.three-columns-github {
+		display: flex;
+    	align-items: stretch;
+    	flex-flow: column wrap;
+        writing-mode: horizontal-tb;
+	}
+
+	.three-col01-github {
+		order: 1;
+		width: 100%;
+        margin-bottom: 5px;
+	}
+
+	.three-col02-github {
+		order: 2;
+		width: 100%;
+        margin-bottom: 5px;
+	}
+
+	.three-col03-github {
+		order: 3;
 		width: 100%;
         margin-bottom: 5px;
 	}
