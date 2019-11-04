@@ -1,4 +1,4 @@
-title:      						Twitter secrets
+title:      						Twitter secrets [on hold]
 id:                 				project_0049
 date:       						2019/04/13 10:00
 category:		    				Project
@@ -8,7 +8,7 @@ author:     						Carolin Zöbelein
 slug_dir:           				Projects
 slug_subdir:        				2018
 slug:       						Twitter-secrets
-index_title:						Twitter secrets
+index_title:						Twitter secrets [on hold]
 index_image:        				/images/projects/TwitterSecrets.png
 index_summary:						A general investigation in possible ways to use Twitter for secret data sharing/transfer.
 sum_image:							/images/projects/TwitterSecrets.png
