@@ -1,7 +1,7 @@
 Title:          		Projects
 Date:           		2018/08/01 20:00
 Slug:           		projects
-projects_ongoing:       project_0056| project_0055
+projects_ongoing:       project_0056| project_0055| project_0049
 
 
 <h2 id="UpcomingProjects">Upcoming projects</h2>
@@ -105,6 +105,7 @@ In the following, a list of my past, current and currently on-the-way for fundin
 List is incomplete.
 </p>
 
+<!--
 <p>
 <ul>
 	<li>
@@ -116,6 +117,7 @@ List is incomplete.
 	</li>
 </ul>
 </p>
+-->
 
 For a full list look <a href="/files/misc_projects.txt" target="_blank">here</a>.
 
