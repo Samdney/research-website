@@ -88,12 +88,22 @@ INDEX_INTRO_CONTENT = 'Research. Free and Independently.'
 # Upcoming Stuff
 UPCOMING = "<b>Grant:</b> NLnet <a href='https://nlnet.nl/discovery/' title='NLnet NGI Zero Discovery' target='_blank' style='color: #2196F3;'>NGI Zero Discovery</a> (19 100 EUR, 12 months)"
 
-# Medium
-#MEDIUM = ""
-
 # Status Report
-STATUS_REPORT = ('Status report #1: Getting ordered, collecting money', 'https://medium.com/@carolinzoebelein/status-report-1-getting-ordered-collecting-money-fe549b05bd59?source=friends_link&sk=21746e4733102fbbad9e8515bb39f66d', '2019/10/24')
+STATUS_REPORT = ('Medium', '#1: Getting ordered, collecting money', 'https://medium.com/@carolinzoebelein/status-report-1-getting-ordered-collecting-money-fe549b05bd59?source=friends_link&sk=21746e4733102fbbad9e8515bb39f66d', '2019/10/24', 'This article is the first one of a new series, a kind of newsletter, for updating you what have happened in the last weeks or months related to my work as independent mathematical research scientist and also a bit about my art work. ....')
 
+# Article
+ARTICLE = ('Medium', 'Independent mathematical scientist. wat?', 'https://medium.com/@carolinzoebelein/independent-mathematical-scientist-wat-9691639a6ced?source=friends_link&sk=10ffa3a64a1812b8ea360ce925df9e1a', '2019/10/03', 'Already for a longer time, I wanted to start with writing Medium articles. My thinking was always to start with any technical content, since writing about themselves, at first,would be too egocentric. But now, ....')
+
+# Q&A
+#QA = ('Misc', 'B', 'C', 'D', 'E')
+
+# GitHub
+GITHUB_USER = ('Samdney', 'https://github.com/Samdney')
+GITHUB_LINKS = (
+    ('Proposals', 'https://github.com/Samdney/proposals'),
+    ('Papers', 'https://github.com/Samdney/papers'),
+    ('Notes', 'https://github.com/Samdney/notes')
+)
 
 # Ongoing Events
 #TALKS = ""

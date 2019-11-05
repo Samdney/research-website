@@ -48,88 +48,139 @@
         </div>
     </noscript>
 
-	<article class="w3-container w3-card-2 w3-white col-main">
-        {% if STATUS_REPORT %}
-        <b style="font-size: 25px;">Status Report</b>
-        <p>
-        {% for title, typea, typef, name in SOCIAL_SIGNS %}
-            {% if title == 'Medium' %}
+	<article class="w3-container w3-card-2 w3-white col-main-index">
+		<!-- TODO: XXX -->
+        <div class="two-columns-pages-index">
+	        <div class="col01-pages70-index"> <!-- TODO -->
                 
-                <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ STATUS_REPORT[1] }}" title="External: {{ STATUS_REPORT[0] }}" target="_blank" style="color: #2196F3;"> {{ STATUS_REPORT[0] }}</a>, {{ STATUS_REPORT[2] }}
+                {% if UPCOMING %}
+		        <b style="font-size: 25px;">Upcoming</b>
+		        <p>
+			        {{ UPCOMING }}
+		        </p>
+		        {% endif %}
 
-            {% endif %}
-        {% endfor %}
-        </p>
-        {% endif %}
+		        <hr />
+		        <b style="font-size: 25px;">Ongoing...</b>
 
-        {% if MEDIUM %}
-        <hr />
-        <b style="font-size: 25px;">Medium</b>
-        <p>
-            {{ MEDIUM }}
-        </p>
-        {% endif %}
+		        {% if TALKS %}
+		        <p>
+		        <b>Talks</b><br />
+			        {{ TALKS }}
+		        </p>
+		        {% endif %}
 
-        {% if UPCOMING %}
-        <hr />
-		<b style="font-size: 25px;">Upcoming</b>
-		<p>
-			{{ UPCOMING }}
-		</p>
-		{% endif %}
+		        {% if MEETUPS %}
+		        <p>
+		        <b>Meetups</b><br />
+			        {{ MEETUPS }}
+		        </p>
+		        {% endif %}
 
-		<hr />
-		<b style="font-size: 25px;">Ongoing...</b>
+		        {% if WEBINARS %}
+		        <p>
+		        <b>Webinars</b><br />
+			        {{ WEBINARS }}
+		        </p>
+		        {% endif %}
 
-		{% if TALKS %}
-		<p>
-		<b>Talks</b><br />
-			{{ TALKS }}
-		</p>
-		{% endif %}
+		        {% if PROJECTS %}
+		        <p>
+		        <b>Projects</b><br />
+			        {{ PROJECTS }}
+		        <p>
+		        {% endif %}
 
-		{% if MEETUPS %}
-		<p>
-		<b>Meetups</b><br />
-			{{ MEETUPS }}
-		</p>
-		{% endif %}
+		        {% if FUNDINGS %}
+		        <p>
+		        <b>Fundings</b><br />
+			        {{ FUNDINGS }}
+		        </p>
+		        {% endif %}
 
-		{% if WEBINARS %}
-		<p>
-		<b>Webinars</b><br />
-			{{ WEBINARS }}
-		</p>
-		{% endif %}
-
-		{% if PROJECTS %}
-		<p>
-		<b>Projects</b><br />
-			{{ PROJECTS }}
-		<p>
-		{% endif %}
-
-		{% if FUNDINGS %}
-		<p>
-		<b>Fundings</b><br />
-			{{ FUNDINGS }}
-		</p>
-		{% endif %}
-
-		{% if CROWDFUNDING_CAMPAIGNS %}
-		<p>
-		<b>Crowdfunding Campaigns</b><br />
-			{{ CROWDFUNDING_CAMPAIGNS }}
-		</p>
-		{% endif %}
+		        {% if CROWDFUNDING_CAMPAIGNS %}
+		        <p>
+		        <b>Crowdfunding Campaigns</b><br />
+			        {{ CROWDFUNDING_CAMPAIGNS }}
+		        </p>
+		        {% endif %}
 		
-		{% if SCHEDULE %}
-		<p>
-		<b>Schedule</b><br />
-			{{ SCHEDULE }}
-		</p>
-		{% endif %}
+		        {% if SCHEDULE %}
+		        <p>
+		        <b>Schedule</b><br />
+			        {{ SCHEDULE }}
+		        </p>
+		        {% endif %}
 
+
+            </div>
+            <div class="col02-pages30-index">
+        
+                {% if STATUS_REPORT %}
+                <b style="font-size: 20px;">Status Report</b><br />
+                {% for title, typea, typef, name in SOCIAL_SIGNS %}
+		            {% if title == STATUS_REPORT[0] %}
+
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ STATUS_REPORT[2] }}" title="External: {{ STATUS_REPORT[1] }}" target="_blank" style="font-size: 0.8em;"> <b>{{ STATUS_REPORT[1] }}</b></a>, <font style="font-size: 0.8em; color: grey;">{{ STATUS_REPORT[3] }}</font><br />
+                    <font style="font-size: 0.8em;"><i>{{ STATUS_REPORT[4] }}</i></font>
+
+                    {% endif %}
+		        {% endfor %}
+                {% endif %}           
+
+                {% if ARTICLE %}
+                <br /><br />
+                <b style="font-size: 20px;">Article</b><br />
+                {% for title, typea, typef, name in SOCIAL_SIGNS %}
+		            {% if title == ARTICLE[0] %}
+
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ ARTICLE[2] }}" title="External: {{ ARTICLE[1] }}" target="_blank" style="font-size: 0.8em;"> <b>{{ ARTICLE[1] }}</b></a>, <font style="font-size: 0.8em; color: grey;">{{ ARTICLE[3] }}</font><br />
+                    <font style="font-size: 0.8em;"><i>{{ ARTICLE[4] }}</i></font>
+
+                    {% endif %}
+		        {% endfor %}
+                {% endif %}
+
+                {% if QA %}
+                <br /><br />
+                <b style="font-size: 20px;">Q&A</b><br />
+                {% for title, typea, typef, name in SOCIAL_SIGNS %}
+		            {% if title == QA[0] %}
+
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ QA[2] }}" title="External: {{ QA[1] }}" target="_blank" style="font-size: 0.8em;"> <b>{{ QA[1] }}</b></a>, <font style="font-size: 0.8em; color: grey;">{{ QA[3] }}</font><br />
+                    <font style="font-size: 0.8em;"><i>{{ QA[4] }}</i></font>
+
+                    {% endif %}
+		        {% endfor %}
+                {% endif %}
+
+                {% if GITHUB_USER %}
+                <br /><br />
+                <b style="font-size: 20px;">GitHub</b><br />
+                <div class="two-columns-octocat">
+
+                    <div class="col01-octocat">
+                        <img height="85px" style="margin-top: 0%;" src="images/labtocat.png">
+                    </div>
+
+                    <div class="col02-octocat">
+                    {{ GITHUB_USER[0] }} <font style="font-size: 0.5em; color: #2196F3;"><a href="{{ GITHUB_USER[1] }}" title="External: {{ GITHUB_USER[0] }} at GitHub" target="_blank"><b>FOLLOW</b></a></font><br />
+
+                    {% if GITHUB_LINKS %}
+                    <font style="font-size: 0.8em;">
+                    {% for repository in GITHUB_LINKS %}
+                        <a href="{{ repository[1] }}" title="External: {{ repository[0] }}" target="_blank" style="color: #2196F3;">{{ repository[0] }}</a>{{ "," if not loop.last }}
+                    {% endfor %}
+                    </font>
+                    {% endif %}
+
+                    </div>
+
+                </div>
+                {% endif %}  
+
+            </div>
+        </div>		
 	</article>
 
       {% endif %}
