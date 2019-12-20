@@ -1,11 +1,11 @@
 Title:          Funding
 Date:           2018/07/07 20:00
 Slug:           funding
+hashtag_links:  /funding.html#GrantsAndFellowships| /funding.html#Crowdfunding| /funding.html#DirectDonations| /funding.html#MembershipPlatforms
+hashtag_info:   Grants &amp; Fellowships| Crowdfunding| Direct Donations| Membership Platforms
+grants_running: funding_0003
+grants_upcoming: NLnet <a href="https://nlnet.nl/discovery/" title="NLnet NGI Zero Discovery" target="_blank">NGI Zero Discovery</a> (Grant, 19 100 EUR, 12 months)
 
-<code><a href="/funding.html#GrantsAndFellowships">\#Grants &amp; Fellowships</a></code>
-<code><a href="/funding.html#Crowdfunding">\#Crowdfunding</a></code>
-<code><a href="/funding.html#DirectDonations">\#Direct Donations</a></code>
-<code><a href="/funding.html#MembershipPlatforms">\#Membership Platforms</a></code>
 <!-- <code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code> -->
 <!-- <code><a href="/funding.html#FinancialReports">\#Financial Reports</a></code> -->
 <!-- <code><a href="/funding.html#Cooperations">\#Cooperations</a></code> -->
@@ -13,22 +13,14 @@ Slug:           funding
 
 
 <hr />
-<h2 id="GrantsAndFellowships">Grants &amp; Fellowships</h2>
-
-<!--
-<h3 id="Running">Running</h3>
--->
-
-<h3 id="Upcoming">Upcoming</h3>
-NLnet <a href="https://nlnet.nl/discovery/" title="NLnet NGI Zero Discovery" target="_blank">NGI Zero Discovery</a> (Grant, 19 100 EUR, 12 months)
-
-
-<hr />
 <h2 id="Crowdfunding">Crowdfunding</h2>
 
 <h3 id="InCollectingProcess">In Collecting Process</h3>
-GoFundMe.com: <i>Conference Attending Expenses</i> (<a href="https://www.gofundme.com/f/conference-attending-expenses" title="GoFundMe.com: Conference Attending Expenses" target="_blank">visit</a>)
-
+<ul>
+    <li>
+        GoFundMe.com: <i>Conference Attending Expenses</i> (<a href="https://www.gofundme.com/f/conference-attending-expenses" title="GoFundMe.com: Conference Attending Expenses" target="_blank">visit</a>)
+    </li>
+</ul>
 
 <hr />
 <h2 id="DirectDonations">Direct Donations</h2>

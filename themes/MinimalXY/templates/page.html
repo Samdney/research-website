@@ -426,7 +426,7 @@
             </article>
         <br><br><br>
 
-	{% elif page.title == "TestFunding" %}
+	{% elif page.title == "Funding" %}
     <!-- Funding --> <!-- TODO -->
 
 		<br><br><br>
@@ -444,26 +444,77 @@
                     </div>
                 </header>
 
-				
-				<!-- TODO -->
-
-
-
-
-
-
-
-				<!-- TODO -->
-
-
                 <div class="col-page-sub w3-container-page-sub">
+
+                    <section id="content">
+                        {% if page.hashtag_links %}
+                      		{% set hashtag_links_pa = page.hashtag_links.split('| ') %}
+                    	{% endif %}
+
+                        {% if page.hashtag_info %}
+                      		{% set hashtag_info_pa = page.hashtag_info.split('| ') %}
+                    	{% endif %}
+
+                        {% set counter = [0] %}
+                        {% for hashtag_link in hashtag_links_pa %}
+                            <code><a href="{{ hashtag_link }}">#{{ hashtag_info_pa[counter[0]] }}</a></code>
+                            {% if counter.append(counter.pop() + 1) %}{% endif %}
+                        {% endfor %}
+                    </section>
+
+                    <hr />
+
+                    <section id="content">
+                    <h2 id="GrantsAndFellowships">Grants &amp; Fellowships</h2>
+
+                        {% if page.grants_running %}
+                      		{% set grants_running_pa = page.grants_running.split('| ') %}
+                    	{% endif %}
+
+                        {% if page.grants_running %}
+                            <h3 id="Running">Running</h3>
+                            <ul>
+                            {% for grant_running in grants_running_pa %}
+                                {% for articleref in articles %}
+                  			        {% if articleref.id == grant_running %}
+                                         <li>
+                                            <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a>
+                                            <div class="little-information-line">
+				                                {% if articleref.sum_content %}{{ articleref.sum_content }}<br />{% endif %}
+                                                {{ articleref.sub_kind }}{% if articleref.funding_period %}, {{ articleref.funding_period }}{% endif %}{% if articleref.funding_amount %}, {{ articleref.funding_amount }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}
+                                            </div>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                        
+
+                        {% if page.grants_upcoming %}
+                      		{% set grants_upcoming_pa = page.grants_upcoming.split('| ') %}
+                    	{% endif %}
+                        
+                        {% if page.grants_upcoming %}
+                            <h3 id="Upcoming">Upcoming</h3>
+                            <ul>
+                            {% for grant_upcoming in grants_upcoming_pa %}
+                                <li>
+                                    {{ grant_upcoming }}<br />
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </section>
+
                     <section id="content">
                     {{ page.content }}
                     </section>
 
                     <br><br><br>
-        
+     
                 </div>
+
             </article>
         <br><br><br>
 

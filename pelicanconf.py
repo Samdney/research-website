@@ -86,7 +86,7 @@ INDEX_INTRO_TITLE = 'Welcome'
 INDEX_INTRO_CONTENT = 'Research. Free and Independently.'
 
 # Upcoming Stuff
-UPCOMING = "<b>Grant:</b> NLnet <a href='https://nlnet.nl/discovery/' title='NLnet NGI Zero Discovery' target='_blank' style='color: #2196F3;'>NGI Zero Discovery</a> (19 100 EUR, 12 months)"
+#UPCOMING = ""
 
 # Status Report
 STATUS_REPORT = ('Medium', '#1: Getting ordered, collecting money', 'https://medium.com/@carolinzoebelein/status-report-1-getting-ordered-collecting-money-fe549b05bd59?source=friends_link&sk=21746e4733102fbbad9e8515bb39f66d', '2019/10/24', 'This article is the first one of a new series, a kind of newsletter, for updating you what have happened in the last weeks or months related to my work as independent mathematical research scientist and also a bit about my art work. ....')
@@ -110,7 +110,7 @@ GITHUB_LINKS = (
 #MEETUPS = ""
 #WEBINARS = ""
 #PROJECTS = ""
-#FUNDINGS = ""
+FUNDINGS = "funding_0003"
 CROWDFUNDING_CAMPAIGNS = "GoFundMe.com: <i>Conference Attending Expenses</i> (<a href='https://www.gofundme.com/f/conference-attending-expenses' title='GoFundMe.com: Conference Attending Expenses' target='_blank' style='color: #2196F3;'>visit</a>)"
 SCHEDULE = "My public <a href='/about.html#Schedule' title='Schedule' style='color: #2196F3;'>schedule</a> for my projects and fundings."
 
