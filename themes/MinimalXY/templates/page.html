@@ -22,6 +22,24 @@
                 </header>
 
                 <div class="col-page-sub w3-container-page-sub">
+                
+                    <section id="content">
+                        {% if page.hashtag_links %}
+                      		{% set hashtag_links_pa = page.hashtag_links.split('| ') %}
+                    	{% endif %}
+
+                        {% if page.hashtag_info %}
+                      		{% set hashtag_info_pa = page.hashtag_info.split('| ') %}
+                    	{% endif %}
+
+                        {% set counter = [0] %}
+                        {% for hashtag_link in hashtag_links_pa %}
+                            <code><a href="{{ hashtag_link }}">#{{ hashtag_info_pa[counter[0]] }}</a></code>
+                            {% if counter.append(counter.pop() + 1) %}{% endif %}
+                        {% endfor %}
+                    </section>
+
+                    <br />
 
 					<section id="content">
 					<font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
