@@ -27,7 +27,7 @@
 					<font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
 					
 					<hr />
-					<h2 id="ResearchAreas">Research Areas</h2> <!-- TODO: Change: , to | -->
+					<!-- TODO: Change: , to | -->
 
 					{% if page.research_areas %}
                   		{% set research_areas = page.research_areas.split('| ') %}
@@ -72,7 +72,7 @@
 						{% endif %}
 	
 						
-						<h3 id="{{ research_areas_title_ids[counter[0]] }}">{{ research_area }}</h3>
+						<h2 id="{{ research_areas_title_ids[counter[0]] }}">{{ research_area }}</h2>
 					
 						<div class="two-columns-pages-projects">
 
