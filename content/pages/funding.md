@@ -1,8 +1,8 @@
 Title:          Funding
 Date:           2018/07/07 20:00
 Slug:           funding
-hashtag_links:  /funding.html#GrantsAndFellowships| /funding.html#Crowdfunding| /funding.html#DirectDonations| /funding.html#MembershipPlatforms
-hashtag_info:   Grants &amp; Fellowships| Crowdfunding| Direct Donations| Membership Platforms
+hashtag_links:  /funding.html#GrantsAndFellowships| /funding.html#Crowdfunding| /funding.html#DirectDonations| /funding.html#Membership
+hashtag_info:   Grants &amp; Fellowships| Crowdfunding| Direct Donations| Membership
 grants_running: funding_0003
 
 <!-- <code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code> -->
@@ -50,7 +50,7 @@ Contact me for bank information.
 *Personal note:* Please use other ways for donations if possible. I don't want to know your personal data ;).
 
 <hr />
-<h2 id="MembershipPlatforms">Membership Platforms</h2>
+<h2 id="Membership">Membership</h2>
 
 <h3>Patreon</h3>
 Patreon is a crowdfunding membership platform that provides the possibility to run a subscription content service.  
