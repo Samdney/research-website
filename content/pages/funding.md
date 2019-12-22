@@ -54,7 +54,7 @@ Contact me for bank information.
 
 <h3>Patreon</h3>
 Patreon is a crowdfunding membership platform that provides the possibility to run a subscription content service.  
-<a href="https://www.patreon.com/carolinzoebelein_research" title="Patreon: Carolin Zöbelein - Research" target="_blank">Become a patron!</a>
+<i class="fab fa-patreon"></i> <a href="https://www.patreon.com/carolinzoebelein_research" title="Patreon: Carolin Zöbelein - Research" target="_blank">Become a patron!</a>
 
 <!--
 <h3>Liberapay</h3>
