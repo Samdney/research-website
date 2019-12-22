@@ -56,6 +56,10 @@ Contact me for bank information.
 Patreon is a crowdfunding membership platform that provides the possibility to run a subscription content service.  
 <i class="fab fa-patreon"></i> <a href="https://www.patreon.com/carolinzoebelein_research" title="Patreon: Carolin Zöbelein - Research" target="_blank">Become a patron!</a>
 
+<h3>GitHub Sponsors</h3>
+GitHub Sponsors is a new way to contribute to open source projects over GitHub. All what you need is a GitHub account to support peoples work on a monthly subscription base.  
+<i class="fas fa-heart" style="color: #ea4aaa;"></i> <a href="https://github.com/sponsors/Samdney" title="External: GitHub Sponsors - Samdney" target="_blank" style="color: #2196F3;">GitHub Sponsors</a>
+
 <!--
 <h3>Liberapay</h3>
 Liberapay is a non-profit organization providing a platform to donate money.  
