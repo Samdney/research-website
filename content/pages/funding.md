@@ -4,7 +4,6 @@ Slug:           funding
 hashtag_links:  /funding.html#GrantsAndFellowships| /funding.html#Crowdfunding| /funding.html#DirectDonations| /funding.html#MembershipPlatforms
 hashtag_info:   Grants &amp; Fellowships| Crowdfunding| Direct Donations| Membership Platforms
 grants_running: funding_0003
-grants_upcoming: NLnet <a href="https://nlnet.nl/discovery/" title="NLnet NGI Zero Discovery" target="_blank">NGI Zero Discovery</a> (Grant, 19 100 EUR, 12 months)
 
 <!-- <code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code> -->
 <!-- <code><a href="/funding.html#FinancialReports">\#Financial Reports</a></code> -->
