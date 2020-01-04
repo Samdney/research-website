@@ -197,6 +197,7 @@
                     {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
                     {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
 	  	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+            {% if article.info %}<li><b>Info:</b> {{ article.info }}</li>{% endif %}
 
 		    {% if article.project_proposal_pdf %}
 			<li>

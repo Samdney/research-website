@@ -85,14 +85,26 @@
 		        {% endif %}
 
 		        {% if PROJECTS %}
-		        <p>
-		        <b>Projects</b><br />
-			        {{ PROJECTS }}
-		        <p>
+		        <br /><br />
+                <b>Projects</b><br />
+                    {% set projects_running_pa = PROJECTS.split('| ') %}                           
+                           
+                    {% for project_running in projects_running_pa %}
+                        {% for articleref in articles %}
+                  	        {% if articleref.id == project_running %}
+                                         
+                                <a href="{{ SITEURL }}/{{ articleref.url }}" style="color: #2196F3;">{{ articleref.title }}</a>
+                                <div class="little-information-line" style="padding-top: 0px;">
+				                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                </div>
+                                        
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
 		        {% endif %}
 
 		        {% if FUNDINGS %}
-		        <br /><br />
+		        <br />
                 <b>Fundings</b><br />
                     {% set fundings_running_pa = FUNDINGS.split('| ') %}                           
                            
@@ -100,7 +112,7 @@
                         {% for articleref in articles %}
                   	        {% if articleref.id == funding_running %}
                                          
-                                <a href="{{ SITEURL }}/{{ articleref.url }}" target="_blank" style="color: #2196F3;">{{ articleref.title }}</a>
+                                <a href="{{ SITEURL }}/{{ articleref.url }}" style="color: #2196F3;">{{ articleref.title }}</a>
                                 <div class="little-information-line" style="padding-top: 0px;">
 				                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
                                 </div>
