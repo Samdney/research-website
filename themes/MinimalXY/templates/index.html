@@ -60,7 +60,7 @@
 		        </p>
 		        {% endif %}
 
-		        <hr />
+		        <hr /> <!-- TODO -->
 		        <b style="font-size: 25px;">Running...</b>
 
 		        {% if TALKS %}
@@ -127,22 +127,6 @@
 		        <b>Crowdfunding Campaigns</b><br />
 			        {{ CROWDFUNDING_CAMPAIGNS }}
 		        </p>
-		        {% endif %}		        
-
-
-                <hr />
-                <b style="font-size: 25px;">Work documentation</b>
-
-                <p>
-                    <b>General docs</b><br />
-                    You can find working notes and plans on my <a href="https://cryptpad.fr/profile/#/2/profile/view/ZGoqJnzLDklP5gYiOFE15ecC8dVMzFSiudqHeTE0Ms4/" title="External: Samdney at Cryptpad" target="_blank" style="color: #2196F3;">Cryptpad</a> profile.
-                </p>
-
-                {% if SCHEDULE %}
-		        <p>
-		        <b>Schedule</b><br />
-			        {{ SCHEDULE }}
-		        </p>
 		        {% endif %}
 
                 <hr />
@@ -153,7 +137,7 @@
                     <!-- </font> -->
                 </p>
 
-                <hr />
+                <hr /> <!-- TODO -->
             </div>
 
             <div class="col02-pages30-index">
@@ -195,6 +179,33 @@
                     {% endif %}
 		        {% endfor %}
                 {% endif %}
+
+		        {% if WORK %}
+		        <br /><br />
+                <b style="font-size: 20px;">Work</b><br />			
+		        {% if WORK_LINKS_EXTERNAL %}
+               	<font style="font-size: 0.8em;">
+                    {% for work in WORK_LINKS_EXTERNAL %}
+                        <a href="{{ work[1] }}" title="External: {{ work[0] }}" target="_blank" style="color: #2196F3;">{{ work[0] }}</a>, 
+                    {% endfor %}
+                    </font>
+             	{% endif %}
+                {% if WORK_LINKS %}
+               	<font style="font-size: 0.8em;">
+                    {% for work in WORK_LINKS %}
+                        <a href="{{ work[1] }}" title="{{ work[0] }}" style="color: #2196F3;">{{ work[0] }}</a>{{ "," if not loop.last }}
+                    {% endfor %}
+                    </font>
+             	{% endif %}
+		        {% endif %}
+
+
+                <br /><br />
+                <b style="font-size: 20px;">Quick link: <a href="{{ COMBSEE_LINK }}" title="External: Combsee.org" target="_blank" style="color: #2196F3;">Combsee.org</a></b><br />
+                <font style="font-size: 0.8em;">
+                    <i>{{ COMBSEE }}</i>
+                </font>
+
 
                 {% if GITHUB_USER %}
                 <br /><br />

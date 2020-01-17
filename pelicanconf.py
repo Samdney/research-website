@@ -97,6 +97,27 @@ ARTICLE = ('Medium', 'Independent mathematical scientist. wat?', 'https://medium
 # Q&A
 #QA = ('Misc', 'B', 'C', 'D', 'E')
 
+# Work
+WORK = " "
+WORK_LINKS_EXTERNAL = (
+    ('General docs', 'https://cryptpad.fr/profile/#/2/profile/view/ZGoqJnzLDklP5gYiOFE15ecC8dVMzFSiudqHeTE0Ms4/'),
+    ('Schedule', 'https://cryptpad.fr/sheet/#/2/sheet/view/ym+olKCrTCwl2MTIOtaRrmzzNyXyh6e8HOCn1xIwKWw/'),
+    ('GitHub', 'https://github.com/Samdney'),
+    ('GitLab', 'https://gitlab.com/Samdney'),
+    ('arXiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C')
+)
+
+WORK_LINKS = (
+    ('Preprints', '/public.html#Preprints'),
+    ('Notes', '/public.html#Notes'),
+    ('Worksheets', '/public.html#Worksheets'),
+    ('Meetups', '/public.html#Meetups')
+)
+
+# Combsee
+COMBSEE = "<font style='color: grey;'>Decentralized search for more privacy.</font><br />A new type of decentralized, privacy preserving, search engine based on its mathematical design."
+COMBSEE_LINK = 'https://www.combsee.org/'
+
 # GitHub
 GITHUB_USER = ('Samdney', 'https://github.com/Samdney')
 GITHUB_LINKS = (
@@ -112,7 +133,6 @@ GITHUB_LINKS = (
 PROJECTS = "project_0055"
 FUNDINGS = "funding_0003"
 CROWDFUNDING_CAMPAIGNS = "GoFundMe.com: <i>Conference Attending Expenses</i> (<a href='https://www.gofundme.com/f/conference-attending-expenses' title='GoFundMe.com: Conference Attending Expenses' target='_blank' style='color: #2196F3;'>visit</a>)"
-SCHEDULE = "My public <a href='/about.html#Schedule' title='Schedule' style='color: #2196F3;'>schedule</a> for my projects and fundings."
 
 # PGP Keys
 SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
