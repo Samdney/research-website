@@ -21,7 +21,7 @@ subject_class:      2010 Mathematics. Primary 11N05.
 keywords:           Distribution, Primes, Structure, Recursion
 pdf:                https://github.com/Samdney/notes/blob/master/notes_0005.pdf
 download:           https://github.com/Samdney/notes/raw/master/notes_0005.pdf
-links:              GitHub, https://github.com/Samdney/notes/tree/master/notes_0005
+links:              GitHub, https://github.com/Samdney/notes-primes05-relationshipbetweennnprime
 links_info:         Source
 abstract:           This notes gives a short overview over the relationship between n̄ and n̄'.
 

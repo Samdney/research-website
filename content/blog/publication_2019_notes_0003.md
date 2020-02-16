@@ -21,7 +21,7 @@ subject_class:      2010 Mathematics. Primary 11N05.
 keywords:           Distribution, Primes, Structure, Recursion
 pdf:                https://github.com/Samdney/notes/blob/master/notes_0003.pdf
 download:           https://github.com/Samdney/notes/raw/master/notes_0003.pdf
-links:              GitHub, https://github.com/Samdney/notes/tree/master/notes_0003
+links:              GitHub, https://github.com/Samdney/notes-primes03-recursionnewapproach
 links_info:         Source
 abstract:           This notes gives a short overview over a new approach for also non-prime times tables and their intersection solutions.
 

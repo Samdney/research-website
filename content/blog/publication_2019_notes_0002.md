@@ -21,7 +21,7 @@ subject_class:      2010 Mathematics. Primary 11N05.
 keywords:           Distribution, Primes, Structure, Recursion
 pdf:                https://github.com/Samdney/notes/blob/master/notes_0002.pdf
 download:           https://github.com/Samdney/notes/raw/master/notes_0002.pdf
-links:              GitHub, https://github.com/Samdney/notes/tree/master/notes_0002
+links:              GitHub, https://github.com/Samdney/notes-primes02-recursionfirststepvalidsol
 links_info:         Source
 abstract:           This notes gives a short overview over the first-recursion-step valid solutions.
 
