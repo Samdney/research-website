@@ -6,7 +6,7 @@ Slug:           keys
 
 <hr />
 
-Last modification: 2019/07/25
+Last modification: 2019/10/22
 
 <h2 id="PGP">PGP</h2>
 * D4A7 35E8 D47F 801F 2CF6 2BA7 927A FD3C DE47 E13B  
