@@ -17,7 +17,7 @@ kind:               Publication
 sub_kind:           Notes
 publish_date:       2020/02/20
 publication_author: Carolin Zöbelein
-subject_class:      ACM Computing Classification. Networks - Network protocol design.
+subject_class:      ACM Computing. Networks - Network protocol design.
 keywords:           Decentralization, Networks, Protocol, Mathematical, Privacy
 pdf:                https://github.com/Samdney/notes/blob/master/notes_0006.pdf
 download:           https://github.com/Samdney/notes/raw/master/notes_0006.pdf
