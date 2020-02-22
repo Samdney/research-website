@@ -104,6 +104,7 @@ WORK_LINKS_EXTERNAL = (
     ('Schedule', 'https://cryptpad.fr/sheet/#/2/sheet/view/ym+olKCrTCwl2MTIOtaRrmzzNyXyh6e8HOCn1xIwKWw/'),
     ('GitHub', 'https://github.com/Samdney'),
     ('GitLab', 'https://gitlab.com/Samdney'),
+    ('ResearchGate', 'https://www.researchgate.net/profile/Carolin_Zoebelein'),
     ('arXiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C')
 )
 
@@ -142,27 +143,29 @@ SOCIAL = (
     ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet'),
     ('Blog', 'fas', 'fa', 'pencil-alt', 'https://Samdney.github.io'),
     ('Medium', 'fab', 'fa', 'medium', 'https://medium.com/@carolinzoebelein'),
-    ('General', 'fas', 'fa', 'globe', 'https://www.carolin-zoebelein.de'),
-    ('Art', 'far', 'fa', 'images', 'https://art.carolin-zoebelein.de'),
     ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney'),
     ('GitLab', 'fab', 'fa', 'gitlab', 'https://gitlab.com/Samdney'),
+    ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein'),
     ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C'),
+    ('General', 'fas', 'fa', 'globe', 'https://www.carolin-zoebelein.de'),
+    ('Art', 'far', 'fa', 'images', 'https://art.carolin-zoebelein.de'),
 )
 
 SOCIAL_SIGNS = (
     ('Twitter', 'fab', 'fa', 'twitter'),
     ('Blog', 'fas', 'fa', 'pencil-alt'),
     ('Medium', 'fab', 'fa', 'medium'),
-    ('General', 'fas', 'fa', 'globe'),
-    ('Art', 'far', 'fa', 'images'),
     ('GitHub', 'fab', 'fa', 'github'),
     ('GitLab', 'fab', 'fa', 'gitlab'),
+    ('ResearchGate', 'ai', 'ai', 'researchgate'),
     ('arXiv', 'ai', 'ai', 'arxiv'),
     ('Website', 'fas', 'fa', 'globe'),
+    ('General', 'fas', 'fa', 'globe'),
+    ('Art', 'far', 'fa', 'images'),
     ('Misc', 'fas', 'fa', 'cat'),
 )
 
-SOCIAL_PAGINATION = 4
+SOCIAL_PAGINATION = 5
 
 #DEFAULT_PAGINATION = 6
 DEFAULT_PAGINATION = False
