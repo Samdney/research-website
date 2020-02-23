@@ -23,7 +23,7 @@
 
         <div style="display: flex; flex-wrap: wrap;">
           <ul class="social" style="flex-grow: 1; padding: 0px;  margin-top: 12px; margin-bottom: 0px;">
-            {% for title, typea, typef, name, link in SOCIAL %}
+            {% for title, typea, typef, name, link, info in SOCIAL %}
             <li style="color: #2196F3; font-size: 18pt;"><a class="sc-{{ name }}" href="{{ link
             }}" title="{{ title }}" target="_blank"><i class="{{ typea }} {{ typef }}-{{ name }}"></i></a></li>
             {% endfor %}
@@ -53,7 +53,7 @@
 
         <div style="display: flex; flex-wrap: wrap;">
           <ul class="social" style="flex-grow: 1; padding: 0px;  margin-top: 12px; margin-bottom: 0px;">
-            {% for title, typea, typef, name, link in SOCIAL %}
+            {% for title, typea, typef, name, link, info in SOCIAL %}
             <li style="color: #2196F3; font-size: 18pt;"><a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank"><i class="{{ typea }} {{ typef }}-{{ name }}"></i></a></li>
             {% endfor %}
           </ul>

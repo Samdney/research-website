@@ -140,15 +140,15 @@ SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 
 # Social
 SOCIAL = (
-    ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet'),
-    ('Blog', 'fas', 'fa', 'pencil-alt', 'https://Samdney.github.io'),
-    ('Medium', 'fab', 'fa', 'medium', 'https://medium.com/@carolinzoebelein'),
-    ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney'),
-    ('GitLab', 'fab', 'fa', 'gitlab', 'https://gitlab.com/Samdney'),
-    ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein'),
-    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C'),
-    ('General', 'fas', 'fa', 'globe', 'https://www.carolin-zoebelein.de'),
-    ('Art', 'far', 'fa', 'images', 'https://art.carolin-zoebelein.de'),
+    ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet','@SamdneyTweet<br /> Tweets and Work updates'),
+    ('Blog', 'fas', 'fa', 'pencil-alt', 'https://Samdney.github.io', 'Mostly math'),
+    ('Medium', 'fab', 'fa', 'medium', 'https://medium.com/@carolinzoebelein', 'Articles'),
+    ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney', '@Samdney<br /> Code, Research Notes, Worksheets, Proposals and Papers'),
+    ('GitLab', 'fab', 'fa', 'gitlab', 'https://gitlab.com/Samdney', '@Samdney<br /> Code, Art Projects, Notes'),
+    ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'Research overview'),
+    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C', 'ePrints and Preprints'),
+    ('General', 'fas', 'fa', 'globe', 'https://www.carolin-zoebelein.de', 'General website'),
+    ('Art', 'far', 'fa', 'images', 'https://art.carolin-zoebelein.de', 'Website about my art work'),
 )
 
 SOCIAL_SIGNS = (
