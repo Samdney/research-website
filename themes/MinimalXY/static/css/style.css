@@ -636,6 +636,36 @@ hr {
 		margin-top: 7.5%;
 		margin-bottom: 7.5%;
 	}
+
+    /* Columns: 20% <-> 80% */
+	.col01-pages20 { 
+		order: 1;
+		width: 20%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.col02-pages80 { 
+		order: 2; 
+		width: 80%;
+        padding: 2%;
+        padding-right: 0%;
+	}
+
+	/* Columns: 80% <-> 20% */
+	.col01-pages80 { 
+		order: 1;
+		width: 80%;
+		padding: 2%;
+        padding-left: 0%;
+	}
+
+	.col02-pages20 { 
+		order: 2; 
+		width: 20%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
 }
 
 /* Desktop */
@@ -725,6 +755,30 @@ hr {
   	}
 
 	.col02-pages30 {
+    	order: 1 ;
+    	width: 100% ;
+  	}
+
+    /* Columns: 20% <-> 80% */
+	.col01-pages20 {
+    	order: 1 ;
+    	width: 100%;
+  	}
+
+	.col02-pages80 {
+    	order: 2 ;
+    	width: 100% ;
+	    padding-bottom: 5%;
+  	}
+
+	/* Columns: 80% <-> 20% */
+	.col01-pages80 {
+    	order: 2 ;
+    	width: 100%;
+	    padding-bottom: 5%;
+  	}
+
+	.col02-pages20 {
     	order: 1 ;
     	width: 100% ;
   	}	
