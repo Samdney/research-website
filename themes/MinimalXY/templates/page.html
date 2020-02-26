@@ -237,18 +237,25 @@
 
                 <div class="col-page-sub w3-container-page-sub">
 
-                    {% if page.projects_ongoing %}
-                  		{% set projects_ongoing_pa = page.projects_ongoing.split('| ') %}                	
+                    <section id="content">
+                        {% if page.internal_links %}
+                            {{ page.internal_links }}
+                        {% endif %}
+                    </section>
+
+
+                    {% if page.projects_running %}
+                  		{% set projects_running_pa = page.projects_running.split('| ') %}                	
 
                         <hr />
                         <section id="content">
-                        <h2 id="OngoingProjects">Ongoing Projects</h2>
+                        <h2 id="Running">Running</h2>
 
                         {% set counter = [0] %}
-                        {% for project_ongoing in projects_ongoing_pa %}
+                        {% for project_running in projects_running_pa %}
 
                             {% for articleref in articles %}
-                  			    {% if articleref.id == project_ongoing %}
+                  			    {% if articleref.id == project_running %}
 
                                     {% if counter[0] % 2 == 0 %}                                  
                                         <div class="two-columns-pages">
@@ -289,10 +296,10 @@
                         <!--
 
                         <ul>
-                        {% for project_ongoing in projects_ongoing_pa %}
+                        {% for project_running in projects_running_pa %}
 
                             {% for articleref in articles %}
-                  			    {% if articleref.id == project_ongoing %}
+                  			    {% if articleref.id == project_running %}
                                   
                                     <li>
                                         <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
@@ -311,6 +318,35 @@
 
 					    </section>
                     {% endif %}
+
+
+                    {% if page.projects_paused %}
+                  		{% set projects_paused_pa = page.projects_paused.split('| ') %}                	
+
+                        <hr />
+                        <section id="content">
+                        <h2 id="Paused">Paused</h2>
+                        <ul>
+                        {% for project_paused in projects_paused_pa %}
+
+                            {% for articleref in articles %}
+                  			    {% if articleref.id == project_paused %}
+                                  
+                                    <li>
+                                        <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
+                                        <div class="little-information-line">
+                                            {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
+                                            {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                        </div>
+                                    </li>
+
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                        </ul>
+					    </section>
+                    {% endif %}
+
 
                     <hr />
                     <section id="content">
