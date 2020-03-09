@@ -1,19 +1,21 @@
 Title:          		Projects
 Date:           		2018/08/01 20:00
 Slug:           		projects
-internal_links:         <code><a href="/projects.html#Running">#Running</a></code> <code><a href="/projects.html#Paused">#Paused</a></code> <code><a href="/projects.html#Upcoming">#Upcoming</a></code> <code><a href="/projects.html#InQueue">#In Queue</a></code> <code><a href="/projects.html#IdeasAndSketches">#IdeasAndSketches</a></code> <code><a href="/projects.html#CommunityBasedResearchAndDevelopment">#Community based Research</a></code>
+internal_links:         <code><a href="/projects.html#Running">#Running</a></code> <code><a href="/projects.html#Paused">#Paused</a></code> <!--<code><a href="/projects.html#Upcoming">#Upcoming</a></code>--> <code><a href="/projects.html#InQueue">#In Queue</a></code> <code><a href="/projects.html#IdeasAndSketches">#IdeasAndSketches</a></code> <code><a href="/projects.html#CommunityBasedResearchAndDevelopment">#Community based Research</a></code>
 projects_running:       project_0058| project_0055| project_0059| project_0056
 projects_paused:        project_0049
 
 
+<!--
 <h2 id="Upcoming">Upcoming</h2>
 
 <p>
 None.
 </p>
+-->
 
 
-<hr />
+<!-- <hr /> -->
 <h2 id="InQueue">In Queue</h2>
 Stuff for which I'm currently doing pre-research, writting work concepts, project- and funding proposals, organizing funding or already have funding but no time to work on and finally projects which have to be more private, for the moment, like my patent application.
 
