@@ -143,6 +143,7 @@ SOCIAL = (
     ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet','@SamdneyTweet<br /> Tweets and Work updates'),
     ('Blog', 'fas', 'fa', 'pencil-alt', 'https://Samdney.github.io', 'Mostly math'),
     ('Medium', 'fab', 'fa', 'medium', 'https://medium.com/@carolinzoebelein', 'Articles'),
+    ('Reddit', 'fab', 'fa', 'reddit', 'https://www.reddit.com/user/CarolinZoebelein', 'Brainstorming forum questions and answers'),
     ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney', '@Samdney<br /> Code, Research Notes, Worksheets, Proposals and Papers'),
     ('GitLab', 'fab', 'fa', 'gitlab', 'https://gitlab.com/Samdney', '@Samdney<br /> Code, Art Projects, Notes'),
     ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'Research overview'),
