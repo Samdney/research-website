@@ -129,6 +129,40 @@
 		        </p>
 		        {% endif %}
 
+
+                {% if WORK %}
+		        <hr />
+                <b style="font-size: 25px;">Publications</b><br />
+                <p>  
+                    You can find a list of my public work on the subpage <a href="/public.html" style="color: #2196F3;">Public</a>.
+                </p>
+                    <!--		
+		            {% if WORK_LINKS_EXTERNAL %}
+                   	<font style="font-size: 0.8em;">
+                        {% for work in WORK_LINKS_EXTERNAL %}
+                            <a href="{{ work[1] }}" title="External: {{ work[0] }}" target="_blank" style="color: #2196F3;">{{ work[0] }}</a>, 
+                        {% endfor %}
+                        </font>
+                 	{% endif %}
+                    {% if WORK_LINKS %}
+                   	<font style="font-size: 0.8em;">
+                        {% for work in WORK_LINKS %}
+                            <a href="{{ work[1] }}" title="{{ work[0] }}" style="color: #2196F3;">{{ work[0] }}</a>{{ "," if not loop.last }}
+                        {% endfor %}
+                        </font>
+                 	{% endif %}
+                    -->
+		        {% endif %}
+
+
+
+
+
+
+
+
+
+
                 <hr />
 		        <b style="font-size: 25px;">Become my Research Angel!</b>
                 <p>
@@ -179,25 +213,6 @@
                     {% endif %}
 		        {% endfor %}
                 {% endif %}
-
-		        {% if WORK %}
-		        <br /><br />
-                <b style="font-size: 20px;">Work</b><br />			
-		        {% if WORK_LINKS_EXTERNAL %}
-               	<font style="font-size: 0.8em;">
-                    {% for work in WORK_LINKS_EXTERNAL %}
-                        <a href="{{ work[1] }}" title="External: {{ work[0] }}" target="_blank" style="color: #2196F3;">{{ work[0] }}</a>, 
-                    {% endfor %}
-                    </font>
-             	{% endif %}
-                {% if WORK_LINKS %}
-               	<font style="font-size: 0.8em;">
-                    {% for work in WORK_LINKS %}
-                        <a href="{{ work[1] }}" title="{{ work[0] }}" style="color: #2196F3;">{{ work[0] }}</a>{{ "," if not loop.last }}
-                    {% endfor %}
-                    </font>
-             	{% endif %}
-		        {% endif %}
 
 
                 <br /><br />
