@@ -146,6 +146,7 @@ SOCIAL = (
     ('Reddit', 'fab', 'fa', 'reddit', 'https://www.reddit.com/user/CarolinZoebelein', 'Brainstorming forum questions and answers'),
     ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney', '@Samdney<br /> Code, Research Notes, Worksheets, Proposals and Papers'),
     ('GitLab', 'fab', 'fa', 'gitlab', 'https://gitlab.com/Samdney', '@Samdney<br /> Code, Art Projects, Notes'),
+    ('Mathoverflow', 'ai', 'ai', 'mathoverflow', 'https://mathoverflow.net/users/147606/samdney?tab=profile', 'Mathematics Q&A'),
     ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'Research overview'),
     ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C', 'ePrints and Preprints'),
     ('General', 'fas', 'fa', 'globe', 'https://www.carolin-zoebelein.de', 'General website'),
@@ -166,7 +167,7 @@ SOCIAL_SIGNS = (
     ('Misc', 'fas', 'fa', 'cat'),
 )
 
-SOCIAL_PAGINATION = 5
+SOCIAL_PAGINATION = 4
 
 #DEFAULT_PAGINATION = 6
 DEFAULT_PAGINATION = False
