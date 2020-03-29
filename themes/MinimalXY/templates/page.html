@@ -39,10 +39,8 @@
                         {% endfor %}
                     </section>
 
-                    <br />
 
 					<section id="content">
-					<font style="color: red;">This site is under construction. The content is incomplete. It will be added, step by step, in the next months.</font>
 					
 					<hr />
 					<!-- TODO: Change: , to | -->
@@ -83,14 +81,25 @@
 					{% set counter = [0] %}
 					{% for research_area in research_areas %}
 
-						{% if counter[0] != 0 %}
+						{% if counter[0] != 0 and  counter[0] != 1 %}
 							<!-- TODO -->
 							<hr style="border-top: dotted 1px; color: blue;" />
 							<!-- TODO -->
 						{% endif %}
 	
+                        
+                        {% if counter[0] == 0 %}
+                            <h2 id="{{ page.research_areas_main_title_id }}">{{ page.research_areas_main }}</h2>
+                            {{ page.research_areas_main_text }}
+                        {% endif %}
+
 						
-						<h2 id="{{ research_areas_title_ids[counter[0]] }}">{{ research_area }}</h2>
+                        {% if counter[0] == 0 or counter[0] == 1 %}
+                            <h3 id="{{ research_areas_title_ids[counter[0]] }}">{{ research_area }}</h3>                            
+                        {% else %}
+                            <h2 id="{{ research_areas_title_ids[counter[0]] }}">{{ research_area }}</h2>
+                        {% endif %}
+						
 					
 						<div class="two-columns-pages-projects">
 
@@ -386,10 +395,10 @@
                     <h2 id="OnlinePresence">Online Presence</h2>
 
                     <div class="social">
-                        You can find <i>daily updates</i> by my handle <i>@SamdneyTweet</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Twitter" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}. From time to time, I write <i>mostly mathematical posts</i> on my {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Blog" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} and more <i>general-, technical- or mathematical articles</i> and <i>status updates</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Medium" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}.<br />
+                        You can find <i>daily updates</i> by my handle <i>@SamdneyTweet</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Twitter" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}. From time to time, I write <i>mostly mathematical posts</i> on my {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Blog" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} and more <i>general-, technical- or mathematical articles</i> and <i>status updates</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Medium" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}. Sometimes, I write random <i>brainstorming forum questions and answers</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Reddit" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}.<br />
                         
                         <br />
-                        I like open access and think research should be as much public as possible. Hence you can find my <i>code, research notes, worksheets, proposals and papers</i> by my handle <i>Samdney</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "GitHub" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} and additional <i>code, art projects and also notes</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "GitLab" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}, too. A <i>research overview</i> related to all my current work can be found on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "ResearchGate" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} and some <i>ePrints and preprints</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "arXiv" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}.<br />               
+                        I like open access and think research should be as much public as possible. Hence you can find my <i>code, research notes, worksheets, proposals and papers</i> by my handle <i>Samdney</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "GitHub" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} and additional <i>code, art projects and also notes</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "GitLab" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}, too. I like to <i>discuss math questions</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Mathoverflow" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}.<br /> A <i>research overview</i> related to all my current work can be found on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "ResearchGate" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} and some <i>ePrints and preprints</i> on {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "arXiv" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %}.<br />               
 
                         <br />
                         If you are interested in learning more about me apart from research, you can find some <i>general information</i> on my {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "General" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} website and about my <i>art work</i> on my {% if SOCIAL %}{% for title, typea, typef, name, link, info in SOCIAL %}{% if title == "Art" %}<i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>{% endif %}{% endfor %}{% endif %} website, too. 
