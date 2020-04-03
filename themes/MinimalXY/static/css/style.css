@@ -451,6 +451,14 @@ hr {
         margin-left: 1.5%;
         margin-right: 0;
 	}
+
+    .research-angel-sponsor-index {
+        order: 1; 
+		width: 41.3%;
+        background-color: #00439c;
+        margin-left: 29.35%;
+        margin-right: 29.35%;
+    }
 }
 
 /* Desktop */
@@ -556,6 +564,13 @@ hr {
 		width: 100%;
         margin-bottom: 5px;
 	}
+
+    .research-angel-sponsor-index {
+        order: 1; 
+		width: 100%;
+        background-color: #00439c;
+        margin-bottom: 5px;
+    }
 }
 
 /* Mobile */
