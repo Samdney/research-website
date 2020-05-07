@@ -11,6 +11,7 @@ grants_running: funding_0003
 <!-- <code><a href="/funding.html#SupportedBy">\#Supported By</a></code> -->
 
 
+<!--
 <hr />
 <h2 id="Crowdfunding">Crowdfunding</h2>
 
@@ -20,6 +21,7 @@ grants_running: funding_0003
         GoFundMe.com: <i>Conference Attending Expenses</i> (<a href="https://www.gofundme.com/f/conference-attending-expenses" title="GoFundMe.com: Conference Attending Expenses" target="_blank">visit</a>)
     </li>
 </ul>
+-->
 
 <hr />
 <h2 id="DirectDonations">Direct Donations</h2>
