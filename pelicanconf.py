@@ -141,7 +141,7 @@ SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 # Social
 SOCIAL = (
     ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet','@SamdneyTweet<br /> Tweets and Work updates'),
-    ('Blog', 'fas', 'fa', 'pencil-alt', 'https://Samdney.github.io', 'Mostly math'),
+    ('Blog', 'fas', 'fa', 'pencil-alt', 'https://blog.carolin-zoebelein.de', 'Mostly math'),
     ('Medium', 'fab', 'fa', 'medium', 'https://medium.com/@carolinzoebelein', 'Articles'),
     ('Reddit', 'fab', 'fa', 'reddit', 'https://www.reddit.com/user/CarolinZoebelein', 'Brainstorming forum questions and answers'),
     ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney', '@Samdney<br /> Code, Research Notes, Worksheets, Proposals and Papers'),
