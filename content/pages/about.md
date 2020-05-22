@@ -95,7 +95,7 @@ Slug:           about
 </p>
 
 <p>
-For information about my work, have a look at my GitHub account <a href="https://github.com/Samdney" target="_blank">https://github.com/Samdney</a> and my blog <a href="https://Samdney.github.io/" target="_blank">https://Samdney.github.io/</a>.
+For information about my work, have a look at my GitHub account <a href="https://github.com/Samdney" target="_blank">https://github.com/Samdney</a> and my blog <a href="https://blog.carolin-zoebelein.de/" target="_blank">https://blog.carolin-zoebelein.de/</a>.
 </p>
 
 <hr />
