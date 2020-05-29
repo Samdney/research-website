@@ -182,7 +182,12 @@
 		            {% if title == STATUS_REPORT[0] %}
 
                     <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ STATUS_REPORT[2] }}" title="External: {{ STATUS_REPORT[1] }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ STATUS_REPORT[1] }}</b></a>, <font style="font-size: 0.8em; color: grey;">{{ STATUS_REPORT[3] }}</font><br />
-                    <font style="font-size: 0.8em;"><i>{{ STATUS_REPORT[4] }}</i></font>
+                    <font style="font-size: 0.8em;"><i>{{ STATUS_REPORT[4] }}</i></font><br />
+
+		            <font style="font-size: 0.8em;">
+                        ---<br/>
+                        For all status reports see also <a href="https://blog.carolin-zoebelein.de/tag/status-report.html" title="External: Blog tag status report" target="_blank" style="color: #2196F3;">Blog tag: status report</a>
+                    </font>
 
                     {% endif %}
 		        {% endfor %}
