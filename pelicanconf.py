@@ -148,7 +148,8 @@ SOCIAL = (
     ('GitLab', 'fab', 'fa', 'gitlab', 'https://gitlab.com/Samdney', '@Samdney<br /> Code, Art Projects, Notes'),
     ('Mathoverflow', 'ai', 'ai', 'mathoverflow', 'https://mathoverflow.net/users/147606/samdney?tab=profile', 'Mathematics Q&A'),
     ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'Research overview'),
-    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C', 'ePrints and Preprints'),
+    #('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C', 'ePrints and Preprints'),
+    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'ePrints and Preprints'),
     ('General', 'fas', 'fa', 'globe', 'https://www.carolin-zoebelein.de', 'General website'),
     ('Art', 'far', 'fa', 'images', 'https://art.carolin-zoebelein.de', 'Website about my art work'),
 )
