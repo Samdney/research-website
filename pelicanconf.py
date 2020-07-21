@@ -105,7 +105,8 @@ WORK_LINKS_EXTERNAL = (
     ('GitHub', 'https://github.com/Samdney'),
     ('GitLab', 'https://gitlab.com/Samdney'),
     ('ResearchGate', 'https://www.researchgate.net/profile/Carolin_Zoebelein'),
-    ('arXiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C')
+    #('arXiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C')
+    ('arXiv', 'https://arxiv.org/a/zobelein_c_1.html')
 )
 
 WORK_LINKS = (
