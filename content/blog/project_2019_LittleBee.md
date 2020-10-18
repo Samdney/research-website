@@ -1,4 +1,4 @@
-title:      						LittleBee
+title:      						LittleBee [on hold since Corona]
 id:                 				project_0056
 date:       						2019/11/01 10:00
 category:		    				Project
@@ -8,7 +8,7 @@ author:     						Carolin Zöbelein
 slug_dir:           				Projects
 slug_subdir:        				2019
 slug:       						LittleBee
-index_title:						LittleBee
+index_title:						LittleBee [on hold since Corona]
 index_image:        				/images/projects/LittleBee.png
 index_summary:						LittbleBee is a Python based research library for decentralized Machine Learning (ML)
 sum_image:							/images/projects/LittleBee.png

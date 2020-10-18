@@ -1,4 +1,4 @@
-title:      						Prior Knowledge MLT
+title:      						Prior Knowledge MLT [on hold since Corona]
 id:                 				project_0059
 date:       						2020/03/01 10:00
 category:		    				Project
@@ -8,7 +8,7 @@ author:     						Carolin Zöbelein
 slug_dir:           				Projects
 slug_subdir:        				2020
 slug:       						Prior-Knowledge-MLT
-index_title:						Prior Knowledge MLT
+index_title:						Prior Knowledge MLT [on hold since Corona]
 index_image:        				/images/projects/PriorKnowledgeMLT.png
 index_summary:                      Prior Knowledge Machine Learning Translation (MLT) uses advanced mathematical descriptions for language groups to reduce maximal error bounds and the number of free parameters of machine learning based translation.
 sum_image:							/images/projects/PriorKnowledgeMLT.png
