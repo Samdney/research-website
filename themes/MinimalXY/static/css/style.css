@@ -896,6 +896,10 @@ ul.social li a:hover {
   margin-right: auto;
   padding: 16px;
   max-width: 1100px;
+
+  /* TODO: FIXED MENUE */
+  /*position: fixed;*/
+  /*top: 0;*/
 }
 
 #header-logo {
