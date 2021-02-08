@@ -36,6 +36,9 @@ system for online money transfers.
 <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+Alternatively, you can use my <a href="https://www.paypal.com/paypalme/CarolinZoebelein" title="External: PayPal.me" target="_blank">PayPal.me link</a>, which you can also send to friends!
+
+
 <h3>Bitcoin</h3>
 Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or administrator. Please use the following address:  
 <i class="cryptocurr-addr">3QtQTQHt1kQ4QQz5wqYwmsQ2QR5YwFwZQ6 (<a href="/qrcodes/crowdfunding_bitcoin.png" title="Crowdfunding - Bitcoin: QR-Code" target="_blank">QR-Code</a>)</i>
