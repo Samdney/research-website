@@ -94,6 +94,11 @@ hr {
 
   .little-information-keys-sigs {
         font-size: 10px;
+  }
+
+  .little-information-bank-accounts {
+        background-color: gainsboro;
+        font-size: 0.8em;
   }	
 
   .index-image {
@@ -120,6 +125,11 @@ hr {
 
      .little-information-keys {
         font-size: 6px;
+    }
+
+     .little-information-bank-accounts {
+        background-color: gainsboro;
+        font-size: 0.8em;
     }
 
      .little-information-keys-sigs {

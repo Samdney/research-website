@@ -2,10 +2,10 @@
 User-agent: *
 Disallow: /
 
-User-agent: Googlebot
-Allow: /about.html
-Allow: /funding.html
+User-agent: *
 Allow: /index.html
+Allow: /about.html
+Allow: /research.html
 Allow: /projects.html
 Allow: /public.html
 Allow: /Projects/

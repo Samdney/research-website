@@ -50,9 +50,119 @@ enhanced privacy for its users. Please use the following address:
 
 <h3>Bank transfer</h3>
 You can send me money by bank transfer in EUR, USD and GBP to an Europe based bank account.  
-An US based bank account is available for donations from the US, too.  
-Contact me for bank information.  
-*Personal note:* Please use other ways for donations if possible. I don't want to know your personal data ;).
+An US based bank account is available for donations from the US and an UK based bank account is available for donations from the UK, too.<br />
+If you have problems with the writing of the German spelling of my surname <i>Zöbelein</i>, instead, you can also write <i>Zoebelein</i>.
+
+
+<code style="font-size: 0.8em;">EUR from EU/SEPA</code>
+
+<div class="little-information-bank-accounts">
+<pre>
+<div class="three-columns" style="margin-top: -3%; margin-bottom: -5%;">
+
+<div class="three-col01">
+<b>Account owner</b>
+Carolin Zöbelein
+
+<b>BIC</b>
+TRWIBEB1XXX
+</div>
+
+<div class="three-col02">
+<b>IBAN</b>
+BE46 9670 6380 3936
+</div>
+
+<div class="three-col03">
+<b>Address</b>
+TransferWise Europe SA
+Avenue Louise 54, Room S52
+Brussels
+1050
+Belgium
+</div>
+
+</div>
+
+</pre>
+</div>
+
+
+
+<br />
+<code style="font-size: 0.8em;">USD from USA</code><br />
+
+<div class="little-information-bank-accounts">
+<pre>
+<div class="three-columns" style="margin-top: -3%; margin-bottom: -5%;">
+
+<div class="three-col01">
+<b>Account owner</b>
+Carolin Zöbelein
+
+<b>ACH Routing-number</b>
+026073150
+</div>
+
+<div class="three-col02">
+<b>Account number</b>
+8310139606
+
+<b>Account type</b>
+Checking
+</div>
+
+<div class="three-col03">
+<b>Address</b>
+TransferWise
+19 W 24th Street
+New York NY 10010
+United States
+</div>
+
+</div>
+
+</pre>
+</div>
+
+
+<br />
+<code style="font-size: 0.8em;">GBP from UK</code>
+
+<div class="little-information-bank-accounts">
+<pre>
+<div class="three-columns" style="margin-top: -3%; margin-bottom: -5%;">
+
+<div class="three-col01">
+<b>Account owner</b>
+Carolin Zöbelein
+
+<b>Sort code</b>
+23-14-70
+</div>
+
+<div class="three-col02">
+<b>Account number</b>
+91180086
+
+<b>IBAN</b>
+GB98 TRWI 2314 7091 1800 86
+</div>
+
+<div class="three-col03">
+<b>Address</b>
+TransferWise
+56 Shoreditch High Street
+London
+E1 6JJ
+United Kingdom
+</div>
+
+</div>
+
+</pre>
+</div>
+
 
 <hr />
 <h2 id="Membership">Membership</h2>
