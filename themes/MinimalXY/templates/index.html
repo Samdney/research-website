@@ -175,6 +175,18 @@
 
 
             <div class="col02-pages30-index">
+
+                {% if RESEARCH %}
+                <b style="font-size: 20px;">Bibliographies</b><br />
+                {% for title, typea, typef, name, link, info in RESEARCH %}
+
+                    <font style="font-size: 1em;"> <!-- 0.8em -->
+                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="External: {{ title }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br />
+                    </font>
+
+                {% endfor %}
+                <br />
+                {% endif %}
         
                 {% if STATUS_REPORT %}
                 <b style="font-size: 20px;">Status Report</b><br />
