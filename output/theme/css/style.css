@@ -88,6 +88,10 @@ hr {
         font-size: 14px;
   }
 
+  .little-information-bib {
+        font-size: 14px;
+  }
+
   .little-information-keys {
         font-size: 12px;
   }
@@ -119,6 +123,11 @@ hr {
         margin-left: 5%;
     }
       .little-information-line {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+
+    .little-information-bib {
         font-size: 14px;
         margin-top: 2px;
     }

@@ -462,57 +462,56 @@
                     <hr />
 
                     <section id="content">
-                    <h2 id="Bibliography">Bibliography</h2>
-    
-                    <h3 id="Preprints">Preprint</h3> <!-- TODO: 's -->
-		    <!--<p><i>The pdf versions of my papers are also available on <a href="https://github.com/Samdney/papers" title="External: Github - Papers" target="_blank">https://github.com/Samdney/papers</a>.</i></p>-->
-                    <ul>
-                    {% for article in articles %}
-                        {% if article.kind == "Publication" %}
-                            {% if article.sub_kind == "Preprint" %}
-                                <li>
-                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                                <div class="little-information-line">
-				    {% if article.sum_content %}{{ article.sum_content }}<br />{% endif %}
-                                    {{ article.publication_author }}{% if article.publish_date %}, {{ article.publish_date }}{% endif %}{% if article.subject_class %}, Subject class: {{ article.subject_class }}{% endif %}{% if article.arxiv %}, arXiv:{{ article.arxiv }}{% endif %}{% if article.id %}, id: {{ article.id }}{% endif %}{% if article.pdf %}, <a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>{% endif %}
-                                </div>
-                                </li>
-                            {% endif %}   
-                        {% endif %}
-                    {% endfor %}
-                    </ul>
+                    <h2 id="Bibliography">Bibliography</h2> <!-- TODO -->
 
-		            <h3 id="Thesis">Thesis</h3>
-                    <ul>
-                    {% for article in articles %}
-                        {% if article.kind == "Publication" %}
-                            {% if article.sub_kind == "Thesis" %}
-                                <li>
-                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                                <div class="little-information-line">
-				    {% if article.sum_content %}{{ article.sum_content }}<br />{% endif %}
-                                    {{ article.publication_author }}{% if article.publish_date %}, {{ article.publish_date }}{% endif %}{% if article.subject_class %}, Subject class: {{ article.subject_class }}{% endif %}{% if article.arxiv %}, arXiv:{{ article.arxiv }}{% endif %}{% if article.id %}, id: {{ article.id }}{% endif %}{% if article.pdf %}, <a href="{{ article.pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>{% endif %}
-                                </div>
-                                </li>
-                            {% endif %}   
-                        {% endif %}
-                    {% endfor %}
-                    </ul>
+                    <ol reversed>
+                    {% if BIBLIOGRAPHY %}
+                        {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
 
-                    <h3 id="Proposals">Proposals</h3>
-                    <p>
-                    Section in progress... :). (Last change: 2020/07/21)
-                     <ul>
-                        <li>
-                            BlueTransience
-                            <div class="little-information-line">
-				                A Bluetooth based, short memory, social media mobile network app.<br />
-                                Carolin Zöbelein, 2020/07/12, Status: Just an idea<br />
-                                <a href="https://github.com/Samdney/proposal-bluetransience" title="External: BlueTransience" target="_blank">https://github.com/Samdney/proposal-bluetransience</a>, <a href="https://github.com/Samdney/proposals/blob/master/proposal_0020.pdf" title="External: BlueTransience" target="_blank">pdf</a>
-                            </div>
-                        </li>
-                    </ul>
-                    </p>
+                            <li>
+                                {% if title != '' %}<b>{{ title }}</b>
+                                    <font style="font-size: 14px;"> <!-- TODO: font-size: 12px -->
+                                        {% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
+                                        {% if subjects != '' %}, {{ subjects }}{% endif %}
+                                        {% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}<br /> <!-- TODO -->
+                                    </font>
+                                {% endif %}
+
+                                <div class="little-information-line">
+                                    <!-- {% if sum != '' %}{{ sum }}<br />{% endif %} -->
+                                    {% if publication != '' %}
+                                        {{ publication }} 
+                                            {% if publicationlink != '' %}
+                                                <a href="{{ publicationlink }}" title="External: Publication site" target="_blank"><i class="fas fa-external-link-alt" style="font-size: 10px;"></i></a>
+                                            {% endif %}
+                                        <br />
+                                        {% endif %}
+
+                                    <!--{% if keywords != '' %}, {{ keywords }}{% endif %}-->
+                                    <!-- author, keywords, year, related, id -->
+
+                                    {% if author != '' %}{{ author }}{% endif %}
+                                    {% if year != '' %}, {{ year }}{% endif %}
+                                    {% if related != '' %}, {{ related }}{% endif %}
+                                    {% if id != '' %}, id: {{ id }}{% endif %}<br />
+
+
+                                    {% if doi != '' %}doi: <a href="{{ doi }}" title="External: Doi - Publication site" target="_blank">{{ doi }}</a><br />{% endif %}
+
+                                    {% if preprint != '' %}Preprint: <a href="{{ preprint }}" title="External: Preprint site" target="_blank">{{ preprint }}</a><br />{% endif %}
+
+                                    {% if latex != '' %}LaTeX: <a href="{{ latex }}" title="External: LaTeX" target="_blank">{{ latex }}</a><br />{% endif %}
+
+                                    {% if source != '' %}Source: <a href="{{ source }}" title="External: Source" target="_blank">{{ source }}</a><br />{% endif %}
+
+                                    {% if misc != '' %}{{ misc }}<br />{% endif %}                   
+                                </div>
+                            </li> 
+
+                        {% endfor %}
+                    {% endif %}
+                    </ol>
+
 
                     <hr />
 
@@ -531,8 +530,6 @@
                             <div class="little-information-line">
                                 Carolin Zöbelein, 2020/09/06, <a href="https://github.com/Samdney/notes-3sum/blob/master/notes-3sum.pdf" title="External: Notes: A 3SUM algorithm on the binary addition level of atomic generated real numbers"" target="_blank">pdf</a>                                </div>
                         </li>
-
-
 
 
                     {% for article in articles %}

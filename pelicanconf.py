@@ -5,6 +5,12 @@ from datetime import date
 from datetime import time
 from datetime import datetime
 
+import os
+import sys
+
+sys.path.append(os.curdir)
+from bibliography import *
+
 
 AUTHOR = u'Carolin Zöbelein'
 AUTHOR_AVATAR = u'/images/zoebelein_avatar.png'
