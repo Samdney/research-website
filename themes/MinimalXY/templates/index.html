@@ -177,11 +177,13 @@
             <div class="col02-pages30-index">
 
                 {% if RESEARCH %}
-                <b style="font-size: 20px;">Bibliographies</b><br />
+                <b style="font-size: 20px;">Bibliography</b><br />
+                <!-- <b style="font-size: 20px;">Bibliographies</b><br /> --> <!-- TODO -->
                 {% for title, typea, typef, name, link, info in RESEARCH %}
 
                     <font style="font-size: 1em;"> <!-- 0.8em -->
-                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="External: {{ title }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br />
+                        <!-- <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="External: {{ title }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br /> --> <!-- TODO -->
+                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br /> <!-- TODO: External removed, target blank removed -->
                     </font>
 
                 {% endfor %}
