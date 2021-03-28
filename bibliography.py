@@ -17,6 +17,7 @@ from datetime import datetime
 BIBLIOGRAPHY = (
     #('nb', 'title', 'sum', 'author', 'date', 'year', 'kind', 'keywords', 'subjectclass', 'subjects', 'publication', 'publicationlink', 'preprint', 'latex', 'source', 'pdf', 'related', 'misc', 'doi', 'id'),
 
+    ('5', 'Dynamical decomposition by clique separators on hypergraphs', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', ''),
 
     ('4', 'Primitive data structures for the 3SUM and k-SUM problem', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', 'Submitted to journal', '', '', '', '', '', '', '', '', ''),
 
