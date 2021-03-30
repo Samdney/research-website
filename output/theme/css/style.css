@@ -72,6 +72,28 @@ hr {
 }
 
 
+
+/* TODO */
+/*
+ol {
+  list-style-type: none;
+  counter-reset: item 10;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+ol>li {
+  counter-increment: item -1;
+}
+
+ol>li:before {
+  content: "[" counter(item) "]";
+  padding-right: 10px;
+}
+*/
+
+
+
 /* Classes */
 /* Desktop old: min-width: 630px */
 /* Mobile old: max-width: 629px */
