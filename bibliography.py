@@ -7,7 +7,6 @@ from datetime import datetime
 
 
 # TODO: related: Works, Project(s), Funding/Grants, Talks, ...
-# TODO: Entry ankers
 # TODO: bib entries numberings brackets
 
 # TODO: Add missing entry information

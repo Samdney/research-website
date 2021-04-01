@@ -430,7 +430,7 @@
                     {% if BIBLIOGRAPHY %}
                         {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
 
-                            <li>
+                            <li id="bib{{ nb }}">
                                 {% if title != '' %}<b>{{ title }}</b>
                                     <font style="font-size: 14px;"> <!-- TODO: font-size: 12px -->
                                         {% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
