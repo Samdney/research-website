@@ -130,6 +130,22 @@
 		        {% endif %}
 
 
+                <!--
+                {% if ARTICLE %}
+                <hr />
+                <b style="font-size: 25px;">Article</b><br />
+                {% for title, typea, typef, name in SOCIAL_SIGNS %}
+		            {% if title == ARTICLE[0] %}
+
+                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ ARTICLE[2] }}" title="External: {{ ARTICLE[1] }}" target="_blank" style="color: #2196F3;"> <b>{{ ARTICLE[1] }}</b></a>, <font style="color: grey;">{{ ARTICLE[3] }}</font><br />
+                    <font><i>{{ ARTICLE[4] }}</i></font>
+
+                    {% endif %}
+		        {% endfor %}
+                {% endif %}
+                -->
+
+
                 {% if WORK %}
 		        <hr />
                 <b style="font-size: 25px;">Publications</b><br />
@@ -221,6 +237,7 @@
 		        {% endfor %}
                 {% endif %}           
 
+
                 {% if ARTICLE %}
                 <br /><br />
                 <b style="font-size: 20px;">Article</b><br />
@@ -233,6 +250,7 @@
                     {% endif %}
 		        {% endfor %}
                 {% endif %}
+
 
                 {% if QA %}
                 <br /><br />
