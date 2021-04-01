@@ -408,12 +408,44 @@
 
                     <div class="social">
                         {% if SOCIAL %}
-                        {% for title, typea, typef, name, link, info in SOCIAL %}
-                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>
-                        {% if loop.index != loop.length %}
-                        | 
-                        {% endif %}
-                        {% endfor %}
+
+                            Social and Writing:<br />
+
+                            <!-- TODO: Also still in SOCIAL: Github, Mathoverflow, ResearchGate, arXiv -->
+                            {% for title, typea, typef, name, link, info in SOCIAL %}
+                                {% if title != 'GitHub' and title != 'Mathoverflow' and title != 'ResearchGate' and title != 'arXiv' %}
+                                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>
+                                    {% if loop.index != loop.length %}
+                                    | 
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}                    
+                    </div>
+
+                    <div class="social">
+                        {% if RESEARCH %}
+
+                            <br />
+
+                            Research:<br />
+
+                            {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
+                                {% if external == 'true' %}
+
+                                    {% if loop.index != 1 %} <!-- TODO -->
+                                    |
+                                    {% endif %}
+
+                                    <i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank">{{ title }}</a>
+
+                                    <!-- TODO
+                                    {% if loop.index != loop.length %}
+                                    | 
+                                    {% endif %}
+                                    -->
+                                {% endif %}
+                            {% endfor %}
                         {% endif %}                    
                     </div>
 

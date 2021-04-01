@@ -171,7 +171,16 @@ RESEARCH = (
     ('irb', 'Bibliography', 'fas', 'fa', 'globe', '/public.html#Bibliography', 'Jump to Bibliography', 'false'),
 #    ('', 'ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'ResearchGate: Carolin_Zoebelein', 'true'),
     ('irp', 'Open Science Framework (OSF)', 'ai', 'ai', 'osf', 'https://osf.io/d64bs/', 'OSF: osf.io/d64bs', 'true'),
-    ('irp', 'Projects', 'fas', 'fa', 'globe', '/projects.html', 'Jump to Projects', 'false')
+    ('irp', 'Projects', 'fas', 'fa', 'globe', '/projects.html', 'Jump to Projects', 'false'),
+    
+    # TODO: Also still in SOCIAL: Github, Mathoverflow, ResearchGate, arXiv
+    ('', 'GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney', 'GitHub: Samdney', 'true'),
+    ('', 'Mathoverflow', 'ai', 'ai', 'mathoverflow', 'https://mathoverflow.net/users/147606/samdney?tab=profile', 'Mathoverflow: users/147606/samdney', 'true'),
+    ('', 'ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'ResearchGate: Carolin_Zoebelein', 'true'),
+    ('', 'arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'arXiv: zobelein_c_1', 'true'),
+
+    # TODO: Authorea
+    ('', 'Authorea', 'fas', 'fa', 'edit', 'https://www.authorea.com/users/402885', 'Authorea: users/402885', 'true')
 )
 
 SOCIAL_SIGNS = (
