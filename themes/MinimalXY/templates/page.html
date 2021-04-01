@@ -422,6 +422,43 @@
                     <hr />
 
                     <section id="content">
+                    <h2 id="Projects">Projects</h2> <!-- TODO -->
+
+                        {% if RESEARCH %} <!-- TODO -->
+
+                            I'm a fan of open science, hence you can find a list of my public projects and belonging content on:<br />
+
+                            {% for kind, title, typea, typef, name, link, info, external in RESEARCH %} <!-- TODO -->
+                                {% if name == 'osf' %} <!-- TODO -->
+
+                                    <font style="font-size: 1em;"> <!-- 0.8em -->
+                                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br />
+                                    </font>
+
+                                {% endif %}
+                            {% endfor %}
+
+
+                            {% if SOCIAL %} <!-- TODO -->
+
+                            {% for title, typea, typef, name, link, info in SOCIAL %} <!-- TODO -->
+                                {% if title == 'GitHub' %} <!-- TODO -->
+
+                                    <font style="font-size: 1em;">
+                                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"><b>{{ info }}</b></a><br />
+                                    </font>        
+    
+                                {% endif %}
+                            {% endfor %}
+                            {% endif %}
+
+                        {% endif %}
+
+                    </section>
+
+                    <hr />
+
+                    <section id="content">
                     {% if BIBLIOGRAPHY %}
                     <h2 id="Bibliography">Bibliography</h2> <!-- TODO -->
 
