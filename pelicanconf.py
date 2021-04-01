@@ -156,15 +156,16 @@ SOCIAL = (
     ('Mathoverflow', 'ai', 'ai', 'mathoverflow', 'https://mathoverflow.net/users/147606/samdney?tab=profile', 'Mathematics Q&A'),
     ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'Research overview'),
     #('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/search/?searchtype=author&query=Z%C3%B6belein%2C+C', 'ePrints and Preprints'),
-    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'ePrints and Preprints'),
+    #('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'ePrints and Preprints'),
+    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'arXiv: zobelein_c_1'),
     ('General', 'fas', 'fa', 'globe', 'https://www.carolin-zoebelein.de', 'General website'),
     ('Art', 'far', 'fa', 'images', 'https://art.carolin-zoebelein.de', 'Website about my art work'),
 )
 
 RESEARCH = (
 #    ('', 'ResearcherID', 'ai', 'ai', 'researcherid', 'https://publons.com/researcher/1821403/carolin-zobelein/','ResearcherID: W-8129-2018', 'true'),
-#    ('', 'ORCID-iD', 'ai', 'ai', 'orcid', 'https://orcid.org/0000-0001-5608-1880', 'https://orcid.org/0000-0001-5608-1880', 'true'),
-#    ('', 'Google-Scholar', 'ai', 'ai', 'google-scholar', 'https://scholar.google.de/citations?user=8r4VsJQAAAAJ', 'Google Scholar: 8r4VsJQAAAAJ', 'true'),
+    ('pbb', 'ORCID-iD', 'ai', 'ai', 'orcid', 'https://orcid.org/0000-0001-5608-1880', 'https://orcid.org/0000-0001-5608-1880', 'true'),
+    ('pbb', 'Google-Scholar', 'ai', 'ai', 'google-scholar', 'https://scholar.google.de/citations?user=8r4VsJQAAAAJ', 'Google Scholar: 8r4VsJQAAAAJ', 'true'),
 #    ('', 'arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'arXiv: zobelein_c_1', 'true'),
     ('irb', 'Bibliography', 'fas', 'fa', 'globe', '/public.html#Bibliography', 'Jump to Bibliography', 'false'),
 #    ('', 'ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'ResearchGate: Carolin_Zoebelein', 'true'),
