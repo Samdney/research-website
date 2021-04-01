@@ -179,14 +179,28 @@
                 {% if RESEARCH %}
                 <b style="font-size: 20px;">Bibliography</b><br />
                 <!-- <b style="font-size: 20px;">Bibliographies</b><br /> --> <!-- TODO -->
-                {% for title, typea, typef, name, link, info in RESEARCH %}
+                {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
+                    {% if kind == 'irb' %}
 
-                    <font style="font-size: 1em;"> <!-- 0.8em -->
-                        <!-- <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="External: {{ title }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br /> --> <!-- TODO -->
-                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br /> <!-- TODO: External removed, target blank removed -->
-                    </font>
+                        <font style="font-size: 1em;"> <!-- 0.8em -->
+                            <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br />
+                        </font>
 
+                    {% endif %}
                 {% endfor %}
+
+                <br />
+
+                <b style="font-size: 20px;">Projects</b><br />
+                {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
+                    {% if kind == 'irp' %}
+
+                        <font style="font-size: 1em;"> <!-- 0.8em -->
+                            <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br />
+
+                    {% endif %}
+                {% endfor %}
+
                 <br />
                 {% endif %}
         

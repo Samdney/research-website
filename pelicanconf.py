@@ -162,12 +162,14 @@ SOCIAL = (
 )
 
 RESEARCH = (
-#    ('ResearcherID', 'ai', 'ai', 'researcherid', 'https://publons.com/researcher/1821403/carolin-zobelein/','ResearcherID: W-8129-2018'),
-#    ('ORCID-iD', 'ai', 'ai', 'orcid', 'https://orcid.org/0000-0001-5608-1880', 'https://orcid.org/0000-0001-5608-1880'),
-#    ('Google-Scholar', 'ai', 'ai', 'google-scholar', 'https://scholar.google.de/citations?user=8r4VsJQAAAAJ', 'Google Scholar: 8r4VsJQAAAAJ'),
-#    ('arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'arXiv: zobelein_c_1'),
-    ('Bibliography', 'fas', 'fa', 'globe', '/public.html#Bibliography', 'Jump to Bibliography'),
-#    ('ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'ResearchGate: Carolin_Zoebelein'),
+#    ('', 'ResearcherID', 'ai', 'ai', 'researcherid', 'https://publons.com/researcher/1821403/carolin-zobelein/','ResearcherID: W-8129-2018', 'true'),
+#    ('', 'ORCID-iD', 'ai', 'ai', 'orcid', 'https://orcid.org/0000-0001-5608-1880', 'https://orcid.org/0000-0001-5608-1880', 'true'),
+#    ('', 'Google-Scholar', 'ai', 'ai', 'google-scholar', 'https://scholar.google.de/citations?user=8r4VsJQAAAAJ', 'Google Scholar: 8r4VsJQAAAAJ', 'true'),
+#    ('', 'arXiv', 'ai', 'ai', 'arxiv', 'https://arxiv.org/a/zobelein_c_1.html', 'arXiv: zobelein_c_1', 'true'),
+    ('irb', 'Bibliography', 'fas', 'fa', 'globe', '/public.html#Bibliography', 'Jump to Bibliography', 'false'),
+#    ('', 'ResearchGate', 'ai', 'ai', 'researchgate', 'https://www.researchgate.net/profile/Carolin_Zoebelein', 'ResearchGate: Carolin_Zoebelein', 'true'),
+    ('irp', 'Open Science Framework (OSF)', 'ai', 'ai', 'osf', 'https://osf.io/d64bs/', 'OSF: osf.io/d64bs', 'true'),
+    ('irp', 'Projects', 'fas', 'fa', 'globe', '/projects.html', 'Jump to Projects', 'false')
 )
 
 SOCIAL_SIGNS = (
