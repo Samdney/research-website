@@ -409,7 +409,7 @@
                     <div class="social">
                         {% if SOCIAL %}
 
-                            Social and Writing:<br />
+                            Social, Writing and General:<br />
 
                             <!-- TODO: Also still in SOCIAL: Github, Mathoverflow, ResearchGate, arXiv -->
                             {% for title, typea, typef, name, link, info in SOCIAL %}
@@ -430,7 +430,7 @@
 
                             Research:<br />
 
-                            {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
+                            {% for kind, title, typea, typef, name, link, info, external in RESEARCH %} <!-- TODO: font size icon: Authorea -->
                                 {% if external == 'true' %}
 
                                     {% if loop.index != 1 %} <!-- TODO -->
@@ -507,13 +507,26 @@
 
                                 {% endif %}
                             {% endfor %}
+    
+                            <!-- TODO -->
+                            Preprints and Proposals:<br />
+                            {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
+                                {% if title == 'arXiv' or title == 'Authorea' %}
 
+                                    <font style="font-size: 1em;"> <!-- 0.8em --> <!-- TODO: font size icon: Authorea -->
+                                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a>{% if title == 'arXiv' %} | {% endif %} <!-- TODO: | separator -->
+                                    </font>
+
+                                {% endif %}
+                            {% endfor %}
+
+                            <br />
 
                         <!-- TODO -->
                         <!--
                         {% if SOCIAL %}
 
-                            Preprints:<br />
+                            Preprints and Proposals:<br />
 
                             {% for title, typea, typef, name, link, info in SOCIAL %}
                                 {% if title == 'arXiv' %}
