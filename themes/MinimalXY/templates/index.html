@@ -192,6 +192,29 @@
 
             <div class="col02-pages30-index">
 
+
+                {% if AFFILIATIONS %}
+                <b style="font-size: 20px;">Affiliations</b><br />
+                {% for affiliation, typea, typef, name, link, kind, kindlink in AFFILIATIONS %}              
+    
+                    <font style="font-size: 1em;"> <!-- 0.8em -->
+                            <i class="{{ typea }} {{ typef }}-{{ name }}"></i>
+
+                            {% if kindlink == '' %}
+                                <font class="sc-{{ name }}" style="font-size: 0.8em; color: #2196F3;"> <b>{{ kind }}</b></font>
+                            {% else %}
+                                <a class="sc-{{ name }}" href="{{ kindlink }}" title="External: Personal page @{{ affiliation }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ kind }}</b></a>
+                            {% endif %}
+
+                            <a class="sc-{{ name }}" href="{{ link }}" title="External: {{ affiliation }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>@{{ affiliation }}</b></a><br />
+                        </font>
+                
+                {% endfor %}
+                
+                <br />
+                {% endif %}
+
+
                 {% if RESEARCH %}
                 <b style="font-size: 20px;">Bibliography</b><br />
                 <!-- <b style="font-size: 20px;">Bibliographies</b><br /> --> <!-- TODO -->

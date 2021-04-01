@@ -145,6 +145,16 @@ FUNDINGS = "funding_0003"
 # PGP Keys
 SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 
+
+# Affiliations
+AFFILIATIONS = [
+    #  TODO: Right icon for Tor Project
+    # 'fas', 'fa', 'graduation-cap'
+
+    ('Ronin Institute', 'fas', 'fa', 'university', 'http://ronininstitute.org', 'Research Scholar', ''),
+    #('Tor Project', 'fas', 'fa', 'user-secret', 'https://www.torproject.org/', 'Volunteer', '')
+]
+
 # Social
 SOCIAL = (
     ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet','@SamdneyTweet<br /> Tweets and Work updates'),
