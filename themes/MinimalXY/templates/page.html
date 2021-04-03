@@ -485,7 +485,86 @@
                             {% endif %}
 
                         {% endif %}
+            
 
+                        {% if PROJECTSBIB %} <!-- TODO: Setting/Thinking about all font sizes, Desktop and Mobile -->
+
+                            <br />
+
+                            <ul style="list-style-type:none; padding: 0; margin: 0;"> <!-- TODO: style file -->
+                            {% for mainplace, maintitle, mainlink, mainosflink, mainstatus, mainperiod, mainid, maindoi, mainreadmore, subprojects in PROJECTSBIB %}
+
+                                {% if mainplace == 'OSF' %}
+                                    <!-- TODO -->
+                                {% elif mainplace == 'Globe' %}
+
+                                    {% set maintypea = 'fas' %}
+                                    {% set maintypef = 'fa' %}
+                                    {% set mainname = 'globe' %}
+
+                                    <li>
+                                        <font style="font-size: 1em;"> <!-- 0.8em -->
+
+                                            <i class="{{ maintypea }} {{ maintypef }}-{{ mainname }}"></i>
+                                            <a class="sc-{{ mainname }}" href="{{ mainlink }}" title="{{ maintitle }}" style="color: #2196F3;"> <b>{{ maintitle }}</b></a> <!-- TODO: 0.8 em -->
+
+                                            <font style="font-size: 0.6em;"> <!-- TODO: 0.8 em -->
+                                                (<a href="{{ mainosflink }}" title="External: OSF Project" target="_blank">osf</a>),
+
+                                                Status: {{ mainstatus }}
+                                            </font>
+                                            
+                                            <div class="little-information-line"> <!-- TODO -->
+                                                {% if mainperiod != '' %}{{ mainperiod }}{% endif %}{% if mainid %}, id: {{ mainid }}{% endif %}{% if maindoi != '' %}, doi: <a href="{{ maindoi }}" title="External: Doi - Project site OSF" target="_blank">{{ maindoi }}</a>{% endif %}{% if mainreadmore != '' %}, Read more: <a href="{{ mainreadmore }}" title="External: Blog - Project posts" target="_blank">Blog</a>{% endif %}
+                                            </div>
+
+                                        </font>
+                                    </li>
+                                {% endif %}
+
+
+                                {% if mainplace == 'Globe' and subprojects|length != 0 %}
+                                    <ul style="list-style-type:none;"><!-- TODO: style file -->
+                                    {% for subplace, subtitle, sublink, substatus, subauthors, subperiod, subid, subdoi, subreadmore in subprojects %}
+
+                                        <li>
+                                            <font style="font-size: 1em;"> <!-- 0.8em -->
+                                            {% if subplace == 'OSF' %}
+
+                                                {% set subtypea = 'ai' %}
+                                                {% set subtypef = 'ai' %}
+                                                {% set subname = 'osf' %}
+                                                 
+                                                <i class="{{ subtypea }} {{ subtypef }}-{{ subname }}"></i>
+                                                <a class="sc-{{ subname }}" href="{{ sublink }}" title="External: {{ subtitle }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ subtitle }}</b></a>
+
+                                                <font style="font-size: 0.6em;"> <!-- TODO: 0.8 em -->
+                                                    (<a href="{{ sublink }}/files" title="External: Files of {{ subtitle }}" target="_blank">Files</a>, 
+                                                    <a href="{{ sublink }}/wiki" title="External: Wiki of {{ subtitle }}" target="_blank">Wiki</a>), 
+                                                    <!-- <a href="{{ sublink }}/analytics" title="External: Analytics of {{ subtitle }}" target="_blank">Analytics</a>,-->
+                                                    <!-- <a href="{{ sublink }}/registrations" title="External: Registrations of {{ subtitle }}" target="_blank">Registrations</a>), -->
+                                                    Status: {{ substatus }}
+                                                </font>
+
+                                                <div class="little-information-line"> <!-- TODO -->
+                                                    {{ subauthors }}{% if subperiod != '' %}, {{ subperiod }}{% endif %}{% if subid %}, id: {{ subid }}{% endif %}{% if subdoi != '' %}, doi: <a href="{{ subdoi }}" title="External: Doi - Project site" target="_blank">{{ subdoi }}</a>{% endif %}{% if subreadmore != '' %}, Read more: <a href="{{ subreadmore }}" title="External: Blog - Project posts" target="_blank">Blog</a>{% endif %}
+                                                </div>                         
+
+                                            {% else %}
+                                                <!-- TODO -->
+                                            {% endif %}
+                                           
+                                            </font>
+                                        </li>
+
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+
+                            {% endfor %}
+                            </ul>
+
+                        {% endif %}
                     </section>
 
                     <hr />

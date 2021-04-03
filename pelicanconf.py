@@ -10,6 +10,7 @@ import sys
 
 sys.path.append(os.curdir)
 from bibliography import *
+from projectsbib import *
 
 
 AUTHOR = u'Carolin Zöbelein'
@@ -199,8 +200,13 @@ SOCIAL_SIGNS = (
     ('Medium', 'fab', 'fa', 'medium'),
     ('GitHub', 'fab', 'fa', 'github'),
     ('GitLab', 'fab', 'fa', 'gitlab'),
+    ('ORCID-iD', 'ai', 'ai', 'orcid'),
+    ('Google-Scholar', 'ai', 'ai', 'google-scholar'),
+    ('Mathoverflow', 'ai', 'ai', 'mathoverflow'),
     ('ResearchGate', 'ai', 'ai', 'researchgate'),
     ('arXiv', 'ai', 'ai', 'arxiv'),
+    ('OSF', 'ai', 'ai', 'osf'),
+    ('Authorea', 'fas', 'fa', 'edit'),
     ('Website', 'fas', 'fa', 'globe'),
     ('General', 'fas', 'fa', 'globe'),
     ('Art', 'far', 'fa', 'images'),
