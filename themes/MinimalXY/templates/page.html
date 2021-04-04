@@ -333,7 +333,7 @@
 
                     <!-- TODO -->
                     <section id="content">
-                    <h2 id="ListOfProjects">List of Projects</h2>  <!-- TODO -->              
+                    <h2 id="ListOfProjects">List of Projects</h2>  <!-- TODO --> 
 
                         {% if RESEARCH %} <!-- TODO -->
 
@@ -364,11 +364,12 @@
                         {% endif %}
 
                     {% endif %}
-        
+
 
                     {% if PROJECTSBIB %} <!-- TODO: Setting/Thinking about all font sizes, Desktop and Mobile -->
 
                         <br />
+                        <font style="font-size: 0.7em;">Last update: {{ PROJECTSBIB_LASTUPDATE }}</font>
 
                         <ul style="list-style-type:none; padding: 0; margin: 0;"> <!-- TODO: style file -->
                         {% for mainplace, maintitle, mainlink, mainosflink, mainstatus, mainperiod, mainid, maindoi, mainreadmore, subprojects in PROJECTSBIB %}
@@ -391,7 +392,7 @@
                                             <b> {{ maintitle }}</b>
                                         {% endif %}
 
-                                        <font style="font-size: 0.6em;"> <!-- TODO: 0.8 em -->
+                                        <font style="font-size: 0.7em;"> <!-- TODO: 0.8 em -->
                                             (<a href="{{ mainosflink }}" title="External: OSF Project" target="_blank">osf</a>),
 
                                             Status: {{ mainstatus }}
@@ -421,7 +422,7 @@
                                             <i class="{{ subtypea }} {{ subtypef }}-{{ subname }}"></i>
                                             <a class="sc-{{ subname }}" href="{{ sublink }}" title="External: {{ subtitle }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ subtitle }}</b></a>
 
-                                            <font style="font-size: 0.6em;"> <!-- TODO: 0.8 em -->
+                                            <font style="font-size: 0.7em;"> <!-- TODO: 0.8 em -->
                                                 (<a href="{{ sublink }}/files" title="External: Files of {{ subtitle }}" target="_blank">Files</a>, 
                                                 <a href="{{ sublink }}/wiki" title="External: Wiki of {{ subtitle }}" target="_blank">Wiki</a>), 
                                                 <!-- <a href="{{ sublink }}/analytics" title="External: Analytics of {{ subtitle }}" target="_blank">Analytics</a>,-->
