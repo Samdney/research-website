@@ -12,6 +12,7 @@ from datetime import datetime
 # TODO: Add missing entry information
 # TODO: Remove old subpages
 
+BIBLIOGRAPHY_LASTUPDATE = '2021/03/28'
 
 BIBLIOGRAPHY = (
     #('nb', 'title', 'sum', 'author', 'date', 'year', 'kind', 'keywords', 'subjectclass', 'subjects', 'publication', 'publicationlink', 'preprint', 'latex', 'source', 'pdf', 'related', 'misc', 'doi', 'id'),
