@@ -385,7 +385,11 @@
                                     <font style="font-size: 1em;"> <!-- 0.8em -->
 
                                         <i class="{{ maintypea }} {{ maintypef }}-{{ mainname }}"></i>
-                                        <a class="sc-{{ mainname }}" href="{{ mainlink }}" title="{{ maintitle }}" style="color: #2196F3;"> <b>{{ maintitle }}</b></a> <!-- TODO: 0.8 em -->
+                                        {% if mainlink != '' %}
+                                            <a class="sc-{{ mainname }}" href="{{ mainlink }}" title="{{ maintitle }}" style="color: #2196F3;"> <b>{{ maintitle }}</b></a> <!-- TODO: 0.8 em -->
+                                        {% else %}
+                                            <b> {{ maintitle }}</b>
+                                        {% endif %}
 
                                         <font style="font-size: 0.6em;"> <!-- TODO: 0.8 em -->
                                             (<a href="{{ mainosflink }}" title="External: OSF Project" target="_blank">osf</a>),

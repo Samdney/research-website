@@ -10,7 +10,7 @@ from datetime import datetime
 # TODO: Misc Related
 
 
-#PROJECTSBIB = ( 
+PROJECTSBIB = ( 
 #    ('', '', '', '', '', '', '', '', '', (
 #            ('', '', '', '', '', '', '', '', ''),
 #            ('', '', '', '', '', '', '', '', '')
@@ -21,4 +21,10 @@ from datetime import datetime
 #            ('OSF', 'subtitle01_01', 'sublink01_01', 'substatus01_01', 'authors01_01', 'period01_01', 'subid01_01', 'subdoi01_01', 'readmore01_01')            
 #        )
 #    )
-#)
+
+    ('Globe', 'Dynamical algorithms on hypergraphs', '', 'https://osf.io/6eps2/', 'Open', '', '', '', '', (
+            ('', '', '', '', '', '', '', '', ''),
+            ('', '', '', '', '', '', '', '', '')
+        )
+    ),
+)
