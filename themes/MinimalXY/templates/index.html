@@ -146,6 +146,30 @@
                 -->
 
 
+                <!-- TODO -->
+                <hr />
+                <b style="font-size: 25px;">That's new</b><br />
+                {% if BIBLIOGRAPHY %}
+                {% set bibcounter = [0] %}
+                <ul>
+                    {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
+
+                        {% if bibcounter < [ NBPAPERENTRIES ] %}
+
+                            <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
+                                {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
+                                {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font>, <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
+                            </li>
+
+                        {% endif %}
+
+                    {% endfor %}
+
+                </ul>
+                {% endif %}
+                <!-- TODO -->
+
+
                 {% if WORK %}
 		        <hr />
                 <b style="font-size: 25px;">Publications</b><br />
@@ -354,7 +378,8 @@
 
       <article class="w3-white col-main-entries">
         <header style="margin-left: 1.5%;">
-            <h1>New</h1>
+            <!-- <h1>New</h1> --> <!-- TODO -->
+            <h1>Highlights</h1> <!-- TODO -->
         </header>
 
         <br>

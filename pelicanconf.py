@@ -143,6 +143,8 @@ PROJECTS = "project_0061| project_0060| project_0058| project_0055"
 FUNDINGS = "funding_0003"
 #CROWDFUNDING_CAMPAIGNS = "GoFundMe.com: <i>Conference Attending Expenses</i> (<a href='https://www.gofundme.com/f/conference-attending-expenses' title='GoFundMe.com: Conference Attending Expenses' target='_blank' style='color: #2196F3;'>visit</a>)"
 
+NBPAPERENTRIES = 2
+
 # PGP Keys
 SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 
