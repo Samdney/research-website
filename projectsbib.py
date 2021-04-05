@@ -23,8 +23,8 @@ PROJECTSBIB = (
 #        )
 #    )
     ('Globe', 'Dynamical algorithms on hypergraphs', '', 'https://osf.io/6eps2/', 'Open', '', '', '', '', (
-            ('', '', '', '', '', '', '', '', ''),
-            ('', '', '', '', '', '', '', '', '')
+            ('OSF', 'Equilibrium states of graph properties', '', 'Open', 'Carolin Zöbelein', '', '', '', ''),
+            ('OSF', 'Decomposition by clique separators', '', 'Open', 'Carolin Zöbelein', '', '', '', '')            
         )
     ),
     ('Globe', 'Patent applications', '', '', 'Open', '', '', '', '', (
