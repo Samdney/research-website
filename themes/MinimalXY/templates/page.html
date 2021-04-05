@@ -387,15 +387,19 @@
 
                                         <i class="{{ maintypea }} {{ maintypef }}-{{ mainname }}"></i>
                                         {% if mainlink != '' %}
-                                            <a class="sc-{{ mainname }}" href="{{ mainlink }}" title="{{ maintitle }}" style="color: #2196F3;"> <b>{{ maintitle }}</b></a> <!-- TODO: 0.8 em -->
+                                            <a class="sc-{{ mainname }}" href="{{ mainlink }}" title="{{ maintitle }}" style="color: #2196F3;"> <b>{{ maintitle }}</b></a>{% if mainosflink == '' %},{% endif %} <!-- TODO: 0.8 em -->
                                         {% else %}
-                                            <b> {{ maintitle }}</b>
+                                            <b> {{ maintitle }}</b>{% if mainosflink == '' %},{% endif %}
                                         {% endif %}
 
                                         <font style="font-size: 0.7em;"> <!-- TODO: 0.8 em -->
-                                            (<a href="{{ mainosflink }}" title="External: OSF Project" target="_blank">osf</a>),
+                                            {% if mainosflink != '' %}
+                                                (<a href="{{ mainosflink }}" title="External: OSF Project" target="_blank">osf</a>),
 
-                                            Status: {{ mainstatus }}
+                                                Status: {{ mainstatus }}
+                                            {% else %}
+                                                Status: {{ mainstatus }}
+                                            {% endif %}
                                         </font>
                                         
                                         <div class="little-information-line"> <!-- TODO -->
@@ -420,15 +424,26 @@
                                             {% set subname = 'osf' %}
                                              
                                             <i class="{{ subtypea }} {{ subtypef }}-{{ subname }}"></i>
-                                            <a class="sc-{{ subname }}" href="{{ sublink }}" title="External: {{ subtitle }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ subtitle }}</b></a>
 
-                                            <font style="font-size: 0.7em;"> <!-- TODO: 0.8 em -->
-                                                (<a href="{{ sublink }}/files" title="External: Files of {{ subtitle }}" target="_blank">Files</a>, 
-                                                <a href="{{ sublink }}/wiki" title="External: Wiki of {{ subtitle }}" target="_blank">Wiki</a>), 
-                                                <!-- <a href="{{ sublink }}/analytics" title="External: Analytics of {{ subtitle }}" target="_blank">Analytics</a>,-->
-                                                <!-- <a href="{{ sublink }}/registrations" title="External: Registrations of {{ subtitle }}" target="_blank">Registrations</a>), -->
-                                                Status: {{ substatus }}
-                                            </font>
+                                            {% if sublink != '' %}
+                                                <a class="sc-{{ subname }}" href="{{ sublink }}" title="External: {{ subtitle }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"> <b>{{ subtitle }}</b></a>
+
+                                                <font style="font-size: 0.7em;"> <!-- TODO: 0.8 em -->
+                                                    (<a href="{{ sublink }}/files" title="External: Files of {{ subtitle }}" target="_blank">Files</a>, 
+                                                    <a href="{{ sublink }}/wiki" title="External: Wiki of {{ subtitle }}" target="_blank">Wiki</a>), 
+                                                    <!-- <a href="{{ sublink }}/analytics" title="External: Analytics of {{ subtitle }}" target="_blank">Analytics</a>,-->
+                                                    <!-- <a href="{{ sublink }}/registrations" title="External: Registrations of {{ subtitle }}" target="_blank">Registrations</a>), -->
+                                                    Status: {{ substatus }}
+                                                </font>
+                                            {% else %}
+                                                <font style="font-size: 0.8em;">
+                                                <b>{{ subtitle }}</b>,
+                                                </font>
+
+                                                <font style="font-size: 0.7em;"> <!-- TODO: 0.8 em -->
+                                                    Status: {{ substatus }}
+                                                </font>
+                                            {% endif %}
 
                                             <div class="little-information-line"> <!-- TODO -->
                                                 {{ subauthors }}{% if subperiod != '' %}, {{ subperiod }}{% endif %}{% if subid %}, id: {{ subid }}{% endif %}{% if subdoi != '' %}, doi: <a href="{{ subdoi }}" title="External: Doi - Project site" target="_blank">{{ subdoi }}</a>{% endif %}{% if subreadmore != '' %}, Read more: <a href="{{ subreadmore }}" title="External: Blog - Project posts" target="_blank">Blog</a>{% endif %}

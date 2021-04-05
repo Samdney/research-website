@@ -9,7 +9,7 @@ from datetime import datetime
 # TODO: Grants
 # TODO: Misc Related
 
-PROJECTSBIB_LASTUPDATE = '2021/04/04'
+PROJECTSBIB_LASTUPDATE = '2021/04/05'
 
 PROJECTSBIB = ( 
 #    ('', '', '', '', '', '', '', '', '', (
@@ -22,10 +22,14 @@ PROJECTSBIB = (
 #            ('OSF', 'subtitle01_01', 'sublink01_01', 'substatus01_01', 'authors01_01', 'period01_01', 'subid01_01', 'subdoi01_01', 'readmore01_01')            
 #        )
 #    )
-
     ('Globe', 'Dynamical algorithms on hypergraphs', '', 'https://osf.io/6eps2/', 'Open', '', '', '', '', (
             ('', '', '', '', '', '', '', '', ''),
             ('', '', '', '', '', '', '', '', '')
         )
     ),
+    ('Globe', 'Patent applications', '', '', 'Open', '', '', '', '', (
+            ('OSF', 'Patent 02', '', 'Open', 'Carolin Zöbelein', '', '', '', ''),
+            ('OSF', 'Patent 01', '', 'Open', 'Carolin Zöbelein', '', '', '', '')
+        )
+    )
 )
