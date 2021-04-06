@@ -24,7 +24,7 @@ PROJECTSBIB = (
 #    )
     ('Globe', 'Dynamical algorithms on hypergraphs', '', 'https://osf.io/6eps2/', 'Open', 'Since 2021/02', '', 'https://doi.org/10.17605/OSF.IO/6EPS2', '', (
             ('OSF', 'Equilibrium states of graph properties', '', 'Open', 'Carolin Zöbelein', '', '', '', ''),
-            ('OSF', 'Decomposition by clique separators', '', 'Open', 'Carolin Zöbelein', '', '', '', '')            
+            ('OSF', 'Decomposition by clique separators', 'https://osf.io/nmjr5/', 'Open', 'Carolin Zöbelein', '', '', '', '')            
         )
     ),
     ('Globe', 'Patent applications', '', '', 'Open', '', '', '', '', (
