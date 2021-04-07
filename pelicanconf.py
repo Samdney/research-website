@@ -215,6 +215,8 @@ SOCIAL_SIGNS = (
     ('Misc', 'fas', 'fa', 'cat'),
 )
 
+EVENTS = 'None.'
+
 SOCIAL_PAGINATION = 4
 
 #DEFAULT_PAGINATION = 6

@@ -60,8 +60,12 @@ Slug:           about
 <hr />
 <h2 id="Schedule">Schedule</h2>
 <p>
-	<i>You can find my public schedule for current, upcoming and planned projects and fundings for the next months, as online pad version, <a href="https://cryptpad.fr/sheet/#/2/sheet/view/ym+olKCrTCwl2MTIOtaRrmzzNyXyh6e8HOCn1xIwKWw/" title="Schedule" target="_blank">here</a>.</i>
+	<!-- <i>You can find my public schedule for current, upcoming and planned projects and fundings for the next months, as online pad version, <a href="https://cryptpad.fr/sheet/#/2/sheet/view/ym+olKCrTCwl2MTIOtaRrmzzNyXyh6e8HOCn1xIwKWw/" title="Schedule" target="_blank">here</a>.</i> -->
+    <i>Here, you can find my schedule of current known public events, for the next months.</i>
 </p>
+    <code style="background-color: white;">
+        None.
+    </code>
 
 <hr />
 <h2 id="CurrentWork">Current work</h2>

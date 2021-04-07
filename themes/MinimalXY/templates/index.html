@@ -265,10 +265,25 @@
                     {% endif %}
                 {% endfor %}
 
-                <br />
                 {% endif %}
+
+
+                {% if EVENTS %}
+                <br />
+
+                <b style="font-size: 20px;">Current Events</b><br />
+                    <font style="font-size: 0.8em;"> <!-- 0.8em -->
+                        <code style="background-color: white;">
+                            {{ EVENTS }}<br />
+                        </code>
+                    </font>
+            
+                {% endif %}
+
         
                 {% if STATUS_REPORT %}
+                <br />
+
                 <b style="font-size: 20px;">Status Report</b><br />
                 {% for title, typea, typef, name in SOCIAL_SIGNS %}
 		            {% if title == STATUS_REPORT[0] %}
