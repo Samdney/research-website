@@ -647,9 +647,8 @@
 
                         <font style="font-size: 0.7em;">Last update: {{ BIBLIOGRAPHY_LASTUPDATE }}</font>
 
-                        <!-- <ol> -->    <!-- TODO -->
-                        <!-- <ol style="counter-reset: item 10;"> --> <!-- TODO -->
-                        <ol reversed>
+                        {% set bibliographylengthp1 = BIBLIOGRAPHY|length + 1 %}
+                        <ol reversed style="counter-reset: item {{ bibliographylengthp1 }};">
                         
                             {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
 
