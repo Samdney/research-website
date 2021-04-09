@@ -1,4 +1,4 @@
-Title:          Public
+Title:          Publications
 Date:           2018/10/03 07:00
 Slug:           public
 

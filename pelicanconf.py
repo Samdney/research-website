@@ -24,7 +24,7 @@ KEYWORDS = ('Carolin Zöbelein', 'Research', 'Mathematical', 'Scientist',
         'Free', 'Access', 'Independently', 'Obfuscation', 'Anti-Censorship',
         'Censorship', 'Blocking', 'Circumvention', 'Protecting',
         'Decentralized', 'Networks', 'Technologies', 'Search Engine',
-        'Protocol', 'Prime numbers', 'Android', 'App', 'Security', 'Art')
+        'Protocol', 'Prime numbers', 'Android', 'App', 'Security', 'Art') # TODO: Keywords update, Distributed Networks, ...
 
 PATH = 'content'
 # ******
@@ -69,7 +69,7 @@ MENUITEMS = (
     ('About', '/about.html'),
     ('Research', '/research.html'),
     ('Projects', '/projects.html'),
-    ('Public', '/public.html'),
+    ('Publications', '/public.html'),
     ('Funding', '/funding.html'),
     ('Contact', '/contact.html'),
 )
