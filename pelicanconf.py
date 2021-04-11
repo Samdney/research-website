@@ -12,6 +12,8 @@ sys.path.append(os.curdir)
 from bibliography import *
 from projectsbib import *
 
+# TODO: robots.txt rework
+# TODO: rename: public.html => publications.html, .htaccess, redirection
 
 AUTHOR = u'Carolin Zöbelein'
 AUTHOR_AVATAR = u'/images/zoebelein_avatar.png'
