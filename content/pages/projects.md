@@ -24,6 +24,7 @@ Stuff for which I'm currently doing pre-research, writting work concepts, projec
 		Scary is the idea for a Pluggable Transport for Tor Bridges. It calls Scary, since the idea is scary :). It bases on some concepts of quantum mechanics.
 	</font>
 </li>
+<!-- TODO
 <li>
 	Patent application 01: Free Pony<br />
 	<font style="font-size:14px;">
@@ -31,6 +32,8 @@ Stuff for which I'm currently doing pre-research, writting work concepts, projec
 		This is a private project until patent application will be finished. After this, I want to make it public for beeing used freely for non-commercial aims.
 	</font>
 </li>
+-->
+<!-- TODO
 <li>
 	Patent application 02: Flying Pony<br />
 	<font style="font-size:14px;">
@@ -38,6 +41,7 @@ Stuff for which I'm currently doing pre-research, writting work concepts, projec
 		This is a private project until patent application will be finished. After this, I want to make it public for beeing used freely for non-commercial aims.
 	</font>
 </li>
+-->
 </ul>
 
 
