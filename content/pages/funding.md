@@ -41,7 +41,12 @@ Alternatively, you can use my <a href="https://www.paypal.com/paypalme/CarolinZo
 
 <h3>Bitcoin</h3>
 Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or administrator. Please use the following address:  
-<i class="cryptocurr-addr">3QtQTQHt1kQ4QQz5wqYwmsQ2QR5YwFwZQ6 (<a href="/qrcodes/crowdfunding_bitcoin.png" title="Crowdfunding - Bitcoin: QR-Code" target="_blank">QR-Code</a>)</i>
+<i class="cryptocurr-addr">1KcLtVjzcfv3UYKwzm7Np61YQ1RbpD3xun (<b>Attention that's a new address, please don't use the old one!, 2021/04/23</b>)</i> 
+
+<!--
+<h3>Bitcoin</h3>
+Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or administrator. Please use the following address:  
+<i class="cryptocurr-addr">3QtQTQHt1kQ4QQz5wqYwmsQ2QR5YwFwZQ6 (<a href="/qrcodes/crowdfunding_bitcoin.png" title="Crowdfunding - Bitcoin: QR-Code" target="_blank">QR-Code</a>)</i> -->
 
 <h3>Zcash</h3>
 Zcash is a cryptocurrency. It is aimed at using cryptography to provide
