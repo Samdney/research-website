@@ -181,40 +181,103 @@
                     
           <div class="col-page-sub w3-container-page-sub">
             <section id="content">
-            <div class="two-columns-pages">
-	      <div class="col01-pages30">
-              	<img width="100%" style="border:1px solid #e0e0e0; margin-top: 0%;" src="{{ article.sum_image }}">
-              </div>
-              <div class="col02-pages70">
-                {% if article.keywords %}
-                  {% set keywords = article.keywords.split(', ') %}
+                
+                {% if article.rightcolumn %}
+
+                    <div class="two-columns-pages">
+
+                        <div class="col01-pages30">
+                          	<img width="100%" style="border:1px solid #e0e0e0; margin-top: 0%;" src="{{ article.sum_image }}">
+                       
+                            {% if article.keywords %}
+                              {% set keywords = article.keywords.split(', ') %}
+                            {% endif %}
+
+                            <div style="font-size: 15px; margin-top: 5%; margin-left: -12%; width: 110%;">
+
+                              <ul style="list-style-type:none;">
+                	            {% if article.project_members %}<li><b>Project member(s):</b> {{ article.project_members }}</li>{% endif %}
+                                {% if article.project_period %}<li><b>Project period:</b> {{ article.project_period }}</li>{% endif %}
+                                {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
+                                {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
+                  	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+                        {% if article.info %}<li><b>Info:</b> {{ article.info }}</li>{% endif %}
+
+	                    {% if article.project_proposal_pdf %}
+		                <li>
+			                <b>Project proposal: </b><a href="{{ article.project_proposal_pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
+			                {% if article.project_proposal_download %} 
+			                | <a href="{{ article.project_proposal_download }}" title="External: {{ article.title }}">direct download</a>
+			                {% endif %}
+		                </li>
+	                    {% endif %}
+
+                        {% if article.shields %}<li>{{ article.shields }}</li>{% endif %}
+                              </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col02-pages70">
+                            {% if article.rightcolumn %}
+                                {{ article.rightcolumn }}
+                            {% endif %}
+                        </div>
+
+                    </div>
+
+                {% else %}
+
+                    <div class="two-columns-pages">
+
+                        <div class="col01-pages30">
+                          	<img width="100%" style="border:1px solid #e0e0e0; margin-top: 0%;" src="{{ article.sum_image }}">
+                        </div>
+                        <div class="col02-pages70">
+                            {% if article.keywords %}
+                              {% set keywords = article.keywords.split(', ') %}
+                            {% endif %}
+
+                            <div style="font-size: 15px; margin-top: 5%;">
+
+                              <ul style="list-style-type:none;">
+                	            {% if article.project_members %}<li><b>Project member(s):</b> {{ article.project_members }}</li>{% endif %}
+                                {% if article.project_period %}<li><b>Project period:</b> {{ article.project_period }}</li>{% endif %}
+                                {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
+                                {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
+                  	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
+                        {% if article.info %}<li><b>Info:</b> {{ article.info }}</li>{% endif %}
+
+	                    {% if article.project_proposal_pdf %}
+		                <li>
+			                <b>Project proposal: </b><a href="{{ article.project_proposal_pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
+			                {% if article.project_proposal_download %} 
+			                | <a href="{{ article.project_proposal_download }}" title="External: {{ article.title }}">direct download</a>
+			                {% endif %}
+		                </li>
+	                    {% endif %}
+
+                        {% if article.shields %}<li>{{ article.shields }}</li>{% endif %}
+                              </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col02-pages70">
+                        {% if article.rightcolumn %}
+                            {{ article.rightcolumn }}
+                        {% endif %}
+                    </div>
+
                 {% endif %}
 
-                <div style="font-size: 15px; margin-top: 5%;">
-                  <ul style="list-style-type:none;">
-    	            {% if article.project_members %}<li><b>Project member(s):</b> {{ article.project_members }}</li>{% endif %}
-                    {% if article.project_period %}<li><b>Project period:</b> {{ article.project_period }}</li>{% endif %}
-                    {% if article.subject_class %}<li><b>Subject Classification:</b> {{ article.subject_class }}</li>{% endif %}
-                    {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
-	  	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
-            {% if article.info %}<li><b>Info:</b> {{ article.info }}</li>{% endif %}
+            </section>
 
-		    {% if article.project_proposal_pdf %}
-			<li>
-				<b>Project proposal: </b><a href="{{ article.project_proposal_pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
-				{% if article.project_proposal_download %} 
-				| <a href="{{ article.project_proposal_download }}" title="External: {{ article.title }}">direct download</a>
-				{% endif %}
-			</li>
-		    {% endif %}
-
-            {% if article.shields %}<li>{{ article.shields }}</li>{% endif %}
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </section>			
+		
            
             {% if article.synopsis %}
             <section id="content">
@@ -225,7 +288,7 @@
 
             {% if article.content %}
             <section id="content" style="color: black;">
-              <h3>Content</h3>
+              <!-- <h3>Description</h3> --> <!-- <h3>Content</h3> Description, Abstract -->
               {{ article.content }}
             </section>
             {% endif %}
