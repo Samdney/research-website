@@ -2,3 +2,5 @@ rm -r output/*.html
 rm -r output/pages output/blog output/author output/category output/images output/theme output/feeds output/tag output/files output/qrcodes
 rm -r output/Public
 rm -r output/Projects
+rm -r output/Funding
+rm -r output/drafts
