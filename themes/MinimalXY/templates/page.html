@@ -257,79 +257,7 @@
                   		{% set projects_running_pa = page.projects_running.split('| ') %}                	
 
                         <hr />
-                        <section id="content">
-                        <h2 id="Running">Running</h2>
-
-                        {% set counter = [0] %}
-                        {% for project_running in projects_running_pa %}
-
-                            {% for articleref in articles %}
-                  			    {% if articleref.id == project_running %}
-
-                                    {% if counter[0] % 2 == 0 %}                                  
-                                        <div class="two-columns-pages">
-                                            <div class="col01-pages20">
-                                                <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
-                                            </div>
-
-                                            <div class="col02-pages80">
-                                                <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
-                                                <div class="little-information-line">
-                                                    {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
-                                                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
-                                                </div>
-                                            </div>
-                                        </div>                                    
-                                    {% elif counter[0] % 2 == 1 %}                                   
-                                       <div class="two-columns-pages">
-                                            <div class="col01-pages80">
-                                                <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
-                                                <div class="little-information-line">
-                                                    {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
-                                                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
-                                                </div>
-                                            </div>
-
-                                            <div class="col02-pages20">
-                                                <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
-                                            </div>
-                                        </div>
-                                    {% endif %}                                   
-
-                                {% endif %}
-                            {% endfor %}
-
-                            {% if counter.append(counter.pop() + 1) %}{% endif %}
-                        {% endfor %}
-
-                        <!--
-
-                        <ul>
-                        {% for project_running in projects_running_pa %}
-
-                            {% for articleref in articles %}
-                  			    {% if articleref.id == project_running %}
-                                  
-                                    <li>
-                                        <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
-                                        <div class="little-information-line">
-                                            {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
-                                            {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
-                                        </div>
-                                    </li>
-
-                                {% endif %}
-                            {% endfor %}
-                        {% endfor %}
-                        </ul>
-
-                        -->
-
-					    </section>
-                    {% endif %}
-
-
-                    <hr />
+ 
 
                     <!-- TODO -->
                     <section id="content">
@@ -475,6 +403,79 @@
 
                     {% endif %}
                     </section>
+
+                     <hr />
+
+                    <section id="content">
+                    <h2 id="Running">Running</h2>
+
+                    {% set counter = [0] %}
+                    {% for project_running in projects_running_pa %}
+
+                        {% for articleref in articles %}
+              			    {% if articleref.id == project_running %}
+
+                                {% if counter[0] % 2 == 0 %}                                  
+                                    <div class="two-columns-pages">
+                                        <div class="col01-pages20">
+                                            <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
+                                        </div>
+
+                                        <div class="col02-pages80">
+                                            <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
+                                            <div class="little-information-line">
+                                                {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
+                                                {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                {% elif counter[0] % 2 == 1 %}                                   
+                                   <div class="two-columns-pages">
+                                        <div class="col01-pages80">
+                                            <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
+                                            <div class="little-information-line">
+                                                {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
+                                                {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                            </div>
+                                        </div>
+
+                                        <div class="col02-pages20">
+                                            <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
+                                        </div>
+                                    </div>
+                                {% endif %}                                   
+
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if counter.append(counter.pop() + 1) %}{% endif %}
+                    {% endfor %}
+
+                    <!--
+
+                    <ul>
+                    {% for project_running in projects_running_pa %}
+
+                        {% for articleref in articles %}
+              			    {% if articleref.id == project_running %}
+                              
+                                <li>
+                                    <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
+                                    <div class="little-information-line">
+                                        {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
+                                        {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                    </div>
+                                </li>
+
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    </ul>
+
+                    -->
+
+				    </section>
+                {% endif %}
 
 
                     {% if page.projects_paused %}
