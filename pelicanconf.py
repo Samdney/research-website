@@ -141,7 +141,11 @@ GITHUB_LINKS = (
 #TALKS = ""
 #MEETUPS = ""
 #WEBINARS = ""
+
+# TODO
 PROJECTS = "project_0061| project_0060| project_0058| project_0055"
+
+# TODO
 FUNDINGS = "funding_0003"
 #CROWDFUNDING_CAMPAIGNS = "GoFundMe.com: <i>Conference Attending Expenses</i> (<a href='https://www.gofundme.com/f/conference-attending-expenses' title='GoFundMe.com: Conference Attending Expenses' target='_blank' style='color: #2196F3;'>visit</a>)"
 
