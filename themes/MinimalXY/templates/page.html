@@ -407,7 +407,8 @@
                      <hr />
 
                     <section id="content">
-                    <h2 id="Running">Running</h2>
+                    <!-- <h2 id="Running">Running</h2> --> <!-- TODO: Renaming -->
+                    <h2 id="Work">Work</h2> <!-- TODO: Renaming -->
 
                     {% set counter = [0] %}
                     {% for project_running in projects_running_pa %}
@@ -481,9 +482,10 @@
                     {% if page.projects_paused %}
                   		{% set projects_paused_pa = page.projects_paused.split('| ') %}                	
 
-                        <hr />
+                        <!-- <hr /> --> <!-- TODO: Renaming -->
+                        <br />  <!-- TODO: Renaming -->
                         <section id="content">
-                        <h2 id="Paused">Paused</h2>
+                        <!-- <h2 id="Paused">Paused</h2> --> <!-- TODO: Renaming -->
                         <ul>
                         {% for project_paused in projects_paused_pa %}
 
