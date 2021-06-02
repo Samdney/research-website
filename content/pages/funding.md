@@ -1,8 +1,8 @@
 Title:          Funding
 Date:           2018/07/07 20:00
 Slug:           funding
-hashtag_links:  /funding.html#GrantsAndFellowships| /funding.html#Crowdfunding| /funding.html#DirectDonations| /funding.html#Membership
-hashtag_info:   Grants &amp; Fellowships| Crowdfunding| Direct Donations| Membership
+hashtag_links:  /funding.html#PrivateInvestors| /funding.html#GrantsAndFellowships| /funding.html#DirectDonations| /funding.html#Membership
+hashtag_info:   Private Investors| Grants &amp; Fellowships| Direct Donations| Membership
 grants_running: funding_0003
 
 <!-- <code><a href="/funding.html#Cross-subsidization">\#Cross-subsidization</a></code> -->
