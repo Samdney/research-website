@@ -152,7 +152,7 @@ FUNDINGS = "funding_0003"
 NBPAPERENTRIES = 2
 
 # TODO
-PRIVATEINVESTORS = "Information for Private Investors available on <a href='/funding.html#PrivateInvestors' style='color: #2196F3;'>Funding</a>."
+PRIVATEINVESTORS = "Information for private investors available on <a href='/funding.html#PrivateInvestors' style='color: #2196F3;'>Funding</a>."
 
 # PGP Keys
 SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
