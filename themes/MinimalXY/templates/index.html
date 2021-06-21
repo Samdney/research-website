@@ -427,69 +427,147 @@
         </header>
 
         <br>
+                    <!-- TODO: Clean up code of whole section, no doubled code parts!  -->
+                    
+			        {% set length = [0] %}
+                    {% set index_boxes_pa = INDEX_PAGINATION_ARTICLES.split('| ') %}
 
-				{% set length = [0] %}
-				{% for article in articles_page.object_list %}
-					{% if ((article.sub_kind != "Notes") and (article.sub_kind != "Worksheets")) %}		
-						{% if length.append(length.pop() + 1) %}{% endif %}
-					{% endif %}
-				{% endfor %}
-				
+			        {% for article in articles_page.object_list %}
+                        {% if INDEX_PAGINATION_CHRONOLOGICAL == True %}
+
+				            {% if ((article.sub_kind != "Notes") and (article.sub_kind != "Worksheets")) %}		
+					            {% if length.append(length.pop() + 1) %}{% endif %}
+				            {% endif %}
+
+                        {% else %}
+
+                            {% for index_box in index_boxes_pa %}           
+                                {% if article.id == index_box %}
+                                    {% if length.append(length.pop() + 1) %}{% endif %}
+                                {% endif %}
+                            {% endfor %}
+
+                        {% endif %}
+			        {% endfor %}
+        
 
 					{% set counter = [0] %}
         			{% for article in articles_page.object_list %}
-						{% if ((article.sub_kind != "Notes") and (article.sub_kind != "Worksheets")) %}			
-							{% if counter.append(counter.pop() + 1) %}{% endif %}
-							{% if counter[0] <= INDEX_PAGINATION %}
-								{% if counter[0] % 3 == 1 %}
-								  <div class="three-columns">
 
-									<div class="w3-container w3-card-2 three-col01">
-								{% elif counter[0] % 3 == 2 %}
-									<div class="w3-container w3-card-2 three-col02">
-								{% elif counter[0] % 3 == 0 %}
-									<div class="w3-container w3-card-2 three-col03">
-								{% endif %}                
-									  
-									  <center style="margin-top: 10%;">
-										<img style="border:0.5px solid #e0e0e0;" width="90%" src="{{ article.index_image }}">   
-									  </center>
+                        {% if INDEX_PAGINATION_CHRONOLOGICAL == True %}
 
-									  <header class="article-index-title">    <!-- desktop version: font-size: <h2> -->
-										<b>{{ article.index_title }}</b>
-									  </header>
+						    {% if ((article.sub_kind != "Notes") and (article.sub_kind != "Worksheets")) %}			
+							    {% if counter.append(counter.pop() + 1) %}{% endif %}
+							    {% if counter[0] <= INDEX_PAGINATION %}
+								    {% if counter[0] % 3 == 1 %}
+								      <div class="three-columns">
+
+									    <div class="w3-container w3-card-2 three-col01">
+								    {% elif counter[0] % 3 == 2 %}
+									    <div class="w3-container w3-card-2 three-col02">
+								    {% elif counter[0] % 3 == 0 %}
+									    <div class="w3-container w3-card-2 three-col03">
+								    {% endif %}                
+									      
+									      <center style="margin-top: 10%;">
+										    <img style="border:0.5px solid #e0e0e0;" width="90%" src="{{ article.index_image }}">   
+									      </center>
+
+									      <header class="article-index-title">    <!-- desktop version: font-size: <h2> -->
+										    <b>{{ article.index_title }}</b>
+									      </header>
 								
-									  <div style="margin-left: 5%; margin-right: 5%; color: #0000cd;">
-										{{ article.kind }}
-									  </div>
+									      <div style="margin-left: 5%; margin-right: 5%; color: #0000cd;">
+										    {{ article.kind }}
+									      </div>
 
-									  <div style="margin-left: 5%; margin-right: 5%;">
-										{{ article.index_summary }}
-									  </div>
+									      <div style="margin-left: 5%; margin-right: 5%;">
+										    {{ article.index_summary }}
+									      </div>
 
-									  <div style="margin-left: 5%; margin-right: 5%; color: #2196F3; font-size: 12px;">
-										<a href="{{ SITEURL }}/{{ article.url }}">READ MORE <i class="fas fa-angle-double-right"></i></a>
-									  </div>
+									      <div style="margin-left: 5%; margin-right: 5%; color: #2196F3; font-size: 12px;">
+										    <a href="{{ SITEURL }}/{{ article.url }}">READ MORE <i class="fas fa-angle-double-right"></i></a>
+									      </div>
 								
-									  <br><br>
+									      <br><br>
 
-									</div>          
+									    </div>          
 
-								{% if length[0] % 3 == 0 %}
-								  {% if counter[0] % 3 == 0 %}
-								  </div>
-								  {% endif %}
-								{% else %}
-								  {% if counter[0] % 3 == 0 %}
-								  </div>
-								  {% endif %}
+								    {% if length[0] % 3 == 0 %}
+								      {% if counter[0] % 3 == 0 %}
+								      </div>
+								      {% endif %}
+								    {% else %}
+								      {% if counter[0] % 3 == 0 %}
+								      </div>
+								      {% endif %}
 
-								  {% if counter[0] == length[0] %}
-								  </div>
-								  {% endif %}
-								{% endif %}
-							{% endif %}
-						{% endif %}
+								      {% if counter[0] == length[0] %}
+								      </div>
+								      {% endif %}
+								    {% endif %}
+							    {% endif %}
+						    {% endif %}
+
+                        {% else %}
+                           
+                            {% for index_box in index_boxes_pa %}
+                                {% if article.id == index_box %}
+							        {% if counter.append(counter.pop() + 1) %}{% endif %}
+							        {% if counter[0] <= INDEX_PAGINATION %}
+								        {% if counter[0] % 3 == 1 %}
+								          <div class="three-columns">
+
+									        <div class="w3-container w3-card-2 three-col01">
+								        {% elif counter[0] % 3 == 2 %}
+									        <div class="w3-container w3-card-2 three-col02">
+								        {% elif counter[0] % 3 == 0 %}
+									        <div class="w3-container w3-card-2 three-col03">
+								        {% endif %}                
+									          
+									          <center style="margin-top: 10%;">
+										        <img style="border:0.5px solid #e0e0e0;" width="90%" src="{{ article.index_image }}">   
+									          </center>
+
+									          <header class="article-index-title">    <!-- desktop version: font-size: <h2> -->
+										        <b>{{ article.index_title }}</b>
+									          </header>
+								
+									          <div style="margin-left: 5%; margin-right: 5%; color: #0000cd;">
+										        {{ article.kind }}
+									          </div>
+
+									          <div style="margin-left: 5%; margin-right: 5%;">
+										        {{ article.index_summary }}
+									          </div>
+
+									          <div style="margin-left: 5%; margin-right: 5%; color: #2196F3; font-size: 12px;">
+										        <a href="{{ SITEURL }}/{{ article.url }}">READ MORE <i class="fas fa-angle-double-right"></i></a>
+									          </div>
+								
+									          <br><br>
+
+									        </div>          
+
+								        {% if length[0] % 3 == 0 %}
+								          {% if counter[0] % 3 == 0 %}
+								          </div>
+								          {% endif %}
+								        {% else %}
+								          {% if counter[0] % 3 == 0 %}
+								          </div>
+								          {% endif %}
+
+								          {% if counter[0] == length[0] %}
+								          </div>
+								          {% endif %}
+								        {% endif %}
+							        {% endif %}
+                                {% endif %}
+                            {% endfor %}
+
+                        {% endif %}
+
       				{% endfor %}
        </article>
 

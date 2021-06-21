@@ -228,8 +228,13 @@ EVENTS = 'None.'
 
 SOCIAL_PAGINATION = 4
 
+# Index page pagination: General
 #DEFAULT_PAGINATION = 6
 DEFAULT_PAGINATION = False
+
+# Index page pagination: Info boxes
+INDEX_PAGINATION_CHRONOLOGICAL = True
+INDEX_PAGINATION_ARTICLES = "project_0061| project_0060| project_0058| project_0055"
 INDEX_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
