@@ -252,13 +252,73 @@
                         {% endif %}
                     </section>
 
+                    {% if page.projects_thebigpicture %}
+                  		{% set projects_thebigpicture_pa = page.projects_thebigpicture.split('| ') %}
+                    {% endif %}
+
                     {% if page.projects_running %}
                   		{% set projects_running_pa = page.projects_running.split('| ') %}
                     {% endif %}
 
-                    <hr /> 
 
-                    <!-- TODO -->
+                    {% if page.projects_thebigpicture %}
+
+                        <hr /> 
+
+                        <!-- TODO --> <!-- TODO: if ... -->
+                        <section id="content">
+                        <h2 id="TheBigPicture">The Big Picture</h2> <!-- TODO -->
+
+                        {% set counter = [0] %}
+                        {% for project_thebigpicture in projects_thebigpicture_pa %}
+
+                            {% for articleref in articles %}
+                  			    {% if articleref.id == project_thebigpicture %}
+
+                                    {% if counter[0] % 2 == 0 %}                                  
+                                        <div class="two-columns-pages">
+                                            <div class="col01-pages20">
+                                                <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
+                                            </div>
+
+                                            <div class="col02-pages80">
+                                                <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
+                                                <div class="little-information-line">
+                                                    {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
+                                                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                    {% elif counter[0] % 2 == 1 %}                                   
+                                       <div class="two-columns-pages">
+                                            <div class="col01-pages80">
+                                                <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
+                                                <div class="little-information-line">
+                                                    {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
+                                                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                                </div>
+                                            </div>
+
+                                            <div class="col02-pages20">
+                                                <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
+                                            </div>
+                                        </div>
+                                    {% endif %}                                   
+
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if counter.append(counter.pop() + 1) %}{% endif %}
+                        {% endfor %}
+
+                    </section>    
+
+                    {% endif %}
+      
+
+                    <hr />
+
+                    <!-- TODO --> <!-- TODO: if project list -->
                     <section id="content">
                     <h2 id="ListOfProjects">List of Projects</h2>  <!-- TODO -->
 
