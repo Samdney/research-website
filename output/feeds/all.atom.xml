@@ -110,14 +110,124 @@ The aim of this project is to design a seriously open source alternative to the 
 &lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;I. Page 1 - 4: Relationship between n̄ and n̄'.&lt;/li&gt;
 &lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 04): Playing around</title><link href="/Public/Publications/Primes-part-04-Playing-around.html" rel="alternate"></link><published>2019-05-21T20:00:00+02:00</published><updated>2019-05-21T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-21:/Public/Publications/Primes-part-04-Playing-around.html</id><summary type="html">&lt;ul&gt;
-&lt;li&gt;I. Page 1 - 6: Extenting from $x$ to (2xy + x + y) as part of k solution &lt;/li&gt;
+&lt;li&gt;I. Page 1 - 6: Extenting from &lt;span class="math"&gt;\(x\)&lt;/span&gt; to &lt;span class="math"&gt;\(\left(2xy + x + y\right)\)&lt;/span&gt; as part of k solution &lt;/li&gt;
 &lt;li&gt;II. Page 7 - 10: Checking for possible additional terms and factors of this extension&lt;/li&gt;
-&lt;li&gt;III. Page 11 - 17: Looking at common and not common factor(s) case of original n(2x + 1) equation odd numbers (2x + 1)&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;I. Page 1 - 6: Extenting from $x$ to (2xy + x + y) as part of k solution &lt;/li&gt;
+&lt;li&gt;III. Page 11 - 17: Looking at common and not common factor(s) case of original &lt;span class="math"&gt;\(n\left(2x + 1\right)\)&lt;/span&gt; equation odd numbers &lt;span class="math"&gt;\(\left(2x + 1\right)\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;I. Page 1 - 6: Extenting from &lt;span class="math"&gt;\(x\)&lt;/span&gt; to &lt;span class="math"&gt;\(\left(2xy + x + y\right)\)&lt;/span&gt; as part of k solution &lt;/li&gt;
 &lt;li&gt;II. Page 7 - 10: Checking for possible additional terms and factors of this extension&lt;/li&gt;
-&lt;li&gt;III. Page 11 - 17: Looking at common and not common factor(s) case of original n(2x + 1) equation odd numbers (2x + 1)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 03): Recursion - New approach for also non-prime times tables</title><link href="/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html" rel="alternate"></link><published>2019-05-10T20:05:00+02:00</published><updated>2019-05-10T20:05:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-10:/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;III. Page 11 - 17: Looking at common and not common factor(s) case of original &lt;span class="math"&gt;\(n\left(2x + 1\right)\)&lt;/span&gt; equation odd numbers &lt;span class="math"&gt;\(\left(2x + 1\right)\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 03): Recursion - New approach for also non-prime times tables</title><link href="/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html" rel="alternate"></link><published>2019-05-10T20:05:00+02:00</published><updated>2019-05-10T20:05:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-10:/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;I. Page 1 - 4: Intersection of equations with common factors&lt;/li&gt;
 &lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;I. Page 1 - 4: Intersection of equations with common factors&lt;/li&gt;

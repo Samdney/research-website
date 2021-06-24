@@ -26,7 +26,7 @@ links_info:         Source
 abstract:           Some playing around with different ways of intersection solutions.
 
 
-* I. Page 1 - 6: Extenting from $x$ to (2xy + x + y) as part of k solution 
+* I. Page 1 - 6: Extenting from $x$ to $\left(2xy + x + y\right)$ as part of k solution 
 * II. Page 7 - 10: Checking for possible additional terms and factors of this extension
-* III. Page 11 - 17: Looking at common and not common factor(s) case of original n(2x + 1) equation odd numbers (2x + 1)
+* III. Page 11 - 17: Looking at common and not common factor(s) case of original $n\left(2x + 1\right)$ equation odd numbers $\left(2x + 1\right)$
 

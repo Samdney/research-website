@@ -32,7 +32,7 @@ PATH = 'content'
 # ******
 # Plugins
 PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['jinja2content']
+PLUGINS = ['render_math', 'jinja2content']
 # ******
 STATIC_PATHS = ['blog', 'pages', 'images', 'files', 'qrcodes']
 ARTICLE_PATHS = ['blog']
