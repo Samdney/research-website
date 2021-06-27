@@ -234,7 +234,7 @@ DEFAULT_PAGINATION = False
 
 # Index page pagination: Info boxes
 INDEX_PAGINATION_CHRONOLOGICAL = False
-INDEX_PAGINATION_ARTICLES = "project_0059| funding_0003| project_0056| project_0055| project_0049"
+INDEX_PAGINATION_ARTICLES = "project_0100| project_0059| funding_0003| project_0056| project_0055| project_0049"
 INDEX_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
