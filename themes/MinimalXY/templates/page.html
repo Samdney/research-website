@@ -269,6 +269,10 @@
                         <section id="content">
                         <h2 id="TheBigPicture">The Big Picture</h2> <!-- TODO -->
 
+                        {% if page.projects_thebigpicture_info %}
+                            {{ page.projects_thebigpicture_info }}
+                        {% endif %}
+
                         {% set counter = [0] %}
                         {% for project_thebigpicture in projects_thebigpicture_pa %}
 
@@ -278,7 +282,7 @@
                                     {% if counter[0] % 2 == 0 %}                                  
                                         <div class="two-columns-pages">
                                             <div class="col01-pages20">
-                                                <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
+                                                <img width="100%" style="margin-top: 10%;" src="{{ articleref.sum_image }}"> <!-- TODO: margin-top, 0 -->
                                             </div>
 
                                             <div class="col02-pages80">
@@ -300,7 +304,7 @@
                                             </div>
 
                                             <div class="col02-pages20">
-                                                <img width="100%" style="margin-top: 0%;" src="{{ articleref.sum_image }}">
+                                                <img width="100%" style="margin-top: 10%;" src="{{ articleref.sum_image }}"> <!-- TODO: margin-top, 0 -->
                                             </div>
                                         </div>
                                     {% endif %}                                   
@@ -310,6 +314,10 @@
 
                             {% if counter.append(counter.pop() + 1) %}{% endif %}
                         {% endfor %}
+
+                    {% if page.projects_thebigpicture_funding %}
+                        <b><i class="fas fa-hand-holding-usd"></i> {{ page.projects_thebigpicture_funding }}</b>
+                    {% endif %}
 
                     </section>    
 
