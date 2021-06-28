@@ -84,38 +84,41 @@
 		        </p>
 		        {% endif %}
 
-		        {% if PROJECTS %}
+		        {% if PROJECTS or PROJECTS_INFO %}
 		        <br /><br />
                 <b>Projects</b><br />
 
                     <!-- TODO -->
+                    {% if PROJECTS %}
+                        {% set projects_running_pa = PROJECTS.split('| ') %}                           
+                               
+                        {% for project_running in projects_running_pa %}
+                            {% for articleref in articles %}
+                      	        {% if articleref.id == project_running %}
+                                             
+                                    <a href="{{ SITEURL }}/{{ articleref.url }}" style="color: #2196F3;">{{ articleref.title }}</a>
+                                    <div class="little-information-line" style="padding-top: 0px;">
+				                        {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                    </div>
+                                            
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
+
+		        {% endif %}
+
+
+                {% if PROJECTS_INFO %}
                     <b>
                         <br />
                         <font style="font-size: 0.8em;">
-                            Currently, my research work and the belonging website are under reorganization. I'm updating it step by step, in the next weeks. Have an attention on it for getting a new, better impression. ;)<br />
-                            Please go to <a href="/projects.html" title="Projects" style="color: #2196F3;">Projects</a>, for more information.
+                            {{ PROJECTS_INFO }}
                         </font>
                         <br /><br />
                     </b>
+                {% endif %}
 
-                    <!-- TODO -->
-                    <!--
-                    {% set projects_running_pa = PROJECTS.split('| ') %}                           
-                           
-                    {% for project_running in projects_running_pa %}
-                        {% for articleref in articles %}
-                  	        {% if articleref.id == project_running %}
-                                         
-                                <a href="{{ SITEURL }}/{{ articleref.url }}" style="color: #2196F3;">{{ articleref.title }}</a>
-                                <div class="little-information-line" style="padding-top: 0px;">
-				                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
-                                </div>
-                                        
-                            {% endif %}
-                        {% endfor %}
-                    {% endfor %}
-                    -->
-		        {% endif %}
 
 		        {% if FUNDINGS %}
 		        <br />
