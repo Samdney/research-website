@@ -34,7 +34,7 @@ PATH = 'content'
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['render_math', 'jinja2content']
 # ******
-STATIC_PATHS = ['blog', 'pages', 'images', 'files', 'qrcodes']
+STATIC_PATHS = ['blog', 'pages', 'images', 'files', 'pitches', 'qrcodes']
 ARTICLE_PATHS = ['blog']
 #ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
 #ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
