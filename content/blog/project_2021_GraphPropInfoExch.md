@@ -11,6 +11,7 @@ slug:       						Graph-Property-Driven-Information-Exchange-in-Distributed-Netw
 index_title:						Graph Property Driven Information Exchange in Distributed Networks
 index_image:        				/images/Project.jpg
 index_summary:                      A new mathematical concept for the description of data flow in distributed networks by an enhancement of graph theory which we introduce by our work. It gives new insides for algorithm development and data compression in distributed networks, relevant for high amount of data technologies like high quality video streaming, blockchain and 5G.
+investor_pitch:                     <b>Have a look at: <a href="/pitches/investorpitch-01.pdf" title="Investor Pitch 01" target="_blank">Investor Pitch 01 (pdf)</a></b>
 sum_image:							/images/Project.jpg
 kind:               				Project
 project_period:     				Since 2021/03/01

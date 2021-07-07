@@ -203,6 +203,8 @@
                   	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
                         {% if article.info %}<li><b>Info:</b> {{ article.info }}</li>{% endif %}
 
+                        {% if article.investor_pitch %}{{ article.investor_pitch }}{% endif %}
+
 	                    {% if article.project_proposal_pdf %}
 		                <li>
 			                <b>Project proposal: </b><a href="{{ article.project_proposal_pdf }}" title="External: {{ article.title }}" target="_blank">pdf</a>
@@ -248,6 +250,8 @@
                                 {% if article.keywords %}<li><b>Keywords:</b> {% for keyword in keywords %}{% if loop.index != 1 %}, {% endif %}{{ keyword }}{% endfor %}</li>{% endif %}              
                   	    {% if article.id %}<li><b>id:</b> {{ article.id }}</li>{% endif %}
                         {% if article.info %}<li><b>Info:</b> {{ article.info }}</li>{% endif %}
+
+                        {% if article.investor_pitch %}{{ article.investor_pitch }}{% endif %}
 
 	                    {% if article.project_proposal_pdf %}
 		                <li>

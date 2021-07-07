@@ -289,7 +289,8 @@
                                                 <a href="{{ SITEURL }}/{{ articleref.url }}">{{ articleref.title }}</a> 
                                                 <div class="little-information-line">
                                                     {{ articleref.project_members }}{% if articleref.project_period %}, {{ articleref.project_period }}{% endif %}{% if articleref.fundings %}, {{ articleref.fundings }}{% endif %}{% if articleref.id %}, id: {{ articleref.id }}{% endif %}{% if articleref.index_summary %}<br />{% endif %}
-                                                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}
+                                                    {% if articleref.index_summary %}{{ articleref.index_summary }}{% endif %}<br />
+                                                    {% if articleref.investor_pitch %}{{ articleref.investor_pitch }}{% endif %}
                                                 </div>
                                             </div>
                                         </div>                                    
