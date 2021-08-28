@@ -17,6 +17,8 @@ BIBLIOGRAPHY_LASTUPDATE = '2021/08/28'
 BIBLIOGRAPHY = (
     #('nb', 'title', 'sum', 'author', 'date', 'year', 'kind', 'keywords', 'subjectclass', 'subjects', 'publication', 'publicationlink', 'preprint', 'latex', 'source', 'pdf', 'related', 'misc', 'doi', 'id'),
 
+     ('6', 'Powers of 2 whose digits are powers of 2', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math', '', '', '', '', '', '', '', '', '', ''),
+
     ('5', 'Dynamical decomposition by clique separators on hypergraphs', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', ''),
 
     ('4', 'Primitive data structures for the 3SUM and k-SUM problem', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', ''),
