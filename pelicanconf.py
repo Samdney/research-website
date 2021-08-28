@@ -151,7 +151,7 @@ PROJECTS_INFO = "Currently, my research work and the belonging website are under
 FUNDINGS = "funding_0003"
 #CROWDFUNDING_CAMPAIGNS = "GoFundMe.com: <i>Conference Attending Expenses</i> (<a href='https://www.gofundme.com/f/conference-attending-expenses' title='GoFundMe.com: Conference Attending Expenses' target='_blank' style='color: #2196F3;'>visit</a>)"
 
-NBPAPERENTRIES = 2
+NBPAPERENTRIES = 3
 
 # TODO
 PRIVATEINVESTORS = "Information for private investors available on <a href='/funding.html#PrivateInvestors' style='color: #2196F3;'>Funding</a>."
