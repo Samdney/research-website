@@ -107,7 +107,7 @@ ARTICLE = ('Medium', 'Independent mathematical scientist. wat?', 'https://medium
 #QA = ('Misc', 'B', 'C', 'D', 'E')
 
 # Work
-WORK = " "
+WORK = False    # TODO
 WORK_LINKS_EXTERNAL = (
     ('General docs', 'https://cryptpad.fr/profile/#/2/profile/view/ZGoqJnzLDklP5gYiOFE15ecC8dVMzFSiudqHeTE0Ms4/'),
     ('Schedule', 'https://cryptpad.fr/sheet/#/2/sheet/view/ym+olKCrTCwl2MTIOtaRrmzzNyXyh6e8HOCn1xIwKWw/'),
@@ -125,17 +125,24 @@ WORK_LINKS = (
     ('Meetups', '/public.html#Meetups')
 )
 
+# Blog
+BLOG = True
+
 # Combsee
 COMBSEE = "<font style='color: grey;'>Decentralized search for more privacy.</font><br />A new type of decentralized, privacy preserving, search engine based on its mathematical design."
 COMBSEE_LINK = 'https://www.combsee.org/'
 
+# TODO
+ABOUT = True
+
+# TODO
 # GitHub
-GITHUB_USER = ('Samdney', 'https://github.com/Samdney')
-GITHUB_LINKS = (
-    ('Proposals', 'https://github.com/Samdney/proposals'),
-    ('Papers', 'https://github.com/Samdney/papers'),
-    ('Notes', 'https://github.com/Samdney/notes')
-)
+#GITHUB_USER = ('Samdney', 'https://github.com/Samdney')
+#GITHUB_LINKS = (
+#    ('Proposals', 'https://github.com/Samdney/proposals'),
+#    ('Papers', 'https://github.com/Samdney/papers'),
+#    ('Notes', 'https://github.com/Samdney/notes')
+#)
 
 # Ongoing Events
 #TALKS = ""

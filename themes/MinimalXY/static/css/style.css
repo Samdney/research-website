@@ -340,10 +340,10 @@ ol>li:before {
 
 	/* Columns: 70% <-> 30% */
 	.col01-pages70-index {
-    	order: 2;
+    	order: 1;
     	width: 100%;
 	/*padding: 5%;*/
-        border-top-style: solid;
+        border-top-style: dotted; /* neu */
         border-width: 1px;
         border-color: grey;
         margin-top: 7.5%;
@@ -351,7 +351,12 @@ ol>li:before {
   	}
 
 	.col02-pages30-index {
-    	order: 1;
+    	order: 2;
+        border-top-style: dotted;
+        border-width: 1px;
+        border-color: grey;
+        margin-top: 2em;
+        padding-top: 2em;
     	width: 100% ;
   	}	
 }
@@ -398,11 +403,13 @@ ol>li:before {
     .col01-octocat {
         order: 1;
         width: 30%;
+        text-align: center; /* neu */
     }
 
     .col02-octocat {
         order: 2;
         width: 70%;
+        font-size: 0.9em; /* neu */
         padding-left: 1%;
     }
 }
@@ -415,6 +422,7 @@ ol>li:before {
         align-items: stretch;
     	flex-flow: row wrap;
         writing-mode: horizontal-tb;
+        padding-top: 10%;
 	}
 
      .col01-octocat {
@@ -423,9 +431,12 @@ ol>li:before {
     }
 
     .col02-octocat {
-        order: 1;
+        /* order: 1; */
+        order: 2;   /* neu */
     	width: 70%;
-        padding-left: 1%;
+        /*padding-left: 1%;*/
+        font-size: 0.8em;   /* neu */
+        padding-left: 10%; /* neu */
     }  
 }
 

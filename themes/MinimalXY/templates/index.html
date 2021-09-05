@@ -53,6 +53,24 @@
         <div class="two-columns-pages-index">
 	        <div class="col01-pages70-index"> <!-- TODO -->
                 
+                {% if ABOUT %}
+                 <div class="two-columns-octocat">
+
+                    <div class="col01-octocat">
+                        <img height="120px" style="margin-top: 0%;" src="images/labtocat.png">
+                    </div>
+
+                    <div class="col02-octocat">                    
+                        <b>Carolin Zöbelein</b><br />
+                        <i>Math and Theoretical Computer Science Researcher<br />
+                        Distributed Networks, Algorithms, Combinatorics & Optimization<br />
+                        Inventorship, Open Innovation and Science</i>     
+                    </div>
+
+                </div>
+                {% endif %}
+
+
                 {% if UPCOMING %}
 		        <b style="font-size: 25px;">Upcoming</b>
 		        <p>
@@ -203,42 +221,47 @@
                 <p>  
                     You can find a list of my public work on the subpage <a href="/public.html" style="color: #2196F3;">Public</a>.
                 </p>
-                    <!--		
-		            {% if WORK_LINKS_EXTERNAL %}
-                   	<font style="font-size: 0.8em;">
-                        {% for work in WORK_LINKS_EXTERNAL %}
-                            <a href="{{ work[1] }}" title="External: {{ work[0] }}" target="_blank" style="color: #2196F3;">{{ work[0] }}</a>, 
-                        {% endfor %}
-                        </font>
-                 	{% endif %}
-                    {% if WORK_LINKS %}
-                   	<font style="font-size: 0.8em;">
-                        {% for work in WORK_LINKS %}
-                            <a href="{{ work[1] }}" title="{{ work[0] }}" style="color: #2196F3;">{{ work[0] }}</a>{{ "," if not loop.last }}
-                        {% endfor %}
-                        </font>
-                 	{% endif %}
-                    -->
-		        {% endif %}
+                        <!--		
+		                {% if WORK_LINKS_EXTERNAL %}
+                       	<font style="font-size: 0.8em;">
+                            {% for work in WORK_LINKS_EXTERNAL %}
+                                <a href="{{ work[1] }}" title="External: {{ work[0] }}" target="_blank" style="color: #2196F3;">{{ work[0] }}</a>, 
+                            {% endfor %}
+                            </font>
+                     	{% endif %}
+                        {% if WORK_LINKS %}
+                       	<font style="font-size: 0.8em;">
+                            {% for work in WORK_LINKS %}
+                                <a href="{{ work[1] }}" title="{{ work[0] }}" style="color: #2196F3;">{{ work[0] }}</a>{{ "," if not loop.last }}
+                            {% endfor %}
+                            </font>
+                     	{% endif %}
+                        -->
+		            
 
 
-                <!-- <hr /> -->
-                <i class="ai ai-mathoverflow" style="font-size: 85px;"></i> Visit me on <a href="https://mathoverflow.net/users/147606/samdney?tab=profile" title="Mathoverflow" target="_blank" style="color: #2196F3;">Mathoverflow</a>...<br />
+                    <!-- <hr /> -->
+                    <i class="ai ai-mathoverflow" style="font-size: 85px;"></i> Visit me on <a href="https://mathoverflow.net/users/147606/samdney?tab=profile" title="Mathoverflow" target="_blank" style="color: #2196F3;">Mathoverflow</a>...<br />
 
-                ...and read more about my work on my <a href="https://blog.carolin-zoebelein.de" title="Blog" target="_blank" style="color: #2196F3;">Blog</a>.  <i class="fas fa-pencil-alt" style="font-size: 57px;"></i>
+                    ...and read more about my work on my <a href="https://blog.carolin-zoebelein.de" title="Blog" target="_blank" style="color: #2196F3;">Blog</a>.  <i class="fas fa-pencil-alt" style="font-size: 57px;"></i>
 
 
-                <!--
-                <hr />
-		        <b style="font-size: 25px;">Become my Research Angel!</b>
-                <p>-->
-                    <!-- <font style="font-size: 0.8em;"> --><!--
-                        Become also one of my financial research angels on <i class="fab fa-patreon"></i> <a href="https://www.patreon.com/carolinzoebelein_research" title="External: Patreon - Carolin Zöbelein Research" target="_blank" style="color: #2196F3;">Patreon</a> or <i class="fas fa-heart" style="color: #ea4aaa;"></i> <a href="https://github.com/sponsors/Samdney" title="External: GitHub Sponsors - Samdney" target="_blank" style="color: #2196F3;">GitHub Sponsors</a> to support my work.
-                    --><!-- </font> -->
-                <!--</p> -->
+                    <!--
+                    <hr />
+		            <b style="font-size: 25px;">Become my Research Angel!</b>
+                    <p>-->
+                        <!-- <font style="font-size: 0.8em;"> --><!--
+                            Become also one of my financial research angels on <i class="fab fa-patreon"></i> <a href="https://www.patreon.com/carolinzoebelein_research" title="External: Patreon - Carolin Zöbelein Research" target="_blank" style="color: #2196F3;">Patreon</a> or <i class="fas fa-heart" style="color: #ea4aaa;"></i> <a href="https://github.com/sponsors/Samdney" title="External: GitHub Sponsors - Samdney" target="_blank" style="color: #2196F3;">GitHub Sponsors</a> to support my work.
+                        --><!-- </font> -->
+                    <!--</p> -->
 
-                <!-- <hr /> --> <!-- TODO -->
+                    <!-- <hr /> --> <!-- TODO -->
+
+            {% endif %}
+
+
             </div>
+            
 
 
             <div class="col02-pages30-index">
@@ -305,6 +328,21 @@
                         </code>
                     </font>
             
+                {% endif %}
+
+
+                {% if BLOG %}
+                <br />
+                <b style="font-size: 20px;">Blog & Discussions</b><br />
+                    <font style="font-size: 0.8em;"> <!-- 0.8em -->
+
+                        Visit me on <i class="ai ai-mathoverflow" style="font-size: 1.5em;"></i> <a href="https://mathoverflow.net/users/147606/samdney?tab=profile" title="Mathoverflow" target="_blank" style="color: #2196F3;"><b>Mathoverflow</b></a> ...<br />
+
+                        ... and read more about my work on my <i class="fas fa-pencil-alt" style="font-size: 1.2em;"></i> <a href="https://blog.carolin-zoebelein.de" title="Blog" target="_blank" style="color: #2196F3;"><b>Blog</b></a>.
+
+                    </font>
+
+                <br />
                 {% endif %}
 
         
