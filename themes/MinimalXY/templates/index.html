@@ -70,6 +70,18 @@
                 </div>
                 {% endif %}
 
+                
+                <!-- TODO -->
+                {% if PRIVATEINVESTORS %}
+                <!-- <hr /> --> <!-- TODO: old -->
+                <hr style="border: 0.9px dashed lightgrey" />
+                <!-- <b style="font-size: 25px;">Private Investors</b><br /> --> <!-- TODO: old -->
+                <b style="font-size: 22px;">Private Investors</b><br />
+                <p>
+                    {{ PRIVATEINVESTORS }}
+                </p>
+                {% endif %}
+
 
                 {% if UPCOMING %}
 		        <b style="font-size: 25px;">Upcoming</b>
@@ -203,16 +215,6 @@
                 </ul>
                 {% endif %}
                 <!-- TODO -->
-
-
-                <!-- TODO -->
-                {% if PRIVATEINVESTORS %}
-                <hr />
-                <b style="font-size: 25px;">Private Investors</b><br />
-                <p>
-                    {{ PRIVATEINVESTORS }}
-                </p>
-                {% endif %}
 
 
                 {% if WORK %}
