@@ -151,7 +151,7 @@ ABOUT = True
 #WEBINARS = ""
 
 # TODO
-PROJECTS = "project_0100"
+#PROJECTS = "project_0100" # TODO
 #PROJECTS = "project_0061| project_0060| project_0058| project_0055"
 PROJECTS_INFO = "Currently, my research work and the belonging website are under reorganization. I'm updating it step by step, in the next weeks. Have an attention on it for getting a new, better impression. ;)<br />Please go to <a href='/projects.html' title='Projects' style='color: #2196F3;'>Projects</a>, for more information."
 
