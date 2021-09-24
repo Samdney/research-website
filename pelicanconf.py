@@ -162,11 +162,11 @@ FUNDINGS = "funding_0003"
 NBPAPERENTRIES = 3
 
 # Funding page: Seeking funding for...
-SEEK_FUNDINGS = [
+#SEEK_FUNDINGS = [
     # ( id, info, pdflink, pdftitle, pdfinfo )
 
-    ('InvestorPitch01', 'Graph property driven information exchange in distributed networks', '/pitches/investorpitch-01.pdf', 'Investor Pitch 01', 'Investor Pitch 01 (pdf)')
-]
+    #('InvestorPitch01', 'Graph property driven information exchange in distributed networks', '/pitches/investorpitch-01.pdf', 'Investor Pitch 01', 'Investor Pitch 01 (pdf)')
+#]
 
 
 # TODO
