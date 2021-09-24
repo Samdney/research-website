@@ -988,11 +988,17 @@
                         <a id="PrivateInvestorInformation" href="/files/investorinfo.pdf" title="Private Investor Information" target="_blank">Private Investor Information (pdf)</a>
     
 
-                        <br /><br /> <!-- TODO -->
-                        Seeking funding for...
-                        <ul>
-                            <li id="InvestorPitch01"><b>Graph property driven information exchange in distributed networks</b>, <a href="/pitches/investorpitch-01.pdf" title="Investor Pitch 01" target="_blank">Investor Pitch 01 (pdf)</a></li>
-                        </ul>   
+                        {% if SEEK_FUNDINGS %}
+                            <br /><br /> <!-- TODO -->
+                            Seeking funding for...
+                            
+                            <ul>
+                                {% for id, info, pdflink, pdftitle, pdfinfo in SEEK_FUNDINGS %}
+                                    <li id="{{ id }}"><b>{{ info }}</b>{% if pdflink %}, <a href="{{ pdflink }}" title="{{ pdftitle }}" target="_blank">{{ pdfinfo }}</a>{% endif %}</li>
+                                {% endfor %}
+                            </ul>
+
+                        {% endif %}
 
                     </section>
 

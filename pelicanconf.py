@@ -161,6 +161,14 @@ FUNDINGS = "funding_0003"
 
 NBPAPERENTRIES = 3
 
+# Funding page: Seeking funding for...
+SEEK_FUNDINGS = [
+    # ( id, info, pdflink, pdftitle, pdfinfo )
+
+    ('InvestorPitch01', 'Graph property driven information exchange in distributed networks', '/pitches/investorpitch-01.pdf', 'Investor Pitch 01', 'Investor Pitch 01 (pdf)')
+]
+
+
 # TODO
 PRIVATEINVESTORS = "Information for private investors are available on <a href='/funding.html#PrivateInvestors' style='color: #2196F3;'>Funding</a>."
 
