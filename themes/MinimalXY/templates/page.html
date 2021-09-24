@@ -261,6 +261,7 @@
                     {% endif %}
 
 
+                    
                     {% if page.projects_thebigpicture %}
 
                         <hr /> 
@@ -323,7 +324,19 @@
                     </section>    
 
                     {% endif %}
-      
+
+
+                    <!-- TODO -->
+                    <hr />
+
+                    <section id="content">
+
+                        {% if page.projects_thebigpicture_funding %}
+                            <b><i class="fas fa-hand-holding-usd"></i> {{ page.projects_thebigpicture_funding }}</b>
+                        {% endif %}
+
+                    </section>
+
 
                     <hr />
 
