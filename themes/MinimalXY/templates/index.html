@@ -70,24 +70,129 @@
 
                 </div>
 
-                <br />
-                <center>
-                    <font style="color: red;"><b>Seeeking for partnerships for prototyping, patent applications and license takers.</b></font>
-                </center>
-
                 {% endif %}
 
                 
                 <!-- TODO -->
                 {% if PRIVATEINVESTORS %}
-                <!-- <hr /> --> <!-- TODO: old -->
+                <!-- <hr /> -->
                 <hr style="border: 0.9px dashed lightgrey" />
                 <!-- <b style="font-size: 25px;">Private Investors</b><br /> --> <!-- TODO: old -->
                 <b style="font-size: 22px;">Private Investors</b><br />
+
+                <font style="color: black; font-size: 0.9em; margin-top: 2%;">
+                    <b>Seeeking for partnerships for prototyping, patent applications and license takers.</b><br />
+
+                    #DistributedNetworks, #HighRateDataCompression, #DataFlowRouting, #CensorshipCircumvention, #HybridAlgorithms, #Streaming, #ITSecurity
+                </font>
+
+                <br />
+
+                <div class="two-columns-pages-projects">
+
+                    <div class="col01-pages40" style="margin-top: 2%;">
+                        <img width="100%" style="margin-top: 0%;" src="/images/1910.i039.021_journalistis-reporters-news-media-isometric.jpg">
+
+                        <p style="font-size: 0.7em; text-align: right; color: grey; margin-top: 0.2%;">
+                            <a href="https://www.freepik.com/free-vector/journalistis-reporters-news-media-isometric-illustrations-set_14744111.htm" title="External: freepik" target="_blank">Designed by macrovector</a>
+                        </p>
+			        </div>
+			        <div class="col02-pages60">
+
+                        <font style="font-size: 0.8em;">
+
+                            <p>
+                                <b>Why my work matters...</b><br />
+                                United Nations:
+                                <a href="https://www.un.org/techenvoy/sites/www.un.org.techenvoy/files/general/Digital_Human_Rights_Summary_PDF.pdf" title="External: The United Nations Secretary-General's Roadmap for Digital Cooperation" target="_blank" style="color: #2196F3;">Roadmap for Digital Cooperation</a>,
+                                <a href="https://www.ohchr.org/en/issues/digitalage/pages/digitalageindex.aspx" title="External: United Nations Human Rights: DigitalAge" target="_blank" style="color: #2196F3;">Human Rights: DigitalAge</a>,
+                                <a href="https://www.digitalhub.ohchr.org/" title="External: United Nations: Human Rights and Digital Technology - Resource Hub" target="_blank" style="color: #2196F3;">Human Rights and Digital Technology - Resource Hub</a>
+                            </p>
+
+                            <p>
+                                <b>Related market news</b><br />
+                                Bloomberg: 
+                                <a href="https://www.bloomberg.com/search?query=streaming" title="External: Bloomberg - Streaming" target="_blank" style="color: #2196F3;">Streaming</a>,
+                                <a href="https://www.bloomberg.com/topics/5g-network" title="External: Bloomberg - 5G Network" target="_blank" style="color: #2196F3;">5G Network</a>,
+                                <!-- <a href="XXX" title="XXX" target="_blank" style="color: #2196F3;">VR (Virtual Reality)</a>, -->
+                                <a href="https://www.bloomberg.com/code-wars" title="External: Bloomberg - Code Wars" target="_blank" style="color: #2196F3;">Code Wars</a>,
+                                <a href="https://www.bloomberg.com/search?query=censorship" title="External: Bloomberg - Censorship" target="_blank" style="color: #2196F3;">Censorship</a>,
+                                <a href="https://www.bloomberg.com/green-energy-science" title="External: Bloomberg: Energy & Science" target="_blank" style="color: #2196F3;">Energy & Science</a>
+                            </p>
+
+                        </font>
+                    </div>
+
+                </div>
+
+            
+                <div class="two-columns-pages-projects" style="margin-top: -1%;">
+            
+                    <div class="col01-pages60">
+
+                        <font style="font-size: 0.8em;">
+
+                            <p>
+                                <b>My current work includes...</b><br />
+                                <ul>
+                                    <li>High amount transmission data compression algorithms</li>
+                                    <li>Multi-Problem hybrid algorithms</li>
+                                    <li>Adversary data removing resistant systems</li>
+                                    <li>Anti-Censorship algorithms</li>
+                                    <li>Circuit level based server cooling and energy saving</li>
+                                </ul>                    
+                            </p>
+
+                        </font>
+
+                    </div>
+                    <div class="col02-pages40" style="margin-top: 0;">	
+						<img width="100%" style="margin-top: 0%;" src="/images/Vector_2646_cut.jpg">
+
+                        <p style="font-size: 0.7em; text-align: right; color: grey; margin-top: 0.2%;">
+                            <a href="https://www.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_14803715.htm" title="External: freepik" target="_blank">Designed by liuzishan</a>
+                        </p>
+					</div>
+
+                </div>
+
                 <p>
                     {{ PRIVATEINVESTORS }}
                 </p>
                 {% endif %}
+
+
+
+                <!-- TODO -->
+                {% if BIBLIOGRAPHY %}
+                <!-- <hr /> -->
+                <!-- <b style="font-size: 25px;">That's new</b><br /> --> <!-- TODO: old -->
+                <hr style="border: 0.9px dashed lightgrey" />
+                <b style="font-size: 22px; margin-top: 2%;">That's new</b><br />
+
+                <font style="color: black; font-size: 0.9em;">
+
+                    {% set bibcounter = [0] %}
+                    <ul>
+                        {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
+
+                            {% if bibcounter < [ NBPAPERENTRIES ] %}
+
+                                <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
+                                    {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
+                                    {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font> <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
+                                </li>
+
+                            {% endif %}
+
+                        {% endfor %}
+
+                    </ul>
+
+                </font>
+
+                {% endif %}
+
 
 
                 {% if UPCOMING %}
@@ -97,8 +202,8 @@
 		        </p>
 		        {% endif %}
 
-		        <hr /> <!-- TODO -->
-		        <b style="font-size: 25px;">Running...</b>
+		        <!-- <hr /> --> <!-- TODO -->
+		        <!-- <b style="font-size: 25px;">Running...</b> --> <!-- TODO -->
 
 		        {% if TALKS %}
 		        <p>
@@ -198,30 +303,6 @@
 		        {% endfor %}
                 {% endif %}
                 -->
-
-
-                <!-- TODO -->
-                <hr />
-                <b style="font-size: 25px;">That's new</b><br />
-                {% if BIBLIOGRAPHY %}
-                {% set bibcounter = [0] %}
-                <ul>
-                    {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
-
-                        {% if bibcounter < [ NBPAPERENTRIES ] %}
-
-                            <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
-                                {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
-                                {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font>, <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
-                            </li>
-
-                        {% endif %}
-
-                    {% endfor %}
-
-                </ul>
-                {% endif %}
-                <!-- TODO -->
 
 
                 {% if WORK %}
