@@ -11,6 +11,8 @@ from datetime import datetime
 
 PROJECTSBIB_LASTUPDATE = '2021/04/12'
 
+# TODO: temporary
+"""
 PROJECTSBIB = ( 
 #    ('', '', '', '', '', '', '', '', '', (
 #            ('', '', '', '', '', '', '', '', ''),
@@ -47,3 +49,4 @@ PROJECTSBIB = (
         )
     )
 )
+"""

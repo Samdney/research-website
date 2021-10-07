@@ -354,14 +354,16 @@
                         </b>
 
 
-                        {% if RESEARCH %} <!-- TODO -->
+                        <!-- TODO: temporary -->
+                        <!--
+                        {% if RESEARCH %}
 
                             I'm a fan of open science, hence you can find a list of my public projects and belonging content on:<br />
 
-                            {% for kind, title, typea, typef, name, link, info, external in RESEARCH %} <!-- TODO -->
-                                {% if name == 'osf' %} <!-- TODO -->
+                            {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
+                                {% if name == 'osf' %}
 
-                                    <font style="font-size: 1em;"> <!-- 0.8em -->
+                                    <font style="font-size: 1em;">
                                         <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br />
                                     </font>
 
@@ -369,10 +371,10 @@
                             {% endfor %}
 
 
-                            {% if SOCIAL %} <!-- TODO -->
+                            {% if SOCIAL %}
 
-                                {% for title, typea, typef, name, link, info in SOCIAL %} <!-- TODO -->
-                                    {% if title == 'GitHub' %} <!-- TODO -->
+                                {% for title, typea, typef, name, link, info in SOCIAL %}
+                                    {% if title == 'GitHub' %}
 
                                         <font style="font-size: 1em;">
                                             <i class="{{ typea }} {{ typef }}-{{ name }}"></i>  <a class="sc-{{ name }}" href="{{ link }}" title="{{ title }}" target="_blank" style="font-size: 0.8em; color: #2196F3;"><b>{{ info }}</b></a><br />
@@ -382,6 +384,7 @@
                                 {% endfor %}
                         
                         {% endif %}
+                        -->
 
 
                     {% if PROJECTSBIB %} <!-- TODO: Setting/Thinking about all font sizes, Desktop and Mobile -->
@@ -488,7 +491,7 @@
 
                     <!-- TODO: temporary moved if page_projects_running because of h2 title, in fact it need to put here -->
 
-                     <hr />
+                    <hr />
 
                     <section id="content">
                     <!-- <h2 id="Running">Running</h2> --> <!-- TODO: Renaming -->
