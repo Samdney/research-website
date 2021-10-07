@@ -15,7 +15,7 @@ sum_image:							/images/funding/2019_nlnetngizero.png
 sum_content:						A fund dedicated to search technologies which creates an open, trustworthy and reliable internet for all and financial supported by the European Commission
 kind:               				Funding
 sub_kind:           				Grant
-funding_period:     				Since 2019/12/10 (12 months)
+funding_period:     				2019/12/10 (12 months)
 funding_amount:						19 100 EUR
 project_members:    				Carolin Zöbelein
 keywords:           				decentralization, search engine, math, privacy
