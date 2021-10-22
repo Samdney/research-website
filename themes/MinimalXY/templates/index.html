@@ -181,26 +181,35 @@
                 <hr style="border: 0.9px dashed lightgrey" />
                 <b style="font-size: 22px; margin-top: 2%;">That's new</b><br />
 
-                <font style="color: black; font-size: 0.9em;">
+                <p>
+                    <b style="font-size: 18px; margin-top: 2%;">Blog</b><br /><!-- TODO -->
+                    {{ NEW_BLOG_POST }}<br/>
+                </p>
 
-                    {% set bibcounter = [0] %}
-                    <ul>
-                        {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
+                <p>
+                <b style="font-size: 18px; margin-top: 2px;">Bibliography</b><br />
 
-                            {% if bibcounter < [ NBPAPERENTRIES ] %}
+                    <font style="color: black; font-size: 0.9em;">
 
-                                <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
-                                    {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
-                                    {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font> <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
-                                </li>
+                        {% set bibcounter = [0] %}
+                        <ul>
+                            {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
 
-                            {% endif %}
+                                {% if bibcounter < [ NBPAPERENTRIES ] %}
 
-                        {% endfor %}
+                                    <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
+                                        {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
+                                        {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font> <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
+                                    </li>
 
-                    </ul>
+                                {% endif %}
 
-                </font>
+                            {% endfor %}
+
+                        </ul>
+
+                    </font>
+                </p>
 
                 {% endif %}
 

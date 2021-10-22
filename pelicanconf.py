@@ -129,6 +129,9 @@ WORK_LINKS = (
 # Blog
 BLOG = True
 
+# TODO
+NEW_BLOG_POST = "<font style='font-size: 16px;'><i>Eulerian cycles for combinatorial independent sets determination</i> </font><font style='color: #2196F3; font-size: 12px;'> <a  href='https://blog.carolin-zoebelein.de' title='External: Blog' target='_blank'>Go to Blog</a></font>"
+
 # Combsee
 COMBSEE = "<font style='color: grey;'>Decentralized search for more privacy.</font><br />A new type of decentralized, privacy preserving, search engine based on its mathematical design."
 COMBSEE_LINK = 'https://www.combsee.org/'
