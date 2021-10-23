@@ -2,9 +2,10 @@ Title:          		Projects
 Date:           		2018/08/01 20:00
 Slug:           		projects
 internal_links:         <!--<code><a href="/projects.html#Running">#Running</a></code> --> <!-- <code><a href="/projects.html#TheBigPicture">#The Big Picture</a></code> --> <code><a href="/projects.html#ListOfProjects">#List of Projects</a></code> <code><a href="/projects.html#Work">#Work</a></code> <!-- <code><a href="/projects.html#Paused">#Paused</a></code> --> <!--<code><a href="/projects.html#Upcoming">#Upcoming</a></code>--> <code><a href="/projects.html#InQueue">#In Queue</a></code> <code><a href="/projects.html#IdeasAndSketches">#IdeasAndSketches</a></code> <code><a href="/projects.html#CommunityBasedResearchAndDevelopment">#Community based Research</a></code>
-projects_paused:        project_0055| project_0059| project_0056| project_0049
+projects_paused:        project_0055| project_0049
 projects_thebigpicture_info: Currently, my main research focus is set to the following big research topic(s), cut in several related projects (see List of Projects). For some of them, I'm seeking for funding, at the moment.
 projects_thebigpicture_funding: If you are interested in supporting my work as an investor, check out the <a href="/projects.html#ListOfProjects" title="List of Projects">List of Projects</a> below and have a look at the <a href="/funding.html#PrivateInvestors" title="Private Investors Information" target="_blank">Private Investors Information</a>.
+<!-- TODO: projects_paused:        project_0055| project_0059| project_0056| project_0049 -->
 <!-- TODO: projects_running:       project_0061| project_0060| project_0058| project_0055 -->
 <!-- TODO: projects_paused:        project_0059| project_0056| project_0049 -->
 <!-- TODO: projects_paused:        project_0061| project_0060| project_0058| project_0055| project_0059| project_0056| project_0049 -->
