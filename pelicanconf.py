@@ -126,11 +126,13 @@ WORK_LINKS = (
     ('Meetups', '/public.html#Meetups')
 )
 
-# Blog
+# Blog in sidenav
 BLOG = True
 
 # TODO
-NEW_BLOG_POST = "<font style='font-size: 16px;'><i>Eulerian cycles for combinatorial independent sets determination</i> </font><font style='color: #2196F3; font-size: 12px;'> <a  href='https://blog.carolin-zoebelein.de' title='External: Blog' target='_blank'>Go to Blog</a></font>"
+# Blog entry in main frame
+NEW_BLOG_POST_AUT = False
+NEW_BLOG_POST = ('Eulerian cycles for combinatorial independent sets determination', 'https://blog.carolin-zoebelein.de', 'External: Blog', 'Go to Blog')
 
 # Combsee
 COMBSEE = "<font style='color: grey;'>Decentralized search for more privacy.</font><br />A new type of decentralized, privacy preserving, search engine based on its mathematical design."

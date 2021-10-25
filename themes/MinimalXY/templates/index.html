@@ -181,10 +181,16 @@
                 <hr style="border: 0.9px dashed lightgrey" />
                 <b style="font-size: 22px; margin-top: 2%;">That's new</b><br />
 
-                <p>
-                    <b style="font-size: 18px; margin-top: 2%;">Blog</b><br /><!-- TODO -->
-                    {{ NEW_BLOG_POST }}<br/>
-                </p>
+                {% if NEW_BLOG_POST_AUT == True or NEW_BLOG_POST %}
+                    <p>
+                        <b style="font-size: 18px; margin-top: 2%;">Blog</b><br /><!-- TODO -->
+                        {% if NEW_BLOG_POST_AUT  == False %}
+                            <font style="font-size: 16px;"><i>{{ NEW_BLOG_POST[0] }}</i> </font><font style="color: #2196F3; font-size: 12px;"> <a  href="{{ NEW_BLOG_POST[1] }}" title="{{ NEW_BLOG_POST[2] }}" target="_blank">{{ NEW_BLOG_POST[3] }}</a></font><br />
+                        {% else %}
+                            <!-- TODO -->
+                        {% endif %}
+                    </p>
+                {% endif %}
 
                 <p>
                 <b style="font-size: 18px; margin-top: 2px;">Bibliography</b><br />
