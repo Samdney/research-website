@@ -131,7 +131,7 @@ BLOG = True
 
 # TODO
 # Blog entry in main frame
-NEW_BLOG_POST_AUT = False
+NEW_BLOG_POST_AUT = True
 NEW_BLOG_POST = ('Eulerian cycles for combinatorial independent sets determination', 'https://blog.carolin-zoebelein.de', 'External: Blog', 'Go to Blog')
 
 # Combsee

@@ -10,6 +10,19 @@
     <meta name="description" content="Carolin Zöbelein - Research">
     <meta name="keywords" content="Carolin Zöbelein, Research, Mathematical, Scientist, Freelancer, Math, Crytography, Algebra, Number Theory, Funding, Crowdfunding, Encryption, Privacy, Anonymity, Communication, Free, Access, Independently, Obfuscation, Anti-Censorship, Censorship, Blocking, Circumvention, Protecting, Decentralized, Networks, Technologies, Search Engine, Protocol, Prime numbers, Android, App, Security, Art">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function reqListener () {
+            console.log(this.responseText);
+        }
+        var oReq = new XMLHttpRequest();
+
+        oReq.onload = function() {
+            document.getElementById('my-blog-title').innerHTML = this.responseText;
+        };
+
+        oReq.open("get", "/includes/get_external_content.php", true);
+        oReq.send();
+    </script>
 
     <!-- Social -->
     <meta property="og:type" content="website"/>
@@ -268,7 +281,7 @@
 
                     <p>
                         <b style="font-size: 18px; margin-top: 2%;">Blog</b><br /><!-- TODO -->
-                            <font style="font-size: 16px;"><i>Eulerian cycles for combinatorial independent sets determination</i> </font><font style="color: #2196F3; font-size: 12px;"> <a  href="https://blog.carolin-zoebelein.de" title="External: Blog" target="_blank">Go to Blog</a></font><br />
+                            <font id="my-blog-title" style="font-size: 16px;"><i>Math, CS and Random Stuff :)</i> </font><font style="color: #2196F3; font-size: 12px;"> <a  href="https://blog.carolin-zoebelein.de" title="External: Blog" target="_blank">Go to Blog</a></font><br />
                     </p>
 
                 <p>
