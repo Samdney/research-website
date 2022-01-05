@@ -766,7 +766,7 @@
 
                                 <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
                                     {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
-                                            {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}<br /></font>{% endif %}
+                                            {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, <a href="files/bibliography/{{ pdf }}" title="{{ kind }}: {{ title }}" target="_blank">pdf</a>{% endif %}<br /></font>{% endif %}
 
                                     <div class="little-information-line">
                                         <!-- {% if sum != '' %}{{ sum }}<br />{% endif %} -->
