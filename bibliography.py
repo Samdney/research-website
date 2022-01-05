@@ -19,11 +19,11 @@ BIBLIOGRAPHY = (
 
     ('7', 'HG-hybrid graphs', '', 'Carolin Zöbelein', '', '2021', 'Draft', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', ''),
 
-    ('6', 'Powers of 2 whose digits are powers of 2', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math', '', '', '', '', '', '', '', '', '', ''),
+    ('6', 'Powers of 2 whose digits are powers of 2', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math', '', '', '', '', '', '', '', '', '', 'paper_0004'),
 
-    ('5', 'Dynamical decomposition by clique separators on hypergraphs', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', ''),
+    ('5', 'Dynamical decomposition by clique separators on hypergraphs', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', 'paper_0003'),
 
-    ('4', 'Primitive data structures for the 3SUM and k-SUM problem', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', ''),
+    ('4', 'Primitive data structures for the 3SUM and k-SUM problem', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', 'paper_0002'),
 
     ('3', 'BlueTransience', 'A Bluetooth based, short memory, social media mobile network app', 'Carolin Zöbelein', 'March 26, 2021', '2020', 'Proposal', ' Bluetooth, Mobile App, Social Media, Natural Disaster, Political Demonstrations, Internet Shutdown', '', 'CS', ' Authorea', 'https://www.authorea.com/users/402885/articles/515244-proposal-bluetransience', '', 'https://github.com/Samdney/proposal-bluetransience', '', '', '', '', 'https://doi.org/10.22541/au.161676845.56300213/v1', 'proposal_0001'),
 
