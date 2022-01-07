@@ -768,24 +768,28 @@
                             <br />
                             Current topics: Enhanced Graph Theory Algorithms for Compression of High Amount Data Transmission, Hardware Circuit Design by Algebraic High Dimensional Objects (for Server Cooling Designs), Combinatorics, Number Theory
                         </font> <!-- TODO -->
+    
+                        <br />
+                        <font style="font-size: 14px;">
+                            Hover <span title="Abstract" style="color: #2196F3;"><i class="fas fa-paperclip"></i></span> for abstracts.
+                        </font>
 
                         {% set bibliographylengthp1 = BIBLIOGRAPHY|length + 1 %}
                         <ol reversed style="counter-reset: item {{ bibliographylengthp1 }};">
                         
-                            {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id in BIBLIOGRAPHY %}
+                            {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id, abstract in BIBLIOGRAPHY %}
 
                                 <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
                                     {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
-                                            {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, <a href="files/bibliography/{{ pdf }}" title="{{ kind }}: {{ title }}" target="_blank">pdf</a>{% endif %}<br /></font>{% endif %}
+                                            {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, <a href="files/bibliography/{{ pdf }}" title="{{ kind }}: {{ title }}" target="_blank"><code style="background-color: white;">pdf</code></a>{% endif %}{% if abstract != '' %}{% if pdf == ''%},{% endif %} <span title="Abstract: {{ abstract }}" style="color: #2196F3;"><i class="fas fa-paperclip"></i></span>{% endif %}<br /></font>{% endif %}
 
                                     <div class="little-information-line">
                                         <!-- {% if sum != '' %}{{ sum }}<br />{% endif %} -->
                                         {% if publication != '' %}
                                             {{ publication }} 
                                                 {% if publicationlink != '' %}
-                                                    <a href="{{ publicationlink }}" title="External: Publication site" target="_blank"><i class="fas fa-external-link-alt" style="font-size: 10px;"></i></a>
+                                                    <a href="{{ publicationlink }}" title="External: Publication site" target="_blank"><i class="fas fa-external-link-alt" style="font-size: 10px;"></i></a>, 
                                                 {% endif %}
-                                            <br />
                                             {% endif %}
 
                                         <!--{% if keywords != '' %}, {{ keywords }}{% endif %}-->
@@ -797,15 +801,15 @@
                                         {% if id != '' %}, id: {{ id }}{% endif %}<br />
 
 
-                                        {% if doi != '' %}doi: <a href="{{ doi }}" title="External: Doi - Publication site" target="_blank">{{ doi }}</a><br />{% endif %}
+                                        {% if preprint != '' %}Preprint: <a href="{{ preprint }}" title="External: Preprint site" target="_blank">{{ preprint }}</a>{% endif %}
 
-                                        {% if preprint != '' %}Preprint: <a href="{{ preprint }}" title="External: Preprint site" target="_blank">{{ preprint }}</a><br />{% endif %}
+                                        {% if doi != '' %}{% if preprint != '' %} | {% endif %}doi: <a href="{{ doi }}" title="External: Doi - Publication site" target="_blank">{{ doi }}</a>{% endif %}
 
-                                        {% if latex != '' %}LaTeX: <a href="{{ latex }}" title="External: LaTeX" target="_blank">{{ latex }}</a><br />{% endif %}
+                                        {% if latex != '' %}{% if preprint != '' or doi != '' %} | {% endif %}LaTeX: <a href="{{ latex }}" title="External: LaTeX" target="_blank">{{ latex }}</a>{% endif %}
 
-                                        {% if source != '' %}Source: <a href="{{ source }}" title="External: Source" target="_blank">{{ source }}</a><br />{% endif %}
+                                        {% if source != '' %}{% if preprint != '' or doi != '' or latex != '' %} | {% endif %}Source: <a href="{{ source }}" title="External: Source" target="_blank">{{ source }}</a>{% endif %}
 
-                                        {% if misc != '' %}{{ misc }}<br />{% endif %}                   
+                                        {% if misc != '' %}{% if preprint != '' or doi != '' or latex != '' or source != '' %}<br />{% endif %}{{ misc }}<br />{% endif %}                   
                                     </div>
                                 </li> 
 
