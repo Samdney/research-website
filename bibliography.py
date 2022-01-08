@@ -36,6 +36,6 @@ BIBLIOGRAPHY = (
         'I want to show one possibility to proof the Collatz conjecture, also called 3n + 1 conjecture, for any natural number N ∈ N. For this, I limit my analysis on the direct odd follower of every natural odd number and show the connections between the already by one reached numbers and their followers, to find an recurrence over all ranges [1, N_{i}], i ∈ N to proof the conjecture.'),
 
     ('1', 'Dirac Observablen in der Kosmologie', '', 'Carolin Zöbelein', '', '2013', 'Bachelor Thesis', '', '2010 PACS. 4.60.-m, 98.80.-k', 'Physics', '', '', '', '', '', '', '', '', '', 'thesis_0001', 
-        '')
+        'In der vorliegenden Arbeit soll die Konstruktion von Dirac-Observablen, für den Spezialfall der Kosmologie, betrachtet werden. Als Startpunkt seien hierzu die Zwangsbedingungen des gekoppelten Systems von Gravitation mit Staub- und Skalarfeldern gewählt. Für die deparametrisierte Form, zum Einen, bezüglich des Staub-, und zum Anderen, bezüglich des Skalarfeldes, wird analysiert, inwiefern sich die Observablen in einer expliziten geschlossenen Form angeben lassen. Im Anschluss daran seien zwei verschiedene Möglichkeiten betrachtet einen Uhrenwechsel des jeweiligen Systems für Dirac-Observablen durchzuführen. Einerseits über die Konstruktion einer Uhrenfunktion für die gegebene, deparametrisierte Form der Zwangsbedingung $tilde{c}^{tot}$, andererseits über die Neudefinition eines neuen $tilde{c}^{tot\prime}$, mittels schwacher Abelisierung, für eine fest gegebene Uhr.')
 )
 
