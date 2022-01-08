@@ -46,6 +46,7 @@ PAGE_URL = '{slug}.html'
 
 SUMMARY_MAX_LENGTH = None
 # ******
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'kinds', 'subjects'] # TODO
 
 
 TIMEZONE = 'Europe/Paris'

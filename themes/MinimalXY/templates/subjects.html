@@ -1,0 +1,85 @@
+    {% extends "base.html" %}
+
+    {% block title %}Subjects &ndash; {{ SITENAME }}{% endblock %}
+
+    {% block content %}
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-white w3-container col-main">
+        <h1>Subjects</h1>
+      </header>
+
+      <br>
+
+       <div class="col-main w3-white w3-container">
+        <section id="content">
+
+            {% set tp_subjects = ['Math', 'CS', 'Physics'] %} <!-- TODO -->
+
+            <!-- TODO -->
+            {% set tp_objects = {
+                    'Math' : 0,
+                    'CS' : 0,
+                    'Physics' : 0
+                }
+            %}
+
+
+            {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id, abstract in BIBLIOGRAPHY %}            
+
+                {% if subjects %}
+                    {% set subjects_pa = subjects.split(', ') %}
+                {% endif %}
+
+                {% for subject in subjects_pa %}
+                    {% for key in tp_objects %}
+                        {% if subject == key %}
+                            {% if tp_objects.update({ key : tp_objects[key] + 1 }) %}{% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+            {% endfor %}
+
+
+            <ul>
+                {% for tp_subject in tp_subjects %}
+                    {% if tp_objects[tp_subject] != 0 %}<li><a href="{{ SITEURL }}#{{ tp_subject }}">{{ tp_subject }} ({{ tp_objects[tp_subject] }})</a></li>{% endif %}
+                {% endfor %}
+            </ul>
+
+            Go back to <a href="public.html#Bibliography">Bibliography <i class="fas fa-arrow-right"></i></a>
+
+
+            <hr>
+            {% for tp_subject in tp_subjects %}
+                {% if tp_objects[tp_subject] != 0 %}
+                    <h3 id="{{ tp_subject }}">{{ tp_subject }}</h3>
+                    <ul style="list-style-type:none; padding-left: 1em;">
+                        {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id, abstract in BIBLIOGRAPHY %}
+
+                            {% if subjects %}
+                                {% set subjects_pa = subjects.split(', ') %}
+                            {% endif %}
+
+                            {% for subject in subjects_pa %}
+                                {% if subject == tp_subject %}
+                                    <li>{% include 'sortedbibentrySubjects.html' %}</li>
+                                {% endif %}
+                            {% endfor %}
+
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endfor %}
+
+        </section>
+
+        <br><br><br>
+        
+      </div>
+    </article>
+
+    {% endblock content %}
