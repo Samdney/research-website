@@ -12,10 +12,13 @@ from datetime import datetime
 # TODO: Add missing entry information
 # TODO: Remove old subpages
 
-BIBLIOGRAPHY_LASTUPDATE = '2021/08/28'
+BIBLIOGRAPHY_LASTUPDATE = '2022/01/09'
 
 BIBLIOGRAPHY = (
     #('nb', 'title', 'sum', 'author', 'date', 'year', 'kind', 'keywords', 'subjectclass', 'subjects', 'publication', 'publicationlink', 'preprint', 'latex', 'source', 'pdf', 'related', 'misc', 'doi', 'id', 'abstract'),
+
+    ('8', 'Sums, products and property labeling along the edges of a dynamical hypergraph', '', 'Carolin Zöbelein', '', '2022', 'Preprint', '', '', 'Math', '', '', '', '', '', '', '', '', '', '', 
+        ''),
 
     ('7', 'HG-hybrid graphs', '', 'Carolin Zöbelein', '', '2021', 'Draft', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', '', 
         ''),
