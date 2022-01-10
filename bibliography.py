@@ -17,10 +17,10 @@ BIBLIOGRAPHY_LASTUPDATE = '2022/01/09'
 BIBLIOGRAPHY = (
     #('nb', 'title', 'sum', 'author', 'date', 'year', 'kind', 'keywords', 'subjectclass', 'subjects', 'publication', 'publicationlink', 'preprint', 'latex', 'source', 'pdf', 'related', 'misc', 'doi', 'id', 'abstract'),
 
-    ('8', 'Sums, products and property labeling along the edges of a dynamical hypergraph', '', 'Carolin Zöbelein', '', '2022', 'Preprint', '', '', 'Math', '', '', '', '', '', '', '', '', '', '', 
+    ('8', 'Sums, products and property labeling along the edges of a dynamical hypergraph', '', 'Carolin Zöbelein', '', '2022', 'Preprint', '', '', 'Math', '', '', '', '', '', '', '', '', '', 'paper_0006', 
         ''),
 
-    ('7', 'HG-hybrid graphs', '', 'Carolin Zöbelein', '', '2021', 'Draft', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', '', 
+    ('7', 'HG-hybrid graphs', '', 'Carolin Zöbelein', '', '2021', 'Draft', '', '', 'Math, CS', '', '', '', '', '', '', '', '', '', 'paper_0005', 
         ''),
 
     ('6', 'Powers of 2 whose digits are powers of 2', '', 'Carolin Zöbelein', '', '2021', 'Preprint', '', '', 'Math', '', '', '', '', '', '', '', '', '', 'paper_0004', 
