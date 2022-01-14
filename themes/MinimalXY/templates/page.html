@@ -797,7 +797,6 @@
 
                                         {% if author != '' %}{{ author }}{% endif %}
                                         {% if year != '' %}, {{ year }}{% endif %}
-                                        {% if related != '' %}, {{ related }}{% endif %}
                                         {% if id != '' %}, id: {{ id }}{% endif %}<br />
 
 
@@ -809,7 +808,10 @@
 
                                         {% if source != '' %}{% if preprint != '' or doi != '' or latex != '' %} | {% endif %}Source: <a href="{{ source }}" title="External: Source" target="_blank">{{ source }}</a>{% endif %}
 
-                                        {% if misc != '' %}{% if preprint != '' or doi != '' or latex != '' or source != '' %}<br />{% endif %}{{ misc }}<br />{% endif %}                   
+
+                                        {% if related != '' %}{% if preprint != '' or doi != '' or latex != '' or source != '' %}<br />{% endif %}Related work: {{ related }}{% endif %}
+
+                                        {% if misc != '' %}{% if preprint != '' or doi != '' or latex != '' or source != '' or related != '' %}<br />{% endif %}{{ misc }}{% endif %}
                                     </div>
                                 </li> 
 
