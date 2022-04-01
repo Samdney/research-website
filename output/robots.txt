@@ -1,15 +1,11 @@
-# Disallow everything.
 User-agent: *
-Disallow: /
+Disallow: /legal-disclosure.html
+Disallow: /privacy-policy.html
+Disallow: /disclaimer.html
+Disallow: /contact.html
+Disallow: /funding.html
+Disallow: /authors.html
 
-User-agent: *
-Allow: /index.html
-Allow: /about.html
-Allow: /research.html
-Allow: /projects.html
-Allow: /public.html
-Allow: /Projects/
-Allow: /Public/
 
 User-agent: Twitterbot
 Allow: /images
