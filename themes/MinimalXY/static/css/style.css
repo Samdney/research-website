@@ -954,6 +954,25 @@ ul.social li a:hover {
   /*top: 0;*/
 }
 
+/* Desktop */
+@media all and (min-width: 630px) {
+  #logo {
+    position:relative;
+    top:19%;
+    right:14%;
+    width:124%;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 629px) {
+  #logo {
+    position:relative;
+    top:19%;
+    width:75%;
+  }
+}
+
 #header-logo {
   width: 60px;
   min-width: 60px; /* no resizing! */
