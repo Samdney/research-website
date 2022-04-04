@@ -70,7 +70,7 @@ MINIMALXY_FAVICON = 'images/favicon.ico'
 # Menu
 MENUITEMS = (
     #('<img height="50em" style="margin-top: 0%;" src="images/nerd.png">', ''),
-    ('<img width="35em" style="" alt="Nerd" title="Hire a Nerd! - Algorithm Development and Expert Consulting" src="images/nerd.png">', ''),
+    ('<img width="35em" style="" alt="Nerd" title="Hire a Nerd! - Algorithm Development and Expert Consulting" src="/images/nerd.png">', ''),
     ('About', '/about.html'),
     ('Research', '/research.html'),
     ('Projects', '/projects.html'),
