@@ -190,7 +190,7 @@ AFFILIATIONS = [
     # 'fas', 'fa', 'graduation-cap'
 
     ('Ronin Institute', 'fas', 'fa', 'university', 'http://ronininstitute.org', 'Research Scholar', ''),
-    ('Tor Project', 'fas', 'fa', 'user-secret', 'https://www.torproject.org/', 'Volunteer', '')
+    ('Tor Project', 'fas', 'fa', 'user-secret', 'https://www.torproject.org/', 'Supporter', '')
 ]
 
 # Social
