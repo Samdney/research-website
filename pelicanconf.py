@@ -198,6 +198,8 @@ SOCIAL = (
     ('Twitter', 'fab', 'fa', 'twitter', 'https://twitter.com/SamdneyTweet','@SamdneyTweet<br /> Tweets and Work updates'),
     ('Blog', 'fas', 'fa', 'pencil-alt', 'https://blog.carolin-zoebelein.de', 'Mostly math'),
     ('Medium', 'fab', 'fa', 'medium', 'https://medium.com/@carolinzoebelein', 'Articles'),
+    ('YouTube', 'fab', 'fa', 'youtube', 'https://www.youtube.com/channel/UChKn7j071KPz3QNYldPKH1g', 'Research videos'),
+    ('Vimeo', 'fab', 'fa', 'vimeo', 'https://vimeo.com/carolinzoebeleinresearch', 'Research videos'),
     ('Reddit', 'fab', 'fa', 'reddit', 'https://www.reddit.com/user/CarolinZoebelein', 'Brainstorming forum questions and answers'),
     #('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney', '@Samdney<br /> Code, Research Notes, Worksheets, Proposals and Papers'),
     ('GitHub', 'fab', 'fa', 'github', 'https://github.com/Samdney', 'GitHub: Samdney'),
@@ -252,7 +254,7 @@ SOCIAL_SIGNS = (
 
 EVENTS = 'None.'
 
-SOCIAL_PAGINATION = 4
+SOCIAL_PAGINATION = 5 # 4
 
 # Index page pagination: General
 #DEFAULT_PAGINATION = 6
