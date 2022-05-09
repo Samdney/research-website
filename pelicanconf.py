@@ -11,6 +11,7 @@ import sys
 sys.path.append(os.curdir)
 from bibliography import *
 from projectsbib import *
+from videos import *
 
 # TODO: robots.txt rework
 # TODO: rename: public.html => publications.html, .htaccess, redirection
