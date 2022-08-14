@@ -52,11 +52,12 @@ DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'kinds
 
 TIMEZONE = 'Europe/Paris'
 
-DATE_FORMATS = {
+DATE_FORMATS = {	# TODO
         'en': '%Y/%m/%d',
 }
 
 DEFAULT_LANG = u'en'
+#DEFAULT_LANG = u'de'
 
 # Theme
 THEME = 'themes/MinimalXY'

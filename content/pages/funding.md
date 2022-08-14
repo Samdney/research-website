@@ -36,6 +36,7 @@ system for online money transfers.
 <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+<br />
 Alternatively, you can use my <a href="https://www.paypal.com/paypalme/CarolinZoebelein" title="External: PayPal.me" target="_blank">PayPal.me link</a>, which you can also send to friends!
 
 

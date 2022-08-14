@@ -9,10 +9,10 @@ Slug:           keys
 Last modification: 2021/11/09
 
 <h2 id="PGP">PGP</h2>
-* D4A7 35E8 D47F 801F 2CF6 2BA7 927A FD3C DE47 E13B  
+D4A7 35E8 D47F 801F 2CF6 2BA7 927A FD3C DE47 E13B  
 Key for communication. It is renewed once a year. Available on keyservers or download here: <a href="/files/D4A735E8D47F801F2CF62BA7927AFD3CDE47E13B.asc" title="Public key: D4A735E8D47F801F2CF62BA7927AFD3CDE47E13B.asc" target="_blank">0x927AFD3CDE47E13B.asc</a>  
 <div class="little-information-keys">
-md5sum: a7f83ae9aa905a8ab4d8d03f9fd9da19  
+md5sum: a7f83ae9aa905a8ab4d8d03f9fd9da19<br />
 sha256sum: 99e086c5d863988750a5b28d42e8448a7bf0602eb766a73e56aaf3867aa269fb
 </div>
 <div class="little-information-keys-sigs">
@@ -33,11 +33,13 @@ sig          927AFD3CDE47E13B 2021-11-09  Carolin Zoebelein (second) &lt;contact
 </div>
 
 
+<br />
 
-* 8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B  
+
+8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B  
 Signing key (NOT for communication!) for my work. It hasn't an expiry date. Available on keyservers or download here: <a href="/files/8F31C7C6E67E9ACE8E12E2EF0DE3A4D3BA872A8B.asc" title="Public key: 8F31C7C6E67E9ACE8E12E2EF0DE3A4D3BA872A8B.asc" target="_blank">0x0DE3A4D3BA872A8B.asc</a>  
 <div class="little-information-keys">
-md5sum: 6cd9af5d480bc4f71122aae850f3c07b  
+md5sum: 6cd9af5d480bc4f71122aae850f3c07b<br />
 sha256sum: d9dfe8e51786814e44442bec58b45fb1b999026b7a37ba378eb04fcb77983d6c
 </div>
 <div class="little-information-keys-sigs">

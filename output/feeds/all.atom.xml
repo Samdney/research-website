@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carolin Zöbelein - Research</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-03-28T23:59:00+01:00</updated><entry><title>Notes: Grundy values and distinct distances</title><link href="/Public/Publications/Notes-Grundy-values-and-distinct-distances.html" rel="alternate"></link><published>2020-03-28T23:59:00+01:00</published><updated>2020-03-28T23:59:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2020-03-28:/Public/Publications/Notes-Grundy-values-and-distinct-distances.html</id><summary type="html">&lt;ul&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carolin Zöbelein - Research</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-03-28T23:59:00+01:00</updated><entry><title>Notes: Grundy values and distinct distances</title><link href="/Public/Publications/Notes-Grundy-values-and-distinct-distances.html" rel="alternate"></link><published>2020-03-28T23:59:00+01:00</published><updated>2020-03-28T23:59:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2020-03-28:/Public/Publications/Notes-Grundy-values-and-distinct-distances.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;Preamble&lt;/li&gt;
 &lt;li&gt;1 Introduction&lt;/li&gt;
 &lt;li&gt;2 Grundy values&lt;/li&gt;
@@ -14,22 +14,7 @@
 &lt;li&gt;4 Conclusion&lt;/li&gt;
 &lt;li&gt;Acknowledgement  &lt;/li&gt;
 &lt;li&gt;License&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;Preamble&lt;/li&gt;
-&lt;li&gt;1 Introduction&lt;/li&gt;
-&lt;li&gt;2 Grundy values&lt;/li&gt;
-&lt;li&gt;2.1 Definition&lt;/li&gt;
-&lt;li&gt;2.2 Element determination&lt;/li&gt;
-&lt;li&gt;3 Distance examinations&lt;/li&gt;
-&lt;li&gt;3.1 First appearances within Grundy sequence&lt;/li&gt;
-&lt;li&gt;3.2 Positions of sequence elements&lt;/li&gt;
-&lt;li&gt;3.3 Position distance of first appearances&lt;/li&gt;
-&lt;li&gt;3.4 Position distance of problem statement sequence&lt;/li&gt;
-&lt;li&gt;3.5 Distance between same number appearences&lt;/li&gt;
-&lt;li&gt;4 Conclusion&lt;/li&gt;
-&lt;li&gt;Acknowledgement  &lt;/li&gt;
-&lt;li&gt;License&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Notes: Basic conditions for a mathematical forced decentralized network protocol (MfDN-Protocol)</title><link href="/Public/Publications/Notes-Basic-conditions-for-a-mathematical-forced-decentralized-network-protocol-MfDN-Protocol.html" rel="alternate"></link><published>2020-02-20T23:59:00+01:00</published><updated>2020-02-20T23:59:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2020-02-20:/Public/Publications/Notes-Basic-conditions-for-a-mathematical-forced-decentralized-network-protocol-MfDN-Protocol.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Notes: Basic conditions for a mathematical forced decentralized network protocol (MfDN-Protocol)</title><link href="/Public/Publications/Notes-Basic-conditions-for-a-mathematical-forced-decentralized-network-protocol-MfDN-Protocol.html" rel="alternate"></link><published>2020-02-20T23:59:00+01:00</published><updated>2020-02-20T23:59:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2020-02-20:/Public/Publications/Notes-Basic-conditions-for-a-mathematical-forced-decentralized-network-protocol-MfDN-Protocol.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;ol&gt;
 &lt;li&gt;Introduction  &lt;/li&gt;
@@ -65,51 +50,11 @@
 &lt;/li&gt;
 &lt;li&gt;Acknowledgement  &lt;/li&gt;
 &lt;li&gt;License&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Introduction  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;What does MfDN-Protocol mean?  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;2.1. Centralized service  &lt;/li&gt;
-&lt;li&gt;2.2. Classical decentralized service  &lt;/li&gt;
-&lt;li&gt;2.3. Mathematical forced decentralized service  &lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Critical design questions  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Main decentralization points  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Conclusion  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Further Information  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Acknowledgement  &lt;/li&gt;
-&lt;li&gt;License&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>NGI Zero: Search and Discovery Fund</title><link href="/Funding/2019/NGI-Zero-Search-and-Discovery-Fund.html" rel="alternate"></link><published>2019-12-10T10:00:00+01:00</published><updated>2019-12-10T10:00:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-12-10:/Funding/2019/NGI-Zero-Search-and-Discovery-Fund.html</id><summary type="html">&lt;p&gt;NLnet manages the &lt;a href="https://nlnet.nl/discovery" target="_blank"&gt;NGI0 Discovery Fund&lt;/a&gt;, a fund dedicated to search technologies which creates an open, trustworthy and reliable internet for all. The fund was established with financial support from the &lt;a href="https://ec.europa.eu" target="_blank"&gt;European Commission&lt;/a&gt;'s &lt;a href="https://ngi.eu" target="_blank"&gt;Next Generation Internet&lt;/a&gt; programme, under the aegis of &lt;a href="https://ec.europa.eu/info/departments/communications-networks-content-and-technology_en" target="_blank"&gt;DG Communications Networks, Content and Technology&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;NLnet manages the &lt;a href="https://nlnet.nl/discovery" target="_blank"&gt;NGI0 Discovery Fund&lt;/a&gt;, a fund dedicated to search technologies which creates an open, trustworthy and reliable internet for all. The fund was established with financial support from the &lt;a href="https://ec.europa.eu" target="_blank"&gt;European Commission&lt;/a&gt;'s &lt;a href="https://ngi.eu" target="_blank"&gt;Next Generation Internet&lt;/a&gt; programme, under the aegis of &lt;a href="https://ec.europa.eu/info/departments/communications-networks-content-and-technology_en" target="_blank"&gt;DG Communications Networks, Content and Technology&lt;/a&gt;.&lt;/p&gt;</content><category term="Decentralization"></category><category term="Search Engine"></category><category term="Math"></category><category term="Privacy"></category><category term="Funding"></category><category term="Grant"></category></entry><entry><title>Combsee</title><link href="/Projects/2019/Combsee.html" rel="alternate"></link><published>2019-08-15T10:00:00+02:00</published><updated>2019-08-15T10:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-08-15:/Projects/2019/Combsee.html</id><summary type="html">&lt;p&gt;Decentralized search for more privacy.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry><entry><title>NGI Zero: Search and Discovery Fund</title><link href="/Funding/2019/NGI-Zero-Search-and-Discovery-Fund.html" rel="alternate"></link><published>2019-12-10T10:00:00+01:00</published><updated>2019-12-10T10:00:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-12-10:/Funding/2019/NGI-Zero-Search-and-Discovery-Fund.html</id><content type="html">&lt;p&gt;NLnet manages the &lt;a href="https://nlnet.nl/discovery" target="_blank"&gt;NGI0 Discovery Fund&lt;/a&gt;, a fund dedicated to search technologies which creates an open, trustworthy and reliable internet for all. The fund was established with financial support from the &lt;a href="https://ec.europa.eu" target="_blank"&gt;European Commission&lt;/a&gt;'s &lt;a href="https://ngi.eu" target="_blank"&gt;Next Generation Internet&lt;/a&gt; programme, under the aegis of &lt;a href="https://ec.europa.eu/info/departments/communications-networks-content-and-technology_en" target="_blank"&gt;DG Communications Networks, Content and Technology&lt;/a&gt;.&lt;/p&gt;</content><category term="Funding"></category><category term="Decentralization"></category><category term="Search Engine"></category><category term="Math"></category><category term="Privacy"></category><category term="Funding"></category><category term="Grant"></category></entry><entry><title>Combsee</title><link href="/Projects/2019/Combsee.html" rel="alternate"></link><published>2019-08-15T10:00:00+02:00</published><updated>2019-08-15T10:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-08-15:/Projects/2019/Combsee.html</id><content type="html">&lt;p&gt;Decentralized search for more privacy.&lt;/p&gt;
 &lt;p&gt;A research and development project for a new type of decentralized, privacy preserving, search engine based on its mathematical design.
-The aim of this project is to design a seriously open source alternative to the well known commercial search engines.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Decentralized search for more privacy.&lt;/p&gt;
-&lt;p&gt;A research and development project for a new type of decentralized, privacy preserving, search engine based on its mathematical design.
-The aim of this project is to design a seriously open source alternative to the well known commercial search engines.&lt;/p&gt;</content><category term="Decentralization"></category><category term="Search Engine"></category><category term="Math"></category><category term="Privacy"></category><category term="Project"></category></entry><entry><title>Primes (part 05): Relationship between n̄ and n̄'</title><link href="/Public/Publications/Primes-part-05-Relationship-between-n-and-n.html" rel="alternate"></link><published>2019-06-06T20:00:00+02:00</published><updated>2019-06-06T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-06-06:/Public/Publications/Primes-part-05-Relationship-between-n-and-n.html</id><summary type="html">&lt;ul&gt;
+The aim of this project is to design a seriously open source alternative to the well known commercial search engines.&lt;/p&gt;</content><category term="Project"></category><category term="Decentralization"></category><category term="Search Engine"></category><category term="Math"></category><category term="Privacy"></category><category term="Project"></category></entry><entry><title>Primes (part 05): Relationship between n̄ and n̄'</title><link href="/Public/Publications/Primes-part-05-Relationship-between-n-and-n.html" rel="alternate"></link><published>2019-06-06T20:00:00+02:00</published><updated>2019-06-06T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-06-06:/Public/Publications/Primes-part-05-Relationship-between-n-and-n.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;I. Page 1 - 4: Relationship between n̄ and n̄'.&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;I. Page 1 - 4: Relationship between n̄ and n̄'.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 04): Playing around</title><link href="/Public/Publications/Primes-part-04-Playing-around.html" rel="alternate"></link><published>2019-05-21T20:00:00+02:00</published><updated>2019-05-21T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-21:/Public/Publications/Primes-part-04-Playing-around.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 04): Playing around</title><link href="/Public/Publications/Primes-part-04-Playing-around.html" rel="alternate"></link><published>2019-05-21T20:00:00+02:00</published><updated>2019-05-21T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-21:/Public/Publications/Primes-part-04-Playing-around.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;I. Page 1 - 6: Extenting from &lt;span class="math"&gt;\(x\)&lt;/span&gt; to &lt;span class="math"&gt;\(\left(2xy + x + y\right)\)&lt;/span&gt; as part of k solution &lt;/li&gt;
 &lt;li&gt;II. Page 7 - 10: Checking for possible additional terms and factors of this extension&lt;/li&gt;
 &lt;li&gt;III. Page 11 - 17: Looking at common and not common factor(s) case of original &lt;span class="math"&gt;\(n\left(2x + 1\right)\)&lt;/span&gt; equation odd numbers &lt;span class="math"&gt;\(\left(2x + 1\right)\)&lt;/span&gt;&lt;/li&gt;
@@ -128,11 +73,14 @@ The aim of this project is to design a seriously open source alternative to the 
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -146,6 +94,8 @@ The aim of this project is to design a seriously open source alternative to the 
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -166,6 +116,69 @@ The aim of this project is to design a seriously open source alternative to the 
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;&lt;script type='text/javascript'&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</summary><content type="html">&lt;ul&gt;
@@ -187,11 +200,14 @@ The aim of this project is to design a seriously open source alternative to the 
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -205,6 +221,8 @@ The aim of this project is to design a seriously open source alternative to the 
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -225,19 +243,16 @@ The aim of this project is to design a seriously open source alternative to the 
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 03): Recursion - New approach for also non-prime times tables</title><link href="/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html" rel="alternate"></link><published>2019-05-10T20:05:00+02:00</published><updated>2019-05-10T20:05:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-10:/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html</id><summary type="html">&lt;ul&gt;
+&lt;/script&gt;</content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 03): Recursion - New approach for also non-prime times tables</title><link href="/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html" rel="alternate"></link><published>2019-05-10T20:05:00+02:00</published><updated>2019-05-10T20:05:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-10:/Public/Publications/Primes-part-03-Recursion-New-approach-for-also-non-prime-times-tables.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;I. Page 1 - 4: Intersection of equations with common factors&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;I. Page 1 - 4: Intersection of equations with common factors&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 02): Recursion - First-step valid solutions</title><link href="/Public/Publications/Primes-part-02-Recursion-First-step-valid-solutions.html" rel="alternate"></link><published>2019-05-10T20:00:00+02:00</published><updated>2019-05-10T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-10:/Public/Publications/Primes-part-02-Recursion-First-step-valid-solutions.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 02): Recursion - First-step valid solutions</title><link href="/Public/Publications/Primes-part-02-Recursion-First-step-valid-solutions.html" rel="alternate"></link><published>2019-05-10T20:00:00+02:00</published><updated>2019-05-10T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-10:/Public/Publications/Primes-part-02-Recursion-First-step-valid-solutions.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;I. Tablet notes 1 - 4: z_{1,2} -solutions for the first intersection&lt;/li&gt;
 &lt;li&gt;II. Scans 1 - 2: (k, ∆)-view on the first intersection solutions&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;I. Tablet notes 1 - 4: z_{1,2} -solutions for the first intersection&lt;/li&gt;
-&lt;li&gt;II. Scans 1 - 2: (k, ∆)-view on the first intersection solutions&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 01): Recursion basics</title><link href="/Public/Publications/Primes-part-01-Recursion-basics.html" rel="alternate"></link><published>2019-05-04T20:00:00+02:00</published><updated>2019-05-04T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-04:/Public/Publications/Primes-part-01-Recursion-basics.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Primes (part 01): Recursion basics</title><link href="/Public/Publications/Primes-part-01-Recursion-basics.html" rel="alternate"></link><published>2019-05-04T20:00:00+02:00</published><updated>2019-05-04T20:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-05-04:/Public/Publications/Primes-part-01-Recursion-basics.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;I. Page 1 - 4: Basic equations and solution of the non-times-table equations intersection&lt;/li&gt;
 &lt;li&gt;II. Page 5 - 5: Relationship between old and new (modified) equation&lt;/li&gt;
 &lt;li&gt;III. Page 6 - 7: Relationship between old and new (modified) equation - Floor corrections&lt;/li&gt;
@@ -252,23 +267,6 @@ without restrictions) during every recursion step&lt;/li&gt;
 &lt;li&gt;VIII. Page 23 - 27: Determine valid Y i and z i, j ranges&lt;/li&gt;
 &lt;li&gt;IX. Page 28 - 28: Approximations for Floor function&lt;/li&gt;
 &lt;li&gt;X. Page 29 - 30: Let’s put all together. ToDo.&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;I. Page 1 - 4: Basic equations and solution of the non-times-table equations intersection&lt;/li&gt;
-&lt;li&gt;II. Page 5 - 5: Relationship between old and new (modified) equation&lt;/li&gt;
-&lt;li&gt;III. Page 6 - 7: Relationship between old and new (modified) equation - Floor corrections&lt;/li&gt;
-&lt;li&gt;IV. Page 8 - 14: General form of the intersection of an arbitrary number of non-times-table
-equations&lt;/li&gt;
-&lt;li&gt;V. Page 15 - 16: Non-times-table equation correction of Y i to the valid range, by substi-
-tution&lt;/li&gt;
-&lt;li&gt;VI. Page 17 - 20: Restriction on only odd solutions and the final, general intersection
-equation&lt;/li&gt;
-&lt;li&gt;VII. Page 21 - 22: Verification that our new (modified) equation is also valid (can used
-without restrictions) during every recursion step&lt;/li&gt;
-&lt;li&gt;VIII. Page 23 - 27: Determine valid Y i and z i, j ranges&lt;/li&gt;
-&lt;li&gt;IX. Page 28 - 28: Approximations for Floor function&lt;/li&gt;
-&lt;li&gt;X. Page 29 - 30: Let’s put all together. ToDo.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Twitter secrets [on hold]</title><link href="/Projects/2018/Twitter-secrets.html" rel="alternate"></link><published>2019-04-13T10:00:00+02:00</published><updated>2019-04-13T10:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-04-13:/Projects/2018/Twitter-secrets.html</id><summary type="html"></summary><content type="html"></content><category term="AntiCensorship"></category><category term="Circumvention"></category><category term="Twitter"></category><category term="Project"></category></entry><entry><title>Why you should study Number Theory!</title><link href="/Public/Meetups/Why-you-should-study-Number-Theory.html" rel="alternate"></link><published>2018-10-03T07:00:00+02:00</published><updated>2018-10-03T07:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2018-10-03:/Public/Meetups/Why-you-should-study-Number-Theory.html</id><summary type="html">&lt;div&gt;
+&lt;/ul&gt;</content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry><entry><title>Twitter secrets [on hold]</title><link href="/Projects/2018/Twitter-secrets.html" rel="alternate"></link><published>2019-04-13T10:00:00+02:00</published><updated>2019-04-13T10:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2019-04-13:/Projects/2018/Twitter-secrets.html</id><content type="html"></content><category term="Project"></category><category term="AntiCensorship"></category><category term="Circumvention"></category><category term="Twitter"></category><category term="Project"></category></entry><entry><title>Why you should study Number Theory!</title><link href="/Public/Meetups/Why-you-should-study-Number-Theory.html" rel="alternate"></link><published>2018-10-03T07:00:00+02:00</published><updated>2018-10-03T07:00:00+02:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2018-10-03:/Public/Meetups/Why-you-should-study-Number-Theory.html</id><content type="html">&lt;div&gt;
     &lt;i&gt;Why you should study Number Theory!&lt;/i&gt;, A friendly together for talking about Number Theory studies with coffee and tea.
-&lt;/div&gt;</summary><content type="html">&lt;div&gt;
-    &lt;i&gt;Why you should study Number Theory!&lt;/i&gt;, A friendly together for talking about Number Theory studies with coffee and tea.
-&lt;/div&gt;</content><category term="Meetup"></category></entry><entry><title>primescalc</title><link href="/Public/Publications/primescalc.html" rel="alternate"></link><published>2017-12-15T23:00:00+01:00</published><updated>2017-12-15T23:00:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2017-12-15:/Public/Publications/primescalc.html</id><summary type="html"></summary><content type="html"></content><category term="Publication"></category><category term="Notes"></category></entry></feed>
+&lt;/div&gt;</content><category term="Public"></category><category term="Meetup"></category></entry><entry><title>primescalc</title><link href="/Public/Publications/primescalc.html" rel="alternate"></link><published>2017-12-15T23:00:00+01:00</published><updated>2017-12-15T23:00:00+01:00</updated><author><name>Carolin Zöbelein</name></author><id>tag:None,2017-12-15:/Public/Publications/primescalc.html</id><content type="html"></content><category term="Public"></category><category term="Publication"></category><category term="Notes"></category></entry></feed>
