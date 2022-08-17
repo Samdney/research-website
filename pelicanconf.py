@@ -179,6 +179,8 @@ NBPAPERENTRIES = 3
 #]
 
 
+# TODO: BATTERY
+
 # TODO
 PRIVATEINVESTORS = "Information for private investors are available on <a href='/funding.html#PrivateInvestors' style='color: #2196F3;'>Funding</a>."
 
