@@ -70,14 +70,64 @@
 
                 </div>
 
+				<!-- TODO -->
+				<!--
                 <br />
                 <font style="font-size: 0.8em; color: black;">
                     <b style="color: red;">Job alarm!</b><br />
 
                     <b>I'm looking for somebody who can help me we with math/cs paper and blog posts typping. I have the math, but because of a disease, temporary language brain failures, I need assistance with writing. If you want to help me or know somebody who could help me, please contact me.</b>
                 </font>
+                -->
 
+                {% endif %}                
+                
+                
+                <!-- TODO -->
+                {% if BIBLIOGRAPHY %}
+                <!-- <hr /> -->
+                <!-- <b style="font-size: 25px;">That's new</b><br /> --> <!-- TODO: old -->
+                <hr style="border: 0.9px dashed lightgrey" />
+                <b style="font-size: 22px; margin-top: 2%;">That's new</b><br />
+
+                {% if NEW_BLOG_POST_AUT == True or NEW_BLOG_POST %}
+                    <p>
+                        <b style="font-size: 18px; margin-top: 2%;">Blog</b><br /><!-- TODO -->
+                        {% if NEW_BLOG_POST_AUT  == False %}
+                            <font style="font-size: 16px;"><i>{{ NEW_BLOG_POST[0] }}</i> </font><font style="color: #2196F3; font-size: 12px;"> <a  href="{{ NEW_BLOG_POST[1] }}" title="{{ NEW_BLOG_POST[2] }}" target="_blank">{{ NEW_BLOG_POST[3] }}</a></font><br />
+                        {% else %}
+                            <font id="my-blog-title" style="font-size: 16px;"><i>Math, CS and Random Stuff :)</i> </font><font style="color: #2196F3; font-size: 12px;"> <a  href="https://blog.carolin-zoebelein.de" title="External: Blog" target="_blank">Go to Blog</a></font><br />
+                        {% endif %}
+                    </p>
                 {% endif %}
+
+                <p>
+                <b style="font-size: 18px; margin-top: 2px;">Bibliography</b><br />
+
+                    <font style="color: black; font-size: 0.9em;">
+
+                        {% set bibcounter = [0] %}
+                        <ul>
+                            {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id, abstract in BIBLIOGRAPHY %}
+
+                                {% if bibcounter < [ NBPAPERENTRIES ] %}
+
+                                    <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
+                                        {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
+                                        {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font> <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
+                                    </li>
+
+                                {% endif %}
+
+                            {% endfor %}
+
+                        </ul>
+
+                    </font>
+                </p>
+
+                {% endif %}               
+                
 
                 
                 <!-- TODO -->
@@ -167,53 +217,6 @@
                 <p>
                     {{ PRIVATEINVESTORS }}
                 </p>
-                {% endif %}
-
-
-
-                <!-- TODO -->
-                {% if BIBLIOGRAPHY %}
-                <!-- <hr /> -->
-                <!-- <b style="font-size: 25px;">That's new</b><br /> --> <!-- TODO: old -->
-                <hr style="border: 0.9px dashed lightgrey" />
-                <b style="font-size: 22px; margin-top: 2%;">That's new</b><br />
-
-                {% if NEW_BLOG_POST_AUT == True or NEW_BLOG_POST %}
-                    <p>
-                        <b style="font-size: 18px; margin-top: 2%;">Blog</b><br /><!-- TODO -->
-                        {% if NEW_BLOG_POST_AUT  == False %}
-                            <font style="font-size: 16px;"><i>{{ NEW_BLOG_POST[0] }}</i> </font><font style="color: #2196F3; font-size: 12px;"> <a  href="{{ NEW_BLOG_POST[1] }}" title="{{ NEW_BLOG_POST[2] }}" target="_blank">{{ NEW_BLOG_POST[3] }}</a></font><br />
-                        {% else %}
-                            <font id="my-blog-title" style="font-size: 16px;"><i>Math, CS and Random Stuff :)</i> </font><font style="color: #2196F3; font-size: 12px;"> <a  href="https://blog.carolin-zoebelein.de" title="External: Blog" target="_blank">Go to Blog</a></font><br />
-                        {% endif %}
-                    </p>
-                {% endif %}
-
-                <p>
-                <b style="font-size: 18px; margin-top: 2px;">Bibliography</b><br />
-
-                    <font style="color: black; font-size: 0.9em;">
-
-                        {% set bibcounter = [0] %}
-                        <ul>
-                            {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id, abstract in BIBLIOGRAPHY %}
-
-                                {% if bibcounter < [ NBPAPERENTRIES ] %}
-
-                                    <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
-                                        {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
-                                        {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font> <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
-                                    </li>
-
-                                {% endif %}
-
-                            {% endfor %}
-
-                        </ul>
-
-                    </font>
-                </p>
-
                 {% endif %}
 
 
@@ -380,7 +383,15 @@
 
 
             <div class="col02-pages30-index">
+            
+                <font style="font-size: 0.8em; color: black;">
+                    <b style="color: red;">Job alarm!</b><br />
 
+                    <b>I'm looking for somebody who can help me we with math/cs paper and blog posts typping. I have the math, but because of a disease, temporary language brain failures, I need assistance with writing. If you want to help me or know somebody who could help me, please contact me.</b>
+                </font>
+                <br />
+                
+				<br />
 
                 {% if AFFILIATIONS %}
                 <b style="font-size: 20px;">Affiliations</b><br />
