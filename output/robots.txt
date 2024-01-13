@@ -5,6 +5,7 @@ Disallow: /disclaimer.html
 Disallow: /contact.html
 Disallow: /funding.html
 Disallow: /authors.html
+Disallow: /files
 
 
 User-agent: Twitterbot
