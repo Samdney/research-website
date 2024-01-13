@@ -6,7 +6,7 @@ Slug:           mailinglists
 
 <hr />
 
-** This lists are used to coordinate my research and development work with other people, groups, projects and institutions who are interested in cooperation. Feel free to subscribe if you are also interested in helping. The subscriptions are moderated, so please be patient, it can take some days. **
+<b>This lists are used to coordinate my research and development work with other people, groups, projects and institutions who are interested in cooperation. Feel free to subscribe if you are also interested in helping. The subscriptions are moderated, so please be patient, it can take some days.</b>
 
 <hr />
 
