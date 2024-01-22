@@ -820,14 +820,15 @@
                                 {% endif %}
                             {% endfor %}
     
-                            <!-- TODO -->
+                            <!-- TODO: RETURN -->
+                            <!--
                             Preprints and Proposals:<br />
                             {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
                                 {% if title == 'arXiv' or title == 'Authorea' %}
 
-                                    <font style="font-size: 1em;"> <!-- 0.8em --> <!-- TODO: font size icon: Authorea -->
-                                        <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a>{% if title == 'arXiv' %} | {% endif %} <!-- TODO: | separator -->
-                                    </font>
+                                    <font style="font-size: 1em;">--> <!-- 0.8em --> <!-- TODO: font size icon: Authorea -->
+                                        <!--<i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a>{% if title == 'arXiv' %} | {% endif %}--> <!-- TODO: | separator -->
+                                    <!--</font>
 
                                 {% endif %}
                             {% endfor %}
@@ -839,7 +840,8 @@
                                 <a href="files/bibliography.pdf" title="bibliography.pdf" target="_blank">*.pdf</a>, <a href="files/bibliography.bib" title="bibliography.bib" target="_blank">*.bib</a>
                             </font>
 
-                            <br />
+                            <br />-->
+                          	<!-- TODO: RETURN -->
 
                         <!-- TODO -->
                         <!--
@@ -859,15 +861,18 @@
                         {% endif %}
                         -->
 
-                        <br />
+						<!-- TODO: RETURN
+                        <br />TODO: RETURN -->
 
                         {% endif %}
 
+						<!-- TODO: RETURN -->
+						<!-- TODO: RETURN
                         <font style="font-size: 0.7em;">Last update: {{ BIBLIOGRAPHY_LASTUPDATE }}</font><br />
 
-                        <font style="font-size: 0.8em; color: black;"><b>Entries without closer publication information are submitted, under review, or under non-disclosure because of related patent application intentions</b></font> <!-- TODO -->
+                        <font style="font-size: 0.8em; color: black;"><b>Entries without closer publication information are submitted, under review, or under non-disclosure because of related patent application intentions</b></font> TODO: RETURN--> <!-- TODO -->
 
-                        <br />
+                        <!-- TODO: RETURN<br />
                         <font style="font-size: 0.8em; color: red;">
                             <b>
                                 Public and non-public papers (not all mentioned here) are available as professional references, on demand. But some of them only with NDA. Please contact me, in case of interest!
@@ -875,9 +880,9 @@
 
                             <br />
                             Current topics: Enhanced Graph Theory Algorithms for Compression of High Amount Data Transmission, Hardware Circuit Design by Algebraic High Dimensional Objects (for Server Cooling Designs), Combinatorics, Number Theory
-                        </font> <!-- TODO -->
+                        </font> TODO: RETURN --> <!-- TODO -->
     
-                        <br />
+                        <!-- TODO: RETURN <br />
                         <font style="font-size: 14px;">
                             Hover <span title="Abstract" style="color: #2196F3;"><i class="fas fa-paperclip"></i></span> for abstracts. Watch sorted bibliography: <a href="/kinds.html" title="Kinds">Kinds</a>, <a href="/subjects.html" title="Subjects">Subjects</a>
                         </font>
@@ -887,22 +892,22 @@
                         
                             {% for nb, title, sum, author, date, year, kind, keywords, subjectclass, subjects, publication, publicationlink, preprint, latex, source, pdf, related, misc, doi, id, abstract in BIBLIOGRAPHY %}
 
-                                <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
-                                    {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
+                                <li id="bib{{ nb }}">TODO:RETURN--><!-- TODO: font-size: 12px for kind, subjects, pdf -->
+                                    <!-- TODO: RETURN{% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
                                             {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, <a href="files/bibliography/{{ pdf }}" title="{{ kind }}: {{ title }}" target="_blank"><code style="background-color: white;">pdf</code></a>{% endif %}{% if abstract != '' %}{% if pdf == '' %},{% endif %} <span title="Abstract: {{ abstract }}" style="color: #2196F3;"><i class="fas fa-paperclip"></i></span>{% endif %}<br /></font>{% endif %}
 
-                                    <div class="little-information-line">
+                                    <div class="little-information-line">TODO: RETURN -->
                                         <!-- {% if sum != '' %}{{ sum }}<br />{% endif %} -->
-                                        {% if publication != '' %}
+                                        <!-- TODO: RETURN {% if publication != '' %}
                                             {{ publication }} 
                                                 {% if publicationlink != '' %}
                                                     <a href="{{ publicationlink }}" title="External: Publication site" target="_blank"><i class="fas fa-external-link-alt" style="font-size: 10px;"></i></a>, 
                                                 {% endif %}
-                                            {% endif %}
+                                            {% endif %}TODO: RETURN -->
 
                                         <!--{% if keywords != '' %}, {{ keywords }}{% endif %}-->
                                         <!-- author, keywords, year, related, id -->
-
+										<!-- TODO: RETURN
                                         {% if author != '' %}{{ author }}{% endif %}
                                         {% if year != '' %}, {{ year }}{% endif %}
                                         {% if id != '' %}, id: {{ id }}{% endif %}<br />
@@ -924,7 +929,9 @@
                                 </li> 
 
                             {% endfor %}
-                        </ol>
+                        </ol>TODO: RETURN -->
+                        
+                    <!-- TODO: RETURN -->
 
                     {% endif %}
                     </section>
