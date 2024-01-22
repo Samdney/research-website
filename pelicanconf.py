@@ -192,7 +192,7 @@ SIGNING_KEY = u'8F31 C7C6 E67E 9ACE 8E12 E2EF 0DE3 A4D3 BA87 2A8B'
 AFFILIATIONS = [
     #  TODO: Right icon for Tor Project
     # 'fas', 'fa', 'graduation-cap'
-
+	('Hyperbedge Technologies', 'fas', 'fa', 'university', 'https://www.linkedin.com/company/hyperbedge-technologies/' , 'Founder & Head of Research And Development', ''),
     ('Ronin Institute', 'fas', 'fa', 'university', 'http://ronininstitute.org', 'Research Scholar', ''),
     ('Tor Project', 'fas', 'fa', 'user-secret', 'https://www.torproject.org/', 'Supporter', '')
 ]
