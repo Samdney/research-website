@@ -112,6 +112,8 @@
                 </font>
 			
 
+				<!-- TODO: RETURN -->
+				<!--
                 <p>
                 <b style="font-size: 18px; margin-top: 2px;">Bibliography</b><br />
 
@@ -123,10 +125,10 @@
 
                                 {% if bibcounter < [ NBPAPERENTRIES ] %}
 
-                                    <li id="bib{{ nb }}"> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
-                                        {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
-                                        {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font> <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %} <!-- TODO -->
-                                    </li>
+                                    <li id="bib{{ nb }}">--> <!-- TODO: font-size: 12px for kind, subjects, pdf -->
+                                        <!-- {% if title != '' %}<b>{{ title }}</b><font style="font-size: 14px;">{% if kind != '' %}, <i>{{ kind }}</i>{% endif %}
+                                        {% if subjects != '' %}, {{ subjects }}{% endif %}{% if pdf != '' %}, (<a href="XXXX" title="XXX" target="_blank">{{ pdf }}</a>){% endif %}</font> <a href="/public.html#bib{{ nb }}" title="Jump to Bibliography: {{ title }}"><font style="color: #2196F3; font-size: 12px;"><i class="fas fa-angle-double-right"></i></font></a>{% if bibcounter.append(bibcounter.pop() + 1) %}{% endif %}{% endif %}--> <!-- TODO -->
+                                    <!--</li>
 
                                 {% endif %}
 
@@ -135,7 +137,9 @@
                         </ul>
 
                     </font>
-                </p>
+                </p>-->
+                <!-- TODO: RETURN -->
+                
 
                 {% endif %}               
                 
