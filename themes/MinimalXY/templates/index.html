@@ -398,15 +398,6 @@
 
 
             <div class="col02-pages30-index">
-            
-                <font style="font-size: 0.8em; color: black;">
-                    <b style="color: red;">Job alarm!</b><br />
-
-                    <b>I'm looking for somebody who can help me we with math/cs paper and blog posts typping. I have the math, but because of a disease, temporary language brain failures, I need assistance with writing. If you want to help me or know somebody who could help me, please contact me.</b>
-                </font>
-                <br />
-                
-				<br />
 
                 {% if AFFILIATIONS %}
                 <b style="font-size: 20px;">Affiliations</b><br />
@@ -434,6 +425,18 @@
                 {% if RESEARCH %}
                 <b style="font-size: 20px;">Bibliography</b><br />
                 <!-- <b style="font-size: 20px;">Bibliographies</b><br /> --> <!-- TODO -->
+               	<!-- TODO: RETURN -->
+                {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
+                    {% if kind == 'pbb' %}
+
+                        <font style="font-size: 1em;"> <!-- 0.8em -->
+                            <i class="{{ typea }} {{ typef }}-{{ name }}"></i><a class="sc-{{ name }}" href="{{ link }}" title="{% if external =='true' %} External: {% endif %} {{ title }}" {% if external =='true' %} target="_blank" {% endif %} style="font-size: 0.8em; color: #2196F3;"> <b>{{ info }}</b></a><br />
+                        </font>
+
+                    {% endif %}
+                {% endfor %}
+                <!-- TODO: RETURN -->                
+                
                 {% for kind, title, typea, typef, name, link, info, external in RESEARCH %}
                     {% if kind == 'irb' %}
 
@@ -443,7 +446,7 @@
 
                     {% endif %}
                 {% endfor %}
-
+                
                 <br />
 
                 <b style="font-size: 20px;">Projects</b><br />
@@ -490,6 +493,20 @@
                 <br />
                 {% endif %}
 
+        
+        		<!-- TODO: RETURN -->
+				<br />
+                <font style="font-size: 0.8em; color: black;">
+                    <b style="color: red;">Job alarm!</b><br />
+
+                    <b>I'm looking for somebody who can help me we with math/cs paper and blog posts typping. I have the math, but because of a disease, temporary language brain failures, I need assistance with writing. If you want to help me or know somebody who could help me, please contact me.</b>
+                </font>
+                <br />
+                
+				<!--<br /> -->
+				<!-- TODO: RETURN -->
+        
+        
         
                 {% if STATUS_REPORT %}
                 <br />
